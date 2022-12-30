@@ -25,10 +25,8 @@
 
 MIT License
 
-:::note warn
-__NOTICE__
+__! NOTICE !__
 __This source does not include an HDMI license.__
-:::
 
 - 本ソースコードにはHDMIのライセンスは含まれません。HDMI機器製品を開発・販売する際にはHDMI Licensing Administrator, Inc.のアダプターメンバーになる必要があります。
 - 本ソースコードは研究・実験目的で開発されており、本ソースコードを直接あるいは間接的に利用したもので発生した全ての問題に対し、本ソースコードの製作者および権利者は一切の責務を負いません。
