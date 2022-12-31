@@ -2,7 +2,7 @@
 -- TITLE : HDMI Transmitter (for GowinEDA)
 --
 --     DESIGN : s.osafune@j7system.jp (J-7SYSTEM WORKS LIMITED)
---     DATE   : 2022/12/01 -> 2022/12/30
+--     DATE   : 2022/12/01 -> 2022/12/31
 --
 --
 -- ===================================================================
@@ -31,71 +31,71 @@
 
 -- hdmi_tx component declaration ------------------------------------------------------------------
 --
---	component hdmi_tx
---	generic(
---		CLOCK_FREQUENCY	: real := 25.200;		-- Input clock frequency (MHz)
+--  component hdmi_tx
+--  generic(
+--      CLOCK_FREQUENCY : real := 25.200;       -- Input clock frequency (MHz)
 --
---		ENCODE_MODE		: string := "HDMI";		-- "HDMI"    : HDMI
---												-- "LITEHDMI": Reduce HDMI-TX(Null packet only)
---												-- "DVI"     : DVI
---		USE_EXTCONTROL	: string := "OFF";		-- "ON"      : Use control port (External HDMI timing generator)
---												-- "OFF"     : Internal HDMI timing regenerator
---		SYNC_POLARITY	: string := "NEGATIVE";	-- "NEGATIVE": Invert HSYNC/VSYNC to send
---												-- "POSITIVE": Non invert HSYNC/VSYNC to send
---		SCANMODE		: string := "AUTO";		-- "AUTO"    : Displays decides
---												-- "OVER"    : Overscanned display
---												-- "UNDER"   : Underscanned display
---		ASPECTRATIO		: string := "AUTO";		-- "AUTO"    : Same as picture
---												-- "4:3"     : 4:3 format
---												-- "16:9"    : 16:9 format
---												-- "14:9"    : 14:9 format
---												-- "NONE"    : Aspect information not present
---		PICTURESCALING	: string := "FIT";		-- "FIT"     : Picture has been scaled H and V.
---												-- "HEIGHT"  : Scaled vertically
---												-- "WIDTH"   : Scaled horizontally
---												-- "NONE"    : No scaling
---		COLORSPACE		: string := "RGB";		-- "RGB"     : RGB888 (Fixed at Full range)
---												-- "BT601"   : YCbCr444(ITU-R BT.601/SMPTE170M)
---												-- "BT709"   : YCbCr444(ITU-R BT.709)
---												-- "XVYCC601": YCbCr444(xvYCC BT.601)
---												-- "XVYCC709": YCbCr444(xvYCC BT.709)
---		YCC_DATARANGE	: string := "LIMITED";	-- "LIMITED" : Limited data range(16-235,240)
---												-- "FULL"    : Full range (0-255)
---		CONTENTTYPE		: string := "GRAPHICS";	-- "GRAPHICS": for PC use(IT Content)
---												-- "PHOTO"   : for Digital still pictures
---												-- "CINEMA"  : for Cinema material
---												-- "GAME"    : for Game machine material
---		USE_AUDIO_PACKET: string := "ON";		-- "ON"      : Use Audio sample packet
---												-- "OFF"     : Without Audio sample packet
---		AUDIO_FREQUENCY	: real := 44.1;			-- Audio sampling frequency (KHz) : 32.0, 44.1, 48.0, 88.2, 96.0, 176.4, 192.0
---		PCMFIFO_DEPTH	: integer := 8;			-- Sample data fifo depth : 8=256word(35sample), 9=512word(72sample), 10=1024word(145sample)
---		VIC_CODE		: std_logic_vector(6 downto 0) := "0000000";
---		CATEGORY_CODE	: std_logic_vector(7 downto 0) := "00000000"
---	);
---	port(
---		reset		: in  std_logic;
---		clk			: in  std_logic;			-- Rise edge drive clock
---		clk_x5		: in  std_logic;			-- Transmitter clock (It synchronizes with clk)
+--      ENCODE_MODE     : string := "HDMI";     -- "HDMI"    : HDMI
+--                                              -- "LITEHDMI": Reduce HDMI-TX(Null packet only)
+--                                              -- "DVI"     : DVI
+--      USE_EXTCONTROL  : string := "OFF";      -- "ON"      : Use control port (External HDMI timing generator)
+--                                              -- "OFF"     : Internal HDMI timing regenerator
+--      SYNC_POLARITY   : string := "NEGATIVE"; -- "NEGATIVE": Invert HSYNC/VSYNC to send
+--                                              -- "POSITIVE": Non invert HSYNC/VSYNC to send
+--      SCANMODE        : string := "AUTO";     -- "AUTO"    : Displays decides
+--                                              -- "OVER"    : Overscanned display
+--                                              -- "UNDER"   : Underscanned display
+--      ASPECTRATIO     : string := "AUTO";     -- "AUTO"    : Same as picture
+--                                              -- "4:3"     : 4:3 format
+--                                              -- "16:9"    : 16:9 format
+--                                              -- "14:9"    : 14:9 format
+--                                              -- "NONE"    : Aspect information not present
+--      PICTURESCALING  : string := "FIT";      -- "FIT"     : Picture has been scaled H and V.
+--                                              -- "HEIGHT"  : Scaled vertically
+--                                              -- "WIDTH"   : Scaled horizontally
+--                                              -- "NONE"    : No scaling
+--      COLORSPACE      : string := "RGB";      -- "RGB"     : RGB888 (Fixed at Full range)
+--                                              -- "BT601"   : YCbCr444(ITU-R BT.601/SMPTE170M)
+--                                              -- "BT709"   : YCbCr444(ITU-R BT.709)
+--                                              -- "XVYCC601": YCbCr444(xvYCC BT.601)
+--                                              -- "XVYCC709": YCbCr444(xvYCC BT.709)
+--      YCC_DATARANGE   : string := "LIMITED";  -- "LIMITED" : Limited data range(16-235,240)
+--                                              -- "FULL"    : Full range (0-255)
+--      CONTENTTYPE     : string := "GRAPHICS"; -- "GRAPHICS": for PC use(IT Content)
+--                                              -- "PHOTO"   : for Digital still pictures
+--                                              -- "CINEMA"  : for Cinema material
+--                                              -- "GAME"    : for Game machine material
+--      USE_AUDIO_PACKET: string := "ON";       -- "ON"      : Use Audio sample packet
+--                                              -- "OFF"     : Without Audio sample packet
+--      AUDIO_FREQUENCY : real := 44.1;         -- Audio sampling frequency (KHz) : 32.0, 44.1, 48.0, 88.2, 96.0, 176.4, 192.0
+--      PCMFIFO_DEPTH   : integer := 8;         -- Sample data fifo depth : 8=256word(35sample), 9=512word(72sample), 10=1024word(145sample)
+--      VIC_CODE        : std_logic_vector(6 downto 0) := "0000000";    -- Option
+--      CATEGORY_CODE   : std_logic_vector(7 downto 0) := "00000000"    -- Option
+--  );
+--  port(
+--      reset       : in  std_logic;
+--      clk         : in  std_logic;            -- Rise edge drive clock
+--      clk_x5      : in  std_logic;            -- Transmitter clock (It synchronizes with clk)
 --
---		control		: in  std_logic_vector(3 downto 0) := "0000";	-- [0] : Indicate Active video period
---																	-- [1] : Indicate Video Preamble
---																	-- [2] : Indicate Video Guardband
---																	-- [3] : Allow Packet transmission
---		active		: in  std_logic := '0';				-- Pixel data active
---		r_data		: in  std_logic_vector(7 downto 0);	-- R / Cr
---		g_data		: in  std_logic_vector(7 downto 0);	-- G / Y
---		b_data		: in  std_logic_vector(7 downto 0);	-- B / Cb
---		hsync		: in  std_logic;					-- Horizontal sync (active high)
---		vsync		: in  std_logic;					-- Vertical sync (active high)
+--      control     : in  std_logic_vector(3 downto 0) := "0000";   -- [0] : Indicate Active video period
+--                                                                  -- [1] : Indicate Video Preamble
+--                                                                  -- [2] : Indicate Video Guardband
+--                                                                  -- [3] : Allow Packet transmission
+--      active      : in  std_logic := '0';             -- Pixel data active
+--      r_data      : in  std_logic_vector(7 downto 0); -- R / Cr
+--      g_data      : in  std_logic_vector(7 downto 0); -- G / Y
+--      b_data      : in  std_logic_vector(7 downto 0); -- B / Cb
+--      hsync       : in  std_logic;                    -- Horizontal sync (active high)
+--      vsync       : in  std_logic;                    -- Vertical sync (active high)
 --
---		pcm_fs		: in  std_logic := '0';									-- PCM fs timing. Assert on rising edge.
---		pcm_l		: in  std_logic_vector(23 downto 0) := (others=>'X');	-- Latch on assertion of pcm_fs
---		pcm_r		: in  std_logic_vector(23 downto 0) := (others=>'X');	-- Latch on assertion of pcm_fs
+--      pcm_fs      : in  std_logic := '0';                                 -- PCM fs timing. Assert on rising edge.
+--      pcm_l       : in  std_logic_vector(23 downto 0) := (others=>'X');   -- Latch on assertion of pcm_fs
+--      pcm_r       : in  std_logic_vector(23 downto 0) := (others=>'X');   -- Latch on assertion of pcm_fs
 --
---		data		: out std_logic_vector(2 downto 0);
---		clock		: out std_logic
---	);
---	end component;
+--      data        : out std_logic_vector(2 downto 0);
+--      clock       : out std_logic
+--  );
+--  end component;
 --
 ---------------------------------------------------------------------------------------------------
 
@@ -281,18 +281,6 @@ entity hdmi_tx_audiopacket_submodule is
 		CATEGORY_CODE	: std_logic_vector(7 downto 0) := "00000000"
 	);
 	port(
---		test_pcmfreq_code	: out std_logic_vector(3 downto 0);
---		test_fifoready		: out std_logic;
---		test_pcmbyte		: out std_logic_vector(7 downto 0);
---		test_channelno		: out std_logic_vector(3 downto 0);
---		test_status			: out std_logic_vector(3 downto 0);
---		test_pcmfifo_wr		: out std_logic;
---		test_pcmfifo_data	: out std_logic_vector(8 downto 0);
---		test_pcmfifo_q		: out std_logic_vector(8 downto 0);
---		test_pcmfifo_ack	: out std_logic;
---		test_pcmfifo_dw		: out std_logic_vector(11 downto 0);
---		test_arrival		: out std_logic;
-
 		reset		: in  std_logic;
 		clk			: in  std_logic;
 		enable		: in  std_logic := '1';	-- PCM capture enable
@@ -365,25 +353,6 @@ architecture RTL of hdmi_tx_audiopacket_submodule is
 
 begin
 
-	-- テスト信号 --
-
---	test_pcmfreq_code <= PCMFREQ_CODE;
---
---	test_fifoready <= fifoready_sig;
---	test_pcmbyte <= pcmbyte_sig;
---	test_channelno <= channelno_sig;
---	test_status <= pr_bit_reg & cr_bit_reg & pl_bit_reg & cl_bit_reg;
---
---	test_pcmfifo_data <= pcmfifo_data_sig;
---	test_pcmfifo_wr <= pcmfifo_wr_sig;
---	test_pcmfifo_q <= pcmfifo_q_sig;
---	test_pcmfifo_ack <= pcmfifo_ack_sig;
---	test_pcmfifo_dw(11 downto PCMFIFO_DEPTH+1) <= (others=>'0');
---	test_pcmfifo_dw(PCMFIFO_DEPTH downto 0) <= pcmfifo_dw_sig;
---
---	test_arrival <= arrival_sig;
-
-
 	-- PCMデータ受信とFIFOキューイング制御 --
 
 	fifoready_sig <= enable when(pcmfifo_dw_sig < 2**PCMFIFO_DEPTH-8) else '0';
@@ -393,7 +362,6 @@ begin
 			pcm_fs_reg <= "000";
 			bytecounter_reg <= (others=>'0');
 			framecount <= 0;
---			framecount <= 190;	-- test
 
 		elsif rising_edge(clk) then
 			pcm_fs_reg <= pcm_fs_reg(1 downto 0) & pcm_fs;
@@ -1070,52 +1038,38 @@ end hdmi_tx_tmds_encoder_submodule;
 architecture RTL of hdmi_tx_tmds_encoder_submodule is
 	-- Misc function 
 	function is_true(S:std_logic) return boolean is begin return(S='1'); end;
+	function is_false(S:std_logic) return boolean is begin return(S='0'); end;
 
-	-- バイト中のビット0の個数をカウント 
-	function number0s(D:std_logic_vector(7 downto 0)) return integer is
-		variable i,num	: integer;
+	-- 入力ベクターの1の数を数える 
+	function number1s(D:std_logic_vector) return integer is
+		variable i,num : integer;
 	begin
 		num := 0;
-		for i in 0 to 7 loop
-			if (D(i) = '0') then num := num + 1; end if;
-		end loop;
-		return num;
-	end;
-
-	-- バイト中のビット1の個数をカウント 
-	function number1s(D:std_logic_vector(7 downto 0)) return integer is
-		variable i,num	: integer;
-	begin
-		num := 0;
-		for i in 0 to 7 loop
+		for i in 0 to D'length-1 loop
 			if (D(i) = '1') then num := num + 1; end if;
 		end loop;
 		return num;
 	end;
 
-	-- XNORエンコード 
-	function encode0(D:std_logic_vector(7 downto 0)) return std_logic_vector is
-		variable i		: integer;
-		variable q_m	: std_logic_vector(8 downto 0);
+	-- 入力バイトの変換 (ビット変化を4以上にする)
+	function byteencode(D:std_logic_vector(7 downto 0)) return std_logic_vector is
+		variable num : integer;
+		variable code : std_logic;
+		variable q_m : std_logic_vector(8 downto 0);
 	begin
-		q_m(0) := D(0);
-		for i in 1 to 7 loop
-			q_m(i) := not(q_m(i - 1) xor D(i));
-		end loop;
-		q_m(8) := '0';
-		return q_m;
-	end;
+		num := number1s(D);
+		if (num > 4 or (num = 4 and D(0) = '0')) then
+			code := '1';
+		else
+			code := '0';
+		end if;
 
-	-- XORエンコード 
-	function encode1(D:std_logic_vector(7 downto 0)) return std_logic_vector is
-		variable i		: integer;
-		variable q_m	: std_logic_vector(8 downto 0);
-	begin
 		q_m(0) := D(0);
 		for i in 1 to 7 loop
-			q_m(i) := q_m(i - 1) xor D(i);
+			q_m(i) := q_m(i - 1) xor D(i) xor code;
 		end loop;
-		q_m(8) := '1';
+		q_m(8) := not code;
+
 		return q_m;
 	end;
 
@@ -1123,7 +1077,7 @@ architecture RTL of hdmi_tx_tmds_encoder_submodule is
 	signal sel_reg		: std_logic_vector(1 downto 0);
 	signal sel_dly_reg	: std_logic_vector(1 downto 0);
 
-	signal cnt			: integer range -8 to 8;
+	signal cnt			: integer range -4 to 4;
 	signal qm_reg		: std_logic_vector(8 downto 0);
 	signal qout_reg		: std_logic_vector(9 downto 0);
 	signal s_reg		: std_logic_vector(3 downto 0);
@@ -1150,15 +1104,10 @@ begin
 				sel_reg <= "00";
 			end case;
 
-			if (number1s(d_in) > 4 or (number1s(d_in) = 4 and d_in(0) = '0')) then
-				qm_reg <= encode0(d_in);
-			else
-				qm_reg <= encode1(d_in);
-			end if;
-
+			qm_reg <= byteencode(d_in);
 			s_reg <= s_in;
 
-			if (mode(2) = '1') then
+			if is_true(mode(2)) then
 				c_reg <= mode(1 downto 0) & c_in;
 			else
 				c_reg <= "00" & c_in;
@@ -1171,48 +1120,45 @@ begin
 
 	-- データをTMDSにエンコード --
 
-	process (clk, reset) begin
-		if is_true(reset) then
-			cnt <= 0;
-
-		elsif rising_edge(clk) then
+	process (clk)
+		variable num, inc_c : integer;
+		variable inv_q, sign_eq : std_logic;
+	begin
+		if rising_edge(clk) then
 
 			-- Video active区間のエンコード 
 
-			if (cnt = 0 or (number1s(qm_reg(7 downto 0)) = number0s(qm_reg(7 downto 0)))) then
-				qout_reg(9) <= not qm_reg(8);
-				qout_reg(8) <= qm_reg(8);
+			num := number1s(qm_reg(7 downto 0)) - 4;
 
-				if (qm_reg(8) = '0') then
-					qout_reg(7 downto 0) <= not qm_reg(7 downto 0);
-					cnt <= cnt + (number0s(qm_reg(7 downto 0)) - number1s(qm_reg(7 downto 0)));
-				else
-					qout_reg(7 downto 0) <= qm_reg(7 downto 0);
-					cnt <= cnt + (number1s(qm_reg(7 downto 0)) - number0s(qm_reg(7 downto 0)));
-				end if;
+			if (cnt = 0 or num = 0) then
+				inv_q := not qm_reg(8);
+				sign_eq := '0';
+			elsif ((cnt >= 0 and num >= 0) or (cnt < 0 and num < 0)) then
+				inv_q := '1';
+				sign_eq := '1';
 			else
-				if ((cnt > 0 and number1s(qm_reg(7 downto 0)) > number0s(qm_reg(7 downto 0)))
-						or (cnt < 0 and number0s(qm_reg(7 downto 0)) > number1s(qm_reg(7 downto 0)))) then
-					qout_reg(9) <= '1';
-					qout_reg(8) <= qm_reg(8);
-					qout_reg(7 downto 0) <= not qm_reg(7 downto 0);
+				inv_q := '0';
+				sign_eq := '0';
+			end if;
 
-					if (qm_reg(8) = '0') then
-						cnt <= cnt + (number0s(qm_reg(7 downto 0)) - number1s(qm_reg(7 downto 0)));
-					else
-						cnt <= cnt + (number0s(qm_reg(7 downto 0)) - number1s(qm_reg(7 downto 0))) + 2;
-					end if;
-				else
-					qout_reg(9) <= '0';
-					qout_reg(8) <= qm_reg(8);
-					qout_reg(7 downto 0) <= qm_reg(7 downto 0);
+			if ((qm_reg(8) = sign_eq) and not(cnt = 0 or num = 0)) then
+				inc_c := num - 1;
+			else
+				inc_c := num;
+			end if;
 
-					if (qm_reg(8) = '1') then
-						cnt <= cnt + (number1s(qm_reg(7 downto 0)) - number0s(qm_reg(7 downto 0)));
-					else
-						cnt <= cnt + (number1s(qm_reg(7 downto 0)) - number0s(qm_reg(7 downto 0))) - 2;
-					end if;
-				end if;
+			if is_false(sel_reg(0)) then
+				cnt <= 0;
+			elsif is_true(inv_q) then
+				cnt <= cnt - inc_c;
+			else
+				cnt <= cnt + inc_c;
+			end if;
+
+			if is_true(inv_q) then
+				qout_reg <= inv_q & qm_reg(8) & not qm_reg(7 downto 0);
+			else
+				qout_reg <= inv_q & qm_reg(8 downto 0);
 			end if;
 
 			-- Data Island区間のエンコード(TERC4)
@@ -1238,14 +1184,14 @@ begin
 
 			-- Control/Guadband区間のエンコード 
 
-			if (c_reg(2) = '1') then			-- Video Guardband
+			if is_true(c_reg(2)) then			-- Video Guardband
 				if (TMDS_CHANNEL = 1) then
 					cout_reg <= "0100110011";	-- Ch.1
 				else
 					cout_reg <= "1011001100";	-- Ch.0 or 2
 				end if;
 
-			elsif (c_reg(3) = '1') then			-- Data Island Guardband
+			elsif is_true(c_reg(3)) then		-- Data Island Guardband
 				if (TMDS_CHANNEL = 0) then
 					case c_reg(1 downto 0) is
 					when "00" =>	cout_reg <= "1010001110";	-- TERC4("1100")
@@ -1269,10 +1215,9 @@ begin
 		end if;
 	end process;
 
-	with (sel_dly_reg) select q_out <=
-		qout_reg	when "01",
-		sout_reg	when "10",
-		cout_reg	when others;
+	q_out <= qout_reg when is_true(sel_dly_reg(0)) else
+			sout_reg when is_true(sel_dly_reg(1)) else
+			cout_reg;
 
 end RTL;
 

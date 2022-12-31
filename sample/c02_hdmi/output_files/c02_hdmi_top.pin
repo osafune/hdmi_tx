@@ -1,0 +1,106 @@
+ -- Copyright (C) 2022  Intel Corporation. All rights reserved.
+ -- Your use of Intel Corporation's design tools, logic functions 
+ -- and other software and tools, and any partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Intel Program License 
+ -- Subscription Agreement, the Intel Quartus Prime License Agreement,
+ -- the Intel FPGA IP License Agreement, or other applicable license
+ -- agreement, including, without limitation, that your use is for
+ -- the sole purpose of programming logic devices manufactured by
+ -- Intel and sold by Intel or its authorized distributors.  Please
+ -- refer to the applicable agreement for further details, at
+ -- https://fpgasoftware.intel.com/eula.
+ -- 
+ -- This is a Quartus Prime output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus Prime input file. This file cannot be used
+ -- to make Quartus Prime pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus Prime help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --                  Bank 1A:       3.3V
+ --                  Bank 1B:       3.3V
+ --                  Bank 2:       3.3V
+ --                  Bank 3:       3.3V
+ --                  Bank 5:       3.3V
+ --                  Bank 6:       3.3V
+ --                  Bank 8:       3.3V
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --                  It can also be used to report unused dedicated pins. The connection
+ --                  on the board for unused dedicated pins depends on whether this will
+ --                  be used in a future design. One example is device migration. When
+ --                  using device migration, refer to the device pin-tables. If it is a
+ --                  GND pin in the pin table or if it will not be used in a future design
+ --                  for another purpose the it MUST be connected to GND. If it is an unused
+ --                  dedicated pin, then it can be connected to a valid signal on the board
+ --                  (low, high, or toggling) if that signal is required for a different
+ --                  revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --                  This pin should be connected to GND. It may also be connected  to a
+ --                  valid signal  on the board  (low, high, or toggling)  if that signal
+ --                  is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin. Connect each pin marked GND* directly to GND
+ --                  or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+CHIP  "c02_hdmi_top"  ASSIGNED TO AN: 10M02DCV36C8G
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+VCCA3                        : A1        : power  :                   : 2.5V    :           :                
+~ALTERA_CONF_DONE~ / RESERVED_INPUT : A2        : input  : 3.3 V Schmitt Trigger :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A3        :        :                   :         : 8         :                
+~ALTERA_nCONFIG~ / RESERVED_INPUT : A4        : input  : 3.3 V Schmitt Trigger :         : 8         : N              
+LED                          : A5        : output : 3.3-V LVCMOS      :         : 8         : Y              
+VCCA2                        : A6        : power  :                   : 2.5V    :           :                
+VCC                          : B1        : power  :                   : 1.2V    :           :                
+~ALTERA_nSTATUS~ / RESERVED_INPUT : B2        : input  : 3.3 V Schmitt Trigger :         : 8         : N              
+GND                          : B3        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B4        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B5        :        :                   :         : 8         :                
+TMDS_CLOCK_N                 : B6        : output : 3.3-V LVCMOS      :         : 6         : Y              
+~ALTERA_TDI~ / RESERVED_INPUT_WITH_WEAK_PULLUP : C1        : input  : 3.3 V Schmitt Trigger :         : 1B        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C2        :        :                   :         : 1B        :                
+~ALTERA_TMS~ / RESERVED_INPUT_WITH_WEAK_PULLUP : C3        : input  : 3.3 V Schmitt Trigger :         : 1B        : N              
+VCCIO1_2_8                   : C4        : power  :                   : 3.3V    : 1A, 1B, 2, 8 :                
+TMDS_CLOCK_P                 : C5        : output : 3.3-V LVCMOS      :         : 6         : Y              
+TMDS_DATA0_P                 : C6        : output : 3.3-V LVCMOS      :         : 6         : Y              
+OSC_OE                       : D1        : output : 3.3-V LVCMOS      :         : 2         : Y              
+~ALTERA_TDO~                 : D2        : output : 3.3-V LVCMOS      :         : 1B        : N              
+~ALTERA_TCK~ / RESERVED_INPUT : D3        : input  : 3.3 V Schmitt Trigger :         : 1B        : N              
+VCCIO3_5_6                   : D4        : power  :                   : 3.3V    : 3, 5, 6   :                
+TMDS_DATA0_N                 : D5        : output : 3.3-V LVCMOS      :         : 6         : Y              
+TMDS_DATA1_N                 : D6        : output : 3.3-V LVCMOS      :         : 6         : Y              
+CLOCK_50                     : E1        : input  : 3.3-V LVCMOS      :         : 2         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E2        :        :                   :         : 1B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E3        :        :                   :         : 3         :                
+TMDS_DATA2_P                 : E4        : output : 3.3-V LVCMOS      :         : 3         : Y              
+TMDS_DATA2_N                 : E5        : output : 3.3-V LVCMOS      :         : 3         : Y              
+TMDS_DATA1_P                 : E6        : output : 3.3-V LVCMOS      :         : 6         : Y              
+GND                          : F1        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F2        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F3        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F4        :        :                   :         : 3         :                
+VCC                          : F5        : power  :                   : 1.2V    :           :                
+GND                          : F6        : gnd    :                   :         :           :                

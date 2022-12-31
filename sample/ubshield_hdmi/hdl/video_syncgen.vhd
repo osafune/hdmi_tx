@@ -605,7 +605,7 @@ begin
 						cb_rgb_reg <= chroma_sig & x"80" & x"80";
 					else
 						 -- RED LAMP begin
-						cb_rgb_reg(2*8+7 downto 2*8) <= cblamp_reg(15 downto 8);
+						cb_rgb_reg <= cblamp_reg(15 downto 8) & x"00" & x"00";
 					end if;
 				end if;
 
@@ -619,7 +619,7 @@ begin
 						cb_rgb_reg <= chroma_sig & x"80" & x"80";
 					else
 						 -- RED LAMP
-						cb_rgb_reg(2*8+7 downto 2*8) <= cblamp_reg(15 downto 8);
+						cb_rgb_reg(23 downto 16) <= cblamp_reg(15 downto 8);
 					end if;
 				end if;
 
@@ -642,7 +642,7 @@ begin
 						cb_rgb_reg <= x"80" & x"80" & chroma_sig;
 					else
 						-- GREEN LAMP begin
-						cb_rgb_reg(1*8+7 downto 1*8) <= cblamp_reg(15 downto 8);
+						cb_rgb_reg <= x"00" & cblamp_reg(15 downto 8) & x"00";
 					end if;
 				end if;
 
@@ -656,7 +656,7 @@ begin
 						cb_rgb_reg <= x"80" & x"80" & chroma_sig;
 					else
 						-- GREEN LAMP
-						cb_rgb_reg(1*8+7 downto 1*8) <= cblamp_reg(15 downto 8);
+						cb_rgb_reg(15 downto 8) <= cblamp_reg(15 downto 8);
 					end if;
 				end if;
 
@@ -679,7 +679,7 @@ begin
 						cb_rgb_reg <= COLOR_BLACK;
 					else
 						-- BLUE LAMP Begin
-						cb_rgb_reg(0*8+7 downto 0*8) <= cblamp_reg(15 downto 8);
+						cb_rgb_reg <= x"00" & x"00" & cblamp_reg(15 downto 8);
 					end if;
 
 				end if;
@@ -698,7 +698,7 @@ begin
 						end if;
 					else
 						-- BLUE LAMP
-						cb_rgb_reg(0*8+7 downto 0*8) <= cblamp_reg(15 downto 8);
+						cb_rgb_reg(7 downto 0) <= cblamp_reg(15 downto 8);
 					end if;
 				end if;
 

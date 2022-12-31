@@ -1,5 +1,5 @@
-Analysis & Synthesis report for air_hdmi_test_top
-Sat Dec 31 02:40:18 2022
+Analysis & Synthesis report for air_hdmi_top
+Sat Dec 31 11:40:36 2022
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -91,13 +91,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Dec 31 02:40:18 2022          ;
+; Analysis & Synthesis Status        ; Successful - Sat Dec 31 11:40:36 2022          ;
 ; Quartus Prime Version              ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
-; Revision Name                      ; air_hdmi_test_top                              ;
+; Revision Name                      ; air_hdmi_top                                   ;
 ; Top-level Entity Name              ; air_hdmi_test_top                              ;
 ; Family                             ; Cyclone IV E                                   ;
-; Total logic elements               ; 1,929                                          ;
-;     Total combinational functions  ; 1,797                                          ;
+; Total logic elements               ; 1,854                                          ;
+;     Total combinational functions  ; 1,722                                          ;
 ;     Dedicated logic registers      ; 1,023                                          ;
 ; Total registers                    ; 1039                                           ;
 ; Total pins                         ; 81                                             ;
@@ -114,7 +114,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE6E22C8        ;                    ;
-; Top-level entity name                                            ; air_hdmi_test_top  ; air_hdmi_test_top  ;
+; Top-level entity name                                            ; air_hdmi_test_top  ; air_hdmi_top       ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -213,52 +213,52 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                             ;
-+----------------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path       ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                         ; Library ;
-+----------------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------+---------+
-; ip/pll/hdmi_hdpll.v                    ; yes             ; User Wizard-Generated File             ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/ip/pll/hdmi_hdpll.v                    ;         ;
-; ip/logo_pattern_rom/logo_pattern_rom.v ; yes             ; User Wizard-Generated File             ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/ip/logo_pattern_rom/logo_pattern_rom.v ;         ;
-; hdl/video_syncgen.vhd                  ; yes             ; User VHDL File                         ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/video_syncgen.vhd                  ;         ;
-; hdl/melodychime.vhd                    ; yes             ; User VHDL File                         ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/melodychime.vhd                    ;         ;
-; hdl/hdmi_tx.vhd                        ; yes             ; User VHDL File                         ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd                        ;         ;
-; hdl/logo_overlay.v                     ; yes             ; User Verilog HDL File                  ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/logo_overlay.v                     ;         ;
-; hdl/air_hdmi_test_top.v                ; yes             ; User Verilog HDL File                  ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v                ;         ;
-; altpll.tdf                             ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/altpll.tdf                 ;         ;
-; aglobal221.inc                         ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/aglobal221.inc             ;         ;
-; stratix_pll.inc                        ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/stratix_pll.inc            ;         ;
-; stratixii_pll.inc                      ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/stratixii_pll.inc          ;         ;
-; cycloneii_pll.inc                      ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/cycloneii_pll.inc          ;         ;
-; db/hdmi_hdpll_altpll.v                 ; yes             ; Auto-Generated Megafunction            ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/db/hdmi_hdpll_altpll.v                 ;         ;
-; altsyncram.tdf                         ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/altsyncram.tdf             ;         ;
-; stratix_ram_block.inc                  ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/stratix_ram_block.inc      ;         ;
-; lpm_mux.inc                            ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/lpm_mux.inc                ;         ;
-; lpm_decode.inc                         ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/lpm_decode.inc             ;         ;
-; a_rdenreg.inc                          ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/a_rdenreg.inc              ;         ;
-; altrom.inc                             ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/altrom.inc                 ;         ;
-; altram.inc                             ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/altram.inc                 ;         ;
-; altdpram.inc                           ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/altdpram.inc               ;         ;
-; db/altsyncram_79c1.tdf                 ; yes             ; Auto-Generated Megafunction            ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/db/altsyncram_79c1.tdf                 ;         ;
-; ip/logo_pattern_rom/dvdlogo.mif        ; yes             ; Auto-Found Memory Initialization File  ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/ip/logo_pattern_rom/dvdlogo.mif        ;         ;
-; db/decode_k8a.tdf                      ; yes             ; Auto-Generated Megafunction            ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/db/decode_k8a.tdf                      ;         ;
-; db/mux_4nb.tdf                         ; yes             ; Auto-Generated Megafunction            ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/db/mux_4nb.tdf                         ;         ;
-; altddio_out.tdf                        ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/altddio_out.tdf            ;         ;
-; stratix_ddio.inc                       ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/stratix_ddio.inc           ;         ;
-; cyclone_ddio.inc                       ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/cyclone_ddio.inc           ;         ;
-; stratix_lcell.inc                      ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/stratix_lcell.inc          ;         ;
-; db/ddio_out_s9j.tdf                    ; yes             ; Auto-Generated Megafunction            ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/db/ddio_out_s9j.tdf                    ;         ;
-; db/ddio_out_u6j.tdf                    ; yes             ; Auto-Generated Megafunction            ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/db/ddio_out_u6j.tdf                    ;         ;
-; db/altsyncram_ctg1.tdf                 ; yes             ; Auto-Generated Megafunction            ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/db/altsyncram_ctg1.tdf                 ;         ;
-; altshift_taps.tdf                      ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/altshift_taps.tdf          ;         ;
-; lpm_counter.inc                        ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/lpm_counter.inc            ;         ;
-; lpm_compare.inc                        ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/lpm_compare.inc            ;         ;
-; lpm_constant.inc                       ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/lpm_constant.inc           ;         ;
-; db/shift_taps_08m.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/db/shift_taps_08m.tdf                  ;         ;
-; db/altsyncram_0i81.tdf                 ; yes             ; Auto-Generated Megafunction            ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/db/altsyncram_0i81.tdf                 ;         ;
-; db/cntr_4rf.tdf                        ; yes             ; Auto-Generated Megafunction            ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/db/cntr_4rf.tdf                        ;         ;
-; db/cmpr_sgc.tdf                        ; yes             ; Auto-Generated Megafunction            ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/db/cmpr_sgc.tdf                        ;         ;
-+----------------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                        ;
++----------------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path       ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                    ; Library ;
++----------------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------+---------+
+; ip/pll/hdmi_hdpll.v                    ; yes             ; User Wizard-Generated File             ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/ip/pll/hdmi_hdpll.v                    ;         ;
+; ip/logo_pattern_rom/logo_pattern_rom.v ; yes             ; User Wizard-Generated File             ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/ip/logo_pattern_rom/logo_pattern_rom.v ;         ;
+; hdl/video_syncgen.vhd                  ; yes             ; User VHDL File                         ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/video_syncgen.vhd                  ;         ;
+; hdl/melodychime.vhd                    ; yes             ; User VHDL File                         ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/melodychime.vhd                    ;         ;
+; hdl/hdmi_tx.vhd                        ; yes             ; User VHDL File                         ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd                        ;         ;
+; hdl/logo_overlay.v                     ; yes             ; User Verilog HDL File                  ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/logo_overlay.v                     ;         ;
+; hdl/air_hdmi_test_top.v                ; yes             ; User Verilog HDL File                  ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v                ;         ;
+; altpll.tdf                             ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/altpll.tdf            ;         ;
+; aglobal221.inc                         ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/aglobal221.inc        ;         ;
+; stratix_pll.inc                        ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/stratix_pll.inc       ;         ;
+; stratixii_pll.inc                      ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/stratixii_pll.inc     ;         ;
+; cycloneii_pll.inc                      ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/cycloneii_pll.inc     ;         ;
+; db/hdmi_hdpll_altpll.v                 ; yes             ; Auto-Generated Megafunction            ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/db/hdmi_hdpll_altpll.v                 ;         ;
+; altsyncram.tdf                         ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
+; stratix_ram_block.inc                  ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
+; lpm_mux.inc                            ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
+; lpm_decode.inc                         ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
+; a_rdenreg.inc                          ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
+; altrom.inc                             ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/altrom.inc            ;         ;
+; altram.inc                             ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/altram.inc            ;         ;
+; altdpram.inc                           ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/altdpram.inc          ;         ;
+; db/altsyncram_79c1.tdf                 ; yes             ; Auto-Generated Megafunction            ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/db/altsyncram_79c1.tdf                 ;         ;
+; ip/logo_pattern_rom/dvdlogo.mif        ; yes             ; Auto-Found Memory Initialization File  ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/ip/logo_pattern_rom/dvdlogo.mif        ;         ;
+; db/decode_k8a.tdf                      ; yes             ; Auto-Generated Megafunction            ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/db/decode_k8a.tdf                      ;         ;
+; db/mux_4nb.tdf                         ; yes             ; Auto-Generated Megafunction            ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/db/mux_4nb.tdf                         ;         ;
+; altddio_out.tdf                        ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/altddio_out.tdf       ;         ;
+; stratix_ddio.inc                       ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/stratix_ddio.inc      ;         ;
+; cyclone_ddio.inc                       ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/cyclone_ddio.inc      ;         ;
+; stratix_lcell.inc                      ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/stratix_lcell.inc     ;         ;
+; db/ddio_out_s9j.tdf                    ; yes             ; Auto-Generated Megafunction            ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/db/ddio_out_s9j.tdf                    ;         ;
+; db/ddio_out_u6j.tdf                    ; yes             ; Auto-Generated Megafunction            ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/db/ddio_out_u6j.tdf                    ;         ;
+; db/altsyncram_ctg1.tdf                 ; yes             ; Auto-Generated Megafunction            ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/db/altsyncram_ctg1.tdf                 ;         ;
+; altshift_taps.tdf                      ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/altshift_taps.tdf     ;         ;
+; lpm_counter.inc                        ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/lpm_counter.inc       ;         ;
+; lpm_compare.inc                        ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/lpm_compare.inc       ;         ;
+; lpm_constant.inc                       ; yes             ; Megafunction                           ; c:/develop/quartus/22.1le/quartus/libraries/megafunctions/lpm_constant.inc      ;         ;
+; db/shift_taps_08m.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/db/shift_taps_08m.tdf                  ;         ;
+; db/altsyncram_0i81.tdf                 ; yes             ; Auto-Generated Megafunction            ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/db/altsyncram_0i81.tdf                 ;         ;
+; db/cntr_4rf.tdf                        ; yes             ; Auto-Generated Megafunction            ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/db/cntr_4rf.tdf                        ;         ;
+; db/cmpr_sgc.tdf                        ; yes             ; Auto-Generated Megafunction            ; C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/db/cmpr_sgc.tdf                        ;         ;
++----------------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------+
@@ -266,17 +266,17 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                      ;
 +---------------------------------------------+--------------------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 1,929                                                                                      ;
+; Estimated Total logic elements              ; 1,854                                                                                      ;
 ;                                             ;                                                                                            ;
-; Total combinational functions               ; 1797                                                                                       ;
+; Total combinational functions               ; 1722                                                                                       ;
 ; Logic element usage by number of LUT inputs ;                                                                                            ;
-;     -- 4 input functions                    ; 691                                                                                        ;
-;     -- 3 input functions                    ; 682                                                                                        ;
-;     -- <=2 input functions                  ; 424                                                                                        ;
+;     -- 4 input functions                    ; 670                                                                                        ;
+;     -- 3 input functions                    ; 633                                                                                        ;
+;     -- <=2 input functions                  ; 419                                                                                        ;
 ;                                             ;                                                                                            ;
 ; Logic elements by mode                      ;                                                                                            ;
-;     -- normal mode                          ; 1441                                                                                       ;
-;     -- arithmetic mode                      ; 356                                                                                        ;
+;     -- normal mode                          ; 1399                                                                                       ;
+;     -- arithmetic mode                      ; 323                                                                                        ;
 ;                                             ;                                                                                            ;
 ; Total registers                             ; 1039                                                                                       ;
 ;     -- Dedicated logic registers            ; 1023                                                                                       ;
@@ -292,8 +292,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                                                                                            ;
 ; Maximum fan-out node                        ; hdmi_hdpll:u_pll|altpll:altpll_component|hdmi_hdpll_altpll:auto_generated|wire_pll1_clk[0] ;
 ; Maximum fan-out                             ; 1077                                                                                       ;
-; Total fan-out                               ; 9711                                                                                       ;
-; Average fan-out                             ; 3.15                                                                                       ;
+; Total fan-out                               ; 9391                                                                                       ;
+; Average fan-out                             ; 3.13                                                                                       ;
 +---------------------------------------------+--------------------------------------------------------------------------------------------+
 
 
@@ -302,11 +302,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+--------------+
 ; Compilation Hierarchy Node                               ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                        ; Entity Name                    ; Library Name ;
 +----------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+--------------+
-; |air_hdmi_test_top                                       ; 1797 (39)           ; 1023 (25)                 ; 69348       ; 0            ; 0       ; 0         ; 81   ; 0            ; |air_hdmi_test_top                                                                                                                                         ; air_hdmi_test_top              ; work         ;
+; |air_hdmi_test_top                                       ; 1722 (39)           ; 1023 (25)                 ; 69348       ; 0            ; 0       ; 0         ; 81   ; 0            ; |air_hdmi_test_top                                                                                                                                         ; air_hdmi_test_top              ; work         ;
 ;    |hdmi_hdpll:u_pll|                                    ; 1 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|hdmi_hdpll:u_pll                                                                                                                        ; hdmi_hdpll                     ; work         ;
 ;       |altpll:altpll_component|                          ; 1 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|hdmi_hdpll:u_pll|altpll:altpll_component                                                                                                ; altpll                         ; work         ;
 ;          |hdmi_hdpll_altpll:auto_generated|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|hdmi_hdpll:u_pll|altpll:altpll_component|hdmi_hdpll_altpll:auto_generated                                                               ; hdmi_hdpll_altpll              ; work         ;
-;    |hdmi_tx:u_tx|                                        ; 969 (4)             ; 692 (66)                  ; 3812        ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|hdmi_tx:u_tx                                                                                                                            ; hdmi_tx                        ; work         ;
+;    |hdmi_tx:u_tx|                                        ; 886 (4)             ; 692 (66)                  ; 3812        ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|hdmi_tx:u_tx                                                                                                                            ; hdmi_tx                        ; work         ;
 ;       |hdmi_tx_audiopacket_submodule:\gen_audio:u_audio| ; 121 (94)            ; 89 (64)                   ; 2304        ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio                                                                           ; hdmi_tx_audiopacket_submodule  ; work         ;
 ;          |hdmi_tx_scfifo:u_fifo|                         ; 27 (27)             ; 25 (25)                   ; 2304        ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio|hdmi_tx_scfifo:u_fifo                                                     ; hdmi_tx_scfifo                 ; work         ;
 ;             |altsyncram:ram_rtl_0|                       ; 0 (0)               ; 0 (0)                     ; 2304        ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio|hdmi_tx_scfifo:u_fifo|altsyncram:ram_rtl_0                                ; altsyncram                     ; work         ;
@@ -318,15 +318,15 @@ https://fpgasoftware.intel.com/eula.
 ;                |altsyncram_0i81:altsyncram2|             ; 0 (0)               ; 0 (0)                     ; 1508        ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_delay:\gen_intgen:u_delay|altshift_taps:ram_rtl_0|shift_taps_08m:auto_generated|altsyncram_0i81:altsyncram2        ; altsyncram_0i81                ; work         ;
 ;                |cntr_4rf:cntr1|                          ; 15 (14)             ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_delay:\gen_intgen:u_delay|altshift_taps:ram_rtl_0|shift_taps_08m:auto_generated|cntr_4rf:cntr1                     ; cntr_4rf                       ; work         ;
 ;                   |cmpr_sgc:cmpr4|                       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_delay:\gen_intgen:u_delay|altshift_taps:ram_rtl_0|shift_taps_08m:auto_generated|cntr_4rf:cntr1|cmpr_sgc:cmpr4      ; cmpr_sgc                       ; work         ;
-;       |hdmi_tx_infopacket_submodule:\gen_info:u_info|    ; 66 (66)             ; 20 (20)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_infopacket_submodule:\gen_info:u_info                                                                              ; hdmi_tx_infopacket_submodule   ; work         ;
-;       |hdmi_tx_pdiff_submodule:u_ser|                    ; 67 (67)             ; 83 (83)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser                                                                                              ; hdmi_tx_pdiff_submodule        ; work         ;
+;       |hdmi_tx_infopacket_submodule:\gen_info:u_info|    ; 63 (63)             ; 20 (20)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_infopacket_submodule:\gen_info:u_info                                                                              ; hdmi_tx_infopacket_submodule   ; work         ;
+;       |hdmi_tx_pdiff_submodule:u_ser|                    ; 36 (36)             ; 83 (83)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser                                                                                              ; hdmi_tx_pdiff_submodule        ; work         ;
 ;          |altddio_out:u_ddo_n|                           ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_n                                                                          ; altddio_out                    ; work         ;
 ;             |ddio_out_u6j:auto_generated|                ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_n|ddio_out_u6j:auto_generated                                              ; ddio_out_u6j                   ; work         ;
 ;          |altddio_out:u_ddo_p|                           ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p                                                                          ; altddio_out                    ; work         ;
 ;             |ddio_out_s9j:auto_generated|                ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p|ddio_out_s9j:auto_generated                                              ; ddio_out_s9j                   ; work         ;
-;       |hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|      ; 113 (113)           ; 51 (51)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u                                                                                ; hdmi_tx_tmds_encoder_submodule ; work         ;
-;       |hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|      ; 100 (100)           ; 39 (39)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u                                                                                ; hdmi_tx_tmds_encoder_submodule ; work         ;
-;       |hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|      ; 100 (100)           ; 39 (39)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u                                                                                ; hdmi_tx_tmds_encoder_submodule ; work         ;
+;       |hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|      ; 97 (97)             ; 51 (51)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u                                                                                ; hdmi_tx_tmds_encoder_submodule ; work         ;
+;       |hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|      ; 84 (84)             ; 39 (39)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u                                                                                ; hdmi_tx_tmds_encoder_submodule ; work         ;
+;       |hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|      ; 83 (83)             ; 39 (39)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u                                                                                ; hdmi_tx_tmds_encoder_submodule ; work         ;
 ;    |logo_overlay:u_logo|                                 ; 149 (137)           ; 102 (99)                  ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|logo_overlay:u_logo                                                                                                                     ; logo_overlay                   ; work         ;
 ;       |logo_pattern_rom:u_rom|                           ; 12 (0)              ; 3 (0)                     ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|logo_overlay:u_logo|logo_pattern_rom:u_rom                                                                                              ; logo_pattern_rom               ; work         ;
 ;          |altsyncram:altsyncram_component|               ; 12 (0)              ; 3 (0)                     ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|logo_overlay:u_logo|logo_pattern_rom:u_rom|altsyncram:altsyncram_component                                                              ; altsyncram                     ; work         ;
@@ -337,7 +337,7 @@ https://fpgasoftware.intel.com/eula.
 ;       |melodychime_seq:u_seq|                            ; 62 (62)             ; 26 (26)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|melodychime:u_chime|melodychime_seq:u_seq                                                                                               ; melodychime_seq                ; work         ;
 ;       |melodychime_sg:u_sg0|                             ; 59 (59)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|melodychime:u_chime|melodychime_sg:u_sg0                                                                                                ; melodychime_sg                 ; work         ;
 ;       |melodychime_sg:u_sg1|                             ; 59 (59)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|melodychime:u_chime|melodychime_sg:u_sg1                                                                                                ; melodychime_sg                 ; work         ;
-;    |video_syncgen:u_vga|                                 ; 411 (411)           ; 89 (89)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|video_syncgen:u_vga                                                                                                                     ; video_syncgen                  ; work         ;
+;    |video_syncgen:u_vga|                                 ; 419 (419)           ; 89 (89)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |air_hdmi_test_top|video_syncgen:u_vga                                                                                                                     ; video_syncgen                  ; work         ;
 +----------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -463,24 +463,24 @@ Encoding Type:  One-Hot
 ; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|c_reg[1]                      ; Stuck at GND due to stuck port data_in                                              ;
 ; hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio|pcmdata_reg[0..5,24..29] ; Stuck at GND due to stuck port data_in                                              ;
 ; hdmi_tx:u_tx|hdmi_tx_infopacket_submodule:\gen_info:u_info|ready_old_reg               ; Merged with hdmi_tx:u_tx|ready_old_reg                                              ;
-; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg[1,5]                 ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg[0]    ;
 ; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg[4]                   ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg[8]    ;
 ; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg[3]                   ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg[7]    ;
 ; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg[2]                   ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg[6]    ;
-; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[1,5]                 ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[0]    ;
+; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg[0,1]                 ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg[5]    ;
 ; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[4]                   ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[8]    ;
 ; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[3]                   ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[7]    ;
 ; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[2]                   ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[6]    ;
+; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[0,1]                 ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[5]    ;
 ; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|c_reg[1]                      ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|s_reg[1]       ;
 ; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|c_reg[0]                      ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|s_reg[0]       ;
 ; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|sel_dly_reg[1]                ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|sel_dly_reg[1] ;
 ; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|sel_dly_reg[1]                ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|sel_dly_reg[1] ;
-; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|sel_reg[1]                    ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|sel_reg[1]     ;
-; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|sel_reg[1]                    ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|sel_reg[1]     ;
 ; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|c_reg[3]                      ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|c_reg[3]       ;
 ; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|c_reg[3]                      ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|c_reg[3]       ;
 ; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|c_reg[2]                      ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|c_reg[2]       ;
 ; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|c_reg[2]                      ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|c_reg[2]       ;
+; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|sel_reg[1]                    ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|sel_reg[1]     ;
+; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|sel_reg[1]                    ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|sel_reg[1]     ;
 ; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|sel_reg[0]                    ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|sel_reg[0]     ;
 ; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|sel_reg[0]                    ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|sel_reg[0]     ;
 ; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|sel_dly_reg[0]                ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|sel_dly_reg[0] ;
@@ -493,15 +493,12 @@ Encoding Type:  One-Hot
 ; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[6]                   ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[9]    ;
 ; video_syncgen:u_vga|hcount[0]                                                          ; Merged with melodychime:u_chime|count10us[0]                                        ;
 ; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg[7]                   ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg[8]    ;
-; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[0]                   ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[9]    ;
-; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cnt[0]                        ; Stuck at GND due to stuck port data_in                                              ;
-; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cnt[0]                        ; Stuck at GND due to stuck port data_in                                              ;
-; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|cnt[0]                        ; Stuck at GND due to stuck port data_in                                              ;
+; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[5]                   ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[9]    ;
 ; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[7]                   ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[8]    ;
-; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg[0]                   ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg[9]    ;
+; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg[5]                   ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg[9]    ;
 ; hdmi_tx:u_tx|active_reg[3]                                                             ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|sel_reg[0]     ;
 ; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|sel_dly_reg[0]                ; Merged with hdmi_tx:u_tx|active_reg[2]                                              ;
-; Total Number of Removed Registers = 55                                                 ;                                                                                     ;
+; Total Number of Removed Registers = 52                                                 ;                                                                                     ;
 +----------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
 
 
@@ -512,10 +509,10 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Total registers                              ; 1023  ;
 ; Number of registers using Synchronous Clear  ; 34    ;
-; Number of registers using Synchronous Load   ; 116   ;
-; Number of registers using Asynchronous Clear ; 520   ;
+; Number of registers using Synchronous Load   ; 110   ;
+; Number of registers using Asynchronous Clear ; 508   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 649   ;
+; Number of registers using Clock Enable       ; 578   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -526,13 +523,19 @@ Encoding Type:  One-Hot
 ; Inverted Register                                                         ; Fan out ;
 +---------------------------------------------------------------------------+---------+
 ; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|start_reg[0]                   ; 33      ;
+; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cnt[3]           ; 3       ;
+; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cnt[2]           ; 2       ;
+; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cnt[3]           ; 3       ;
+; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cnt[2]           ; 2       ;
+; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|cnt[3]           ; 3       ;
+; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|cnt[2]           ; 2       ;
 ; hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|counter_reg[2] ; 8       ;
 ; hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|counter_reg[1] ; 7       ;
 ; video_syncgen:u_vga|hblank_reg                                            ; 3       ;
 ; video_syncgen:u_vga|vblank_reg                                            ; 4       ;
 ; logo_overlay:u_logo|vec_x_reg                                             ; 11      ;
 ; logo_overlay:u_logo|vec_y_reg                                             ; 14      ;
-; Total number of inverted registers = 7                                    ;         ;
+; Total number of inverted registers = 13                                   ;         ;
 +---------------------------------------------------------------------------+---------+
 
 
@@ -551,72 +554,69 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------+
-; 4:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|data_in_reg[19]                ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[8]      ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|cout_reg[6]      ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|counter_reg[3] ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[174]    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[118]    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[56]     ;
+; 3:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|data_in_reg[23]                ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[5]      ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|cout_reg[2]      ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|counter_reg[5] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[170]    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[112]    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[59]     ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[4]      ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|hb_reg[7]      ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|bch_sb_reg[4]  ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_infopacket_submodule:\gen_info:u_info|counter_reg[1] ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|bch_hb_reg[5]  ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[177]    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[121]    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[70]     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|hb_reg[5]      ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|bch_sb_reg[11] ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_infopacket_submodule:\gen_info:u_info|counter_reg[0] ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|bch_hb_reg[4]  ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[183]    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[123]    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[69]     ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[13]     ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |air_hdmi_test_top|melodychime:u_chime|melodychime_seq:u_seq|scorecount[1]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[189]    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[133]    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[72]     ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |air_hdmi_test_top|melodychime:u_chime|melodychime_seq:u_seq|scorecount[3]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[187]    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[129]    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[78]     ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[23]     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|hb_reg[13]     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[194]    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[143]    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[86]     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[24]     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[207]    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[146]    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[90]     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|hb_reg[12]     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[192]    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[137]    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[85]     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[25]     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[200]    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[148]    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[91]     ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[34]     ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|hb_reg[19]     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[209]    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[153]    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[97]     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[45]     ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[222]    ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[221]    ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|hb_reg[17]     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[213]    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[152]    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[96]     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[40]     ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[223]    ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[218]    ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[167]    ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[161]    ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[163]    ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[110]    ;
 ; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[107]    ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[54]     ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[51]     ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |air_hdmi_test_top|logo_overlay:u_logo|y_count_reg[9]                                        ;
-; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |air_hdmi_test_top|logo_overlay:u_logo|x_count_reg[3]                                        ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |air_hdmi_test_top|melodychime:u_chime|melodychime_sg:u_sg1|env_count_reg[4]                 ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |air_hdmi_test_top|melodychime:u_chime|melodychime_sg:u_sg0|env_count_reg[12]                ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|bch_sb_reg[14] ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|bch_sb_reg[0]  ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cnt[1]           ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cnt[2]           ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|cnt[2]           ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[55]     ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[49]     ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |air_hdmi_test_top|logo_overlay:u_logo|y_count_reg[0]                                        ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |air_hdmi_test_top|logo_overlay:u_logo|x_count_reg[1]                                        ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |air_hdmi_test_top|melodychime:u_chime|melodychime_sg:u_sg1|env_count_reg[14]                ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |air_hdmi_test_top|melodychime:u_chime|melodychime_sg:u_sg0|env_count_reg[0]                 ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|bch_sb_reg[22] ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|bch_sb_reg[17] ;
 ; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|datacount[4]   ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|bch_hb_reg[0]  ;
-; 34:1               ; 2 bits    ; 44 LEs        ; 10 LEs               ; 34 LEs                 ; Yes        ; |air_hdmi_test_top|video_syncgen:u_vga|cb_rgb_reg[22]                                        ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|counter_reg[1] ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cnt[3]           ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cnt[4]           ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|cnt[3]           ;
+; 34:1               ; 2 bits    ; 44 LEs        ; 10 LEs               ; 34 LEs                 ; Yes        ; |air_hdmi_test_top|video_syncgen:u_vga|cb_rgb_reg[21]                                        ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|counter_reg[2] ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg         ;
 ; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; No         ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio|Mux4        ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio|Mux0        ;
-; 33:1               ; 4 bits    ; 88 LEs        ; 12 LEs               ; 76 LEs                 ; No         ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_infopacket_submodule:\gen_info:u_info|out_data[3]    ;
-; 33:1               ; 4 bits    ; 88 LEs        ; 8 LEs                ; 80 LEs                 ; No         ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_infopacket_submodule:\gen_info:u_info|out_data[4]    ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio|Mux1        ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|Add16            ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|Add16            ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|Add16            ;
+; 33:1               ; 4 bits    ; 88 LEs        ; 12 LEs               ; 76 LEs                 ; No         ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_infopacket_submodule:\gen_info:u_info|out_data[0]    ;
+; 33:1               ; 4 bits    ; 88 LEs        ; 8 LEs                ; 80 LEs                 ; No         ; |air_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_infopacket_submodule:\gen_info:u_info|out_data[6]    ;
 ; 18:1               ; 5 bits    ; 60 LEs        ; 20 LEs               ; 40 LEs                 ; No         ; |air_hdmi_test_top|video_syncgen:u_vga|Selector5                                             ;
-; 20:1               ; 2 bits    ; 26 LEs        ; 4 LEs                ; 22 LEs                 ; No         ; |air_hdmi_test_top|video_syncgen:u_vga|Selector11                                            ;
+; 20:1               ; 2 bits    ; 26 LEs        ; 4 LEs                ; 22 LEs                 ; No         ; |air_hdmi_test_top|video_syncgen:u_vga|Selector2                                             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------+
 
 
@@ -1706,33 +1706,34 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; boundary_port         ; 81                          ;
 ; cycloneiii_ddio_out   ; 8                           ;
 ; cycloneiii_ff         ; 1023                        ;
-;     CLR               ; 303                         ;
+;     CLR               ; 297                         ;
 ;     CLR SCLR          ; 3                           ;
-;     CLR SLD           ; 21                          ;
-;     ENA               ; 436                         ;
+;     CLR SLD           ; 15                          ;
+;     ENA               ; 375                         ;
 ;     ENA CLR           ; 117                         ;
 ;     ENA CLR SCLR      ; 25                          ;
 ;     ENA CLR SLD       ; 51                          ;
-;     ENA SCLR          ; 6                           ;
-;     ENA SLD           ; 14                          ;
-;     SLD               ; 30                          ;
-;     plain             ; 17                          ;
+;     ENA SCLR          ; 1                           ;
+;     ENA SLD           ; 9                           ;
+;     SCLR              ; 5                           ;
+;     SLD               ; 35                          ;
+;     plain             ; 90                          ;
 ; cycloneiii_io_obuf    ; 47                          ;
-; cycloneiii_lcell_comb ; 1799                        ;
-;     arith             ; 356                         ;
-;         2 data inputs ; 202                         ;
-;         3 data inputs ; 154                         ;
-;     normal            ; 1443                        ;
-;         0 data inputs ; 14                          ;
-;         1 data inputs ; 43                          ;
-;         2 data inputs ; 167                         ;
-;         3 data inputs ; 528                         ;
-;         4 data inputs ; 691                         ;
+; cycloneiii_lcell_comb ; 1724                        ;
+;     arith             ; 323                         ;
+;         2 data inputs ; 205                         ;
+;         3 data inputs ; 118                         ;
+;     normal            ; 1401                        ;
+;         0 data inputs ; 8                           ;
+;         1 data inputs ; 39                          ;
+;         2 data inputs ; 169                         ;
+;         3 data inputs ; 515                         ;
+;         4 data inputs ; 670                         ;
 ; cycloneiii_pll        ; 1                           ;
 ; cycloneiii_ram_block  ; 43                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 9.30                        ;
-; Average LUT depth     ; 3.58                        ;
+; Max LUT depth         ; 8.20                        ;
+; Average LUT depth     ; 3.27                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1751,59 +1752,59 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Sat Dec 31 02:39:58 2022
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off air_hdmi_test_top -c air_hdmi_test_top
+    Info: Processing started: Sat Dec 31 11:40:15 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off air_hdmi -c air_hdmi_top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file ip/pll/hdmi_vgapll.v
-    Info (12023): Found entity 1: hdmi_vgapll File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/ip/pll/hdmi_vgapll.v Line: 40
+    Info (12023): Found entity 1: hdmi_vgapll File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/ip/pll/hdmi_vgapll.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file ip/pll/hdmi_hdpll.v
-    Info (12023): Found entity 1: hdmi_hdpll File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/ip/pll/hdmi_hdpll.v Line: 40
+    Info (12023): Found entity 1: hdmi_hdpll File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/ip/pll/hdmi_hdpll.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file ip/logo_pattern_rom/logo_pattern_rom.v
-    Info (12023): Found entity 1: logo_pattern_rom File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/ip/logo_pattern_rom/logo_pattern_rom.v Line: 40
+    Info (12023): Found entity 1: logo_pattern_rom File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/ip/logo_pattern_rom/logo_pattern_rom.v Line: 40
 Info (12021): Found 2 design units, including 1 entities, in source file hdl/video_syncgen.vhd
-    Info (12022): Found design unit 1: video_syncgen-RTL File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/video_syncgen.vhd Line: 138
-    Info (12023): Found entity 1: video_syncgen File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/video_syncgen.vhd Line: 45
+    Info (12022): Found design unit 1: video_syncgen-RTL File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/video_syncgen.vhd Line: 138
+    Info (12023): Found entity 1: video_syncgen File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/video_syncgen.vhd Line: 45
 Info (12021): Found 6 design units, including 3 entities, in source file hdl/melodychime.vhd
-    Info (12022): Found design unit 1: melodychime_seq-RTL File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/melodychime.vhd Line: 63
-    Info (12022): Found design unit 2: melodychime_sg-RTL File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/melodychime.vhd Line: 327
-    Info (12022): Found design unit 3: melodychime-RTL File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/melodychime.vhd Line: 449
-    Info (12023): Found entity 1: melodychime_seq File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/melodychime.vhd Line: 45
-    Info (12023): Found entity 2: melodychime_sg File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/melodychime.vhd Line: 309
-    Info (12023): Found entity 3: melodychime File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/melodychime.vhd Line: 433
+    Info (12022): Found design unit 1: melodychime_seq-RTL File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/melodychime.vhd Line: 63
+    Info (12022): Found design unit 2: melodychime_sg-RTL File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/melodychime.vhd Line: 327
+    Info (12022): Found design unit 3: melodychime-RTL File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/melodychime.vhd Line: 449
+    Info (12023): Found entity 1: melodychime_seq File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/melodychime.vhd Line: 45
+    Info (12023): Found entity 2: melodychime_sg File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/melodychime.vhd Line: 309
+    Info (12023): Found entity 3: melodychime File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/melodychime.vhd Line: 433
 Info (12021): Found 16 design units, including 8 entities, in source file hdl/hdmi_tx.vhd
-    Info (12022): Found design unit 1: hdmi_tx_scfifo-RTL File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 137
-    Info (12022): Found design unit 2: hdmi_tx_delay-RTL File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 240
-    Info (12022): Found design unit 3: hdmi_tx_audiopacket_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 319
-    Info (12022): Found design unit 4: hdmi_tx_infopacket_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 621
-    Info (12022): Found design unit 5: hdmi_tx_dataisland_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 878
-    Info (12022): Found design unit 6: hdmi_tx_tmds_encoder_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 1074
-    Info (12022): Found design unit 7: hdmi_tx_pdiff_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 1314
-    Info (12022): Found design unit 8: hdmi_tx-RTL File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 1486
-    Info (12023): Found entity 1: hdmi_tx_scfifo File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 116
-    Info (12023): Found entity 2: hdmi_tx_delay File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 225
-    Info (12023): Found entity 3: hdmi_tx_audiopacket_submodule File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 281
-    Info (12023): Found entity 4: hdmi_tx_infopacket_submodule File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 566
-    Info (12023): Found entity 5: hdmi_tx_dataisland_submodule File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 855
-    Info (12023): Found entity 6: hdmi_tx_tmds_encoder_submodule File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 1052
-    Info (12023): Found entity 7: hdmi_tx_pdiff_submodule File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 1294
-    Info (12023): Found entity 8: hdmi_tx File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 1416
+    Info (12022): Found design unit 1: hdmi_tx_scfifo-RTL File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 137
+    Info (12022): Found design unit 2: hdmi_tx_delay-RTL File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 240
+    Info (12022): Found design unit 3: hdmi_tx_audiopacket_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 307
+    Info (12022): Found design unit 4: hdmi_tx_infopacket_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 589
+    Info (12022): Found design unit 5: hdmi_tx_dataisland_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 846
+    Info (12022): Found design unit 6: hdmi_tx_tmds_encoder_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 1042
+    Info (12022): Found design unit 7: hdmi_tx_pdiff_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 1259
+    Info (12022): Found design unit 8: hdmi_tx-RTL File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 1431
+    Info (12023): Found entity 1: hdmi_tx_scfifo File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 116
+    Info (12023): Found entity 2: hdmi_tx_delay File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 225
+    Info (12023): Found entity 3: hdmi_tx_audiopacket_submodule File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 281
+    Info (12023): Found entity 4: hdmi_tx_infopacket_submodule File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 534
+    Info (12023): Found entity 5: hdmi_tx_dataisland_submodule File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 823
+    Info (12023): Found entity 6: hdmi_tx_tmds_encoder_submodule File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 1020
+    Info (12023): Found entity 7: hdmi_tx_pdiff_submodule File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 1239
+    Info (12023): Found entity 8: hdmi_tx File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 1361
 Info (12021): Found 1 design units, including 1 entities, in source file hdl/logo_overlay.v
-    Info (12023): Found entity 1: logo_overlay File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/logo_overlay.v Line: 34
+    Info (12023): Found entity 1: logo_overlay File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/logo_overlay.v Line: 34
 Info (12021): Found 1 design units, including 1 entities, in source file hdl/air_hdmi_test_top.v
-    Info (12023): Found entity 1: air_hdmi_test_top File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 36
+    Info (12023): Found entity 1: air_hdmi_test_top File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 36
 Info (12127): Elaborating entity "air_hdmi_test_top" for the top level hierarchy
-Warning (10034): Output port "SDR_A" at air_hdmi_test_top.v(66) has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 66
-Warning (10034): Output port "SDR_BA" at air_hdmi_test_top.v(67) has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 67
-Warning (10034): Output port "SDR_DQM" at air_hdmi_test_top.v(69) has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 69
-Warning (10034): Output port "SDR_CS_N" at air_hdmi_test_top.v(62) has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 62
-Warning (10034): Output port "SDR_RAS_N" at air_hdmi_test_top.v(63) has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 63
-Warning (10034): Output port "SDR_CAS_N" at air_hdmi_test_top.v(64) has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 64
-Warning (10034): Output port "SDR_WE_N" at air_hdmi_test_top.v(65) has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 65
-Info (12128): Elaborating entity "hdmi_hdpll" for hierarchy "hdmi_hdpll:u_pll" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 142
-Info (12128): Elaborating entity "altpll" for hierarchy "hdmi_hdpll:u_pll|altpll:altpll_component" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/ip/pll/hdmi_hdpll.v Line: 108
-Info (12130): Elaborated megafunction instantiation "hdmi_hdpll:u_pll|altpll:altpll_component" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/ip/pll/hdmi_hdpll.v Line: 108
-Info (12133): Instantiated megafunction "hdmi_hdpll:u_pll|altpll:altpll_component" with the following parameter: File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/ip/pll/hdmi_hdpll.v Line: 108
+Warning (10034): Output port "SDR_A" at air_hdmi_test_top.v(66) has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 66
+Warning (10034): Output port "SDR_BA" at air_hdmi_test_top.v(67) has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 67
+Warning (10034): Output port "SDR_DQM" at air_hdmi_test_top.v(69) has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 69
+Warning (10034): Output port "SDR_CS_N" at air_hdmi_test_top.v(62) has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 62
+Warning (10034): Output port "SDR_RAS_N" at air_hdmi_test_top.v(63) has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 63
+Warning (10034): Output port "SDR_CAS_N" at air_hdmi_test_top.v(64) has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 64
+Warning (10034): Output port "SDR_WE_N" at air_hdmi_test_top.v(65) has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 65
+Info (12128): Elaborating entity "hdmi_hdpll" for hierarchy "hdmi_hdpll:u_pll" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 142
+Info (12128): Elaborating entity "altpll" for hierarchy "hdmi_hdpll:u_pll|altpll:altpll_component" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/ip/pll/hdmi_hdpll.v Line: 108
+Info (12130): Elaborated megafunction instantiation "hdmi_hdpll:u_pll|altpll:altpll_component" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/ip/pll/hdmi_hdpll.v Line: 108
+Info (12133): Instantiated megafunction "hdmi_hdpll:u_pll|altpll:altpll_component" with the following parameter: File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/ip/pll/hdmi_hdpll.v Line: 108
     Info (12134): Parameter "bandwidth_type" = "AUTO"
     Info (12134): Parameter "clk0_divide_by" = "35"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
@@ -1864,17 +1865,17 @@ Info (12133): Instantiated megafunction "hdmi_hdpll:u_pll|altpll:altpll_componen
     Info (12134): Parameter "self_reset_on_loss_lock" = "OFF"
     Info (12134): Parameter "width_clock" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/hdmi_hdpll_altpll.v
-    Info (12023): Found entity 1: hdmi_hdpll_altpll File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/db/hdmi_hdpll_altpll.v Line: 31
+    Info (12023): Found entity 1: hdmi_hdpll_altpll File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/db/hdmi_hdpll_altpll.v Line: 31
 Info (12128): Elaborating entity "hdmi_hdpll_altpll" for hierarchy "hdmi_hdpll:u_pll|altpll:altpll_component|hdmi_hdpll_altpll:auto_generated" File: c:/develop/quartus/22.1le/quartus/libraries/megafunctions/altpll.tdf Line: 898
-Info (12128): Elaborating entity "melodychime" for hierarchy "melodychime:u_chime" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 188
-Info (12128): Elaborating entity "melodychime_seq" for hierarchy "melodychime:u_chime|melodychime_seq:u_seq" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/melodychime.vhd Line: 545
-Info (12128): Elaborating entity "melodychime_sg" for hierarchy "melodychime:u_chime|melodychime_sg:u_sg0" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/melodychime.vhd Line: 565
-Info (12128): Elaborating entity "video_syncgen" for hierarchy "video_syncgen:u_vga" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 225
-Info (12128): Elaborating entity "logo_overlay" for hierarchy "logo_overlay:u_logo" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 251
-Info (12128): Elaborating entity "logo_pattern_rom" for hierarchy "logo_overlay:u_logo|logo_pattern_rom:u_rom" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/logo_overlay.v Line: 274
-Info (12128): Elaborating entity "altsyncram" for hierarchy "logo_overlay:u_logo|logo_pattern_rom:u_rom|altsyncram:altsyncram_component" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/ip/logo_pattern_rom/logo_pattern_rom.v Line: 82
-Info (12130): Elaborated megafunction instantiation "logo_overlay:u_logo|logo_pattern_rom:u_rom|altsyncram:altsyncram_component" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/ip/logo_pattern_rom/logo_pattern_rom.v Line: 82
-Info (12133): Instantiated megafunction "logo_overlay:u_logo|logo_pattern_rom:u_rom|altsyncram:altsyncram_component" with the following parameter: File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/ip/logo_pattern_rom/logo_pattern_rom.v Line: 82
+Info (12128): Elaborating entity "melodychime" for hierarchy "melodychime:u_chime" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 188
+Info (12128): Elaborating entity "melodychime_seq" for hierarchy "melodychime:u_chime|melodychime_seq:u_seq" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/melodychime.vhd Line: 545
+Info (12128): Elaborating entity "melodychime_sg" for hierarchy "melodychime:u_chime|melodychime_sg:u_sg0" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/melodychime.vhd Line: 565
+Info (12128): Elaborating entity "video_syncgen" for hierarchy "video_syncgen:u_vga" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 225
+Info (12128): Elaborating entity "logo_overlay" for hierarchy "logo_overlay:u_logo" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 251
+Info (12128): Elaborating entity "logo_pattern_rom" for hierarchy "logo_overlay:u_logo|logo_pattern_rom:u_rom" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/logo_overlay.v Line: 274
+Info (12128): Elaborating entity "altsyncram" for hierarchy "logo_overlay:u_logo|logo_pattern_rom:u_rom|altsyncram:altsyncram_component" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/ip/logo_pattern_rom/logo_pattern_rom.v Line: 82
+Info (12130): Elaborated megafunction instantiation "logo_overlay:u_logo|logo_pattern_rom:u_rom|altsyncram:altsyncram_component" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/ip/logo_pattern_rom/logo_pattern_rom.v Line: 82
+Info (12133): Instantiated megafunction "logo_overlay:u_logo|logo_pattern_rom:u_rom|altsyncram:altsyncram_component" with the following parameter: File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/ip/logo_pattern_rom/logo_pattern_rom.v Line: 82
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -1890,27 +1891,27 @@ Info (12133): Instantiated megafunction "logo_overlay:u_logo|logo_pattern_rom:u_
     Info (12134): Parameter "width_a" = "1"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_79c1.tdf
-    Info (12023): Found entity 1: altsyncram_79c1 File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/db/altsyncram_79c1.tdf Line: 32
+    Info (12023): Found entity 1: altsyncram_79c1 File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/db/altsyncram_79c1.tdf Line: 32
 Info (12128): Elaborating entity "altsyncram_79c1" for hierarchy "logo_overlay:u_logo|logo_pattern_rom:u_rom|altsyncram:altsyncram_component|altsyncram_79c1:auto_generated" File: c:/develop/quartus/22.1le/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_k8a.tdf
-    Info (12023): Found entity 1: decode_k8a File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/db/decode_k8a.tdf Line: 23
-Info (12128): Elaborating entity "decode_k8a" for hierarchy "logo_overlay:u_logo|logo_pattern_rom:u_rom|altsyncram:altsyncram_component|altsyncram_79c1:auto_generated|decode_k8a:rden_decode" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/db/altsyncram_79c1.tdf Line: 40
+    Info (12023): Found entity 1: decode_k8a File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/db/decode_k8a.tdf Line: 23
+Info (12128): Elaborating entity "decode_k8a" for hierarchy "logo_overlay:u_logo|logo_pattern_rom:u_rom|altsyncram:altsyncram_component|altsyncram_79c1:auto_generated|decode_k8a:rden_decode" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/db/altsyncram_79c1.tdf Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_4nb.tdf
-    Info (12023): Found entity 1: mux_4nb File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/db/mux_4nb.tdf Line: 23
-Info (12128): Elaborating entity "mux_4nb" for hierarchy "logo_overlay:u_logo|logo_pattern_rom:u_rom|altsyncram:altsyncram_component|altsyncram_79c1:auto_generated|mux_4nb:mux2" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/db/altsyncram_79c1.tdf Line: 41
-Info (12128): Elaborating entity "hdmi_tx" for hierarchy "hdmi_tx:u_tx" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 284
-Info (12128): Elaborating entity "hdmi_tx_delay" for hierarchy "hdmi_tx:u_tx|hdmi_tx_delay:\gen_intgen:u_delay" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 1556
-Info (12128): Elaborating entity "hdmi_tx_audiopacket_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 1610
-Info (12128): Elaborating entity "hdmi_tx_scfifo" for hierarchy "hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio|hdmi_tx_scfifo:u_fifo" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 495
-Info (12128): Elaborating entity "hdmi_tx_infopacket_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_infopacket_submodule:\gen_info:u_info" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 1643
-Info (12128): Elaborating entity "hdmi_tx_dataisland_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 1681
-Info (12128): Elaborating entity "hdmi_tx_tmds_encoder_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 1755
-Info (12128): Elaborating entity "hdmi_tx_tmds_encoder_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 1755
-Info (12128): Elaborating entity "hdmi_tx_tmds_encoder_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 1755
-Info (12128): Elaborating entity "hdmi_tx_pdiff_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 1770
-Info (12128): Elaborating entity "altddio_out" for hierarchy "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 1372
-Info (12130): Elaborated megafunction instantiation "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 1372
-Info (12133): Instantiated megafunction "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p" with the following parameter: File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 1372
+    Info (12023): Found entity 1: mux_4nb File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/db/mux_4nb.tdf Line: 23
+Info (12128): Elaborating entity "mux_4nb" for hierarchy "logo_overlay:u_logo|logo_pattern_rom:u_rom|altsyncram:altsyncram_component|altsyncram_79c1:auto_generated|mux_4nb:mux2" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/db/altsyncram_79c1.tdf Line: 41
+Info (12128): Elaborating entity "hdmi_tx" for hierarchy "hdmi_tx:u_tx" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 284
+Info (12128): Elaborating entity "hdmi_tx_delay" for hierarchy "hdmi_tx:u_tx|hdmi_tx_delay:\gen_intgen:u_delay" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 1501
+Info (12128): Elaborating entity "hdmi_tx_audiopacket_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 1555
+Info (12128): Elaborating entity "hdmi_tx_scfifo" for hierarchy "hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio|hdmi_tx_scfifo:u_fifo" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 463
+Info (12128): Elaborating entity "hdmi_tx_infopacket_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_infopacket_submodule:\gen_info:u_info" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 1588
+Info (12128): Elaborating entity "hdmi_tx_dataisland_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 1626
+Info (12128): Elaborating entity "hdmi_tx_tmds_encoder_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 1700
+Info (12128): Elaborating entity "hdmi_tx_tmds_encoder_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 1700
+Info (12128): Elaborating entity "hdmi_tx_tmds_encoder_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 1700
+Info (12128): Elaborating entity "hdmi_tx_pdiff_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 1715
+Info (12128): Elaborating entity "altddio_out" for hierarchy "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 1317
+Info (12130): Elaborated megafunction instantiation "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 1317
+Info (12133): Instantiated megafunction "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p" with the following parameter: File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 1317
     Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
     Info (12134): Parameter "extend_oe_disable" = "OFF"
     Info (12134): Parameter "invert_output" = "OFF"
@@ -1920,11 +1921,11 @@ Info (12133): Instantiated megafunction "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_
     Info (12134): Parameter "lpm_hint" = "UNUSED"
     Info (12134): Parameter "lpm_type" = "altddio_out"
 Info (12021): Found 1 design units, including 1 entities, in source file db/ddio_out_s9j.tdf
-    Info (12023): Found entity 1: ddio_out_s9j File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/db/ddio_out_s9j.tdf Line: 28
+    Info (12023): Found entity 1: ddio_out_s9j File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/db/ddio_out_s9j.tdf Line: 28
 Info (12128): Elaborating entity "ddio_out_s9j" for hierarchy "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p|ddio_out_s9j:auto_generated" File: c:/develop/quartus/22.1le/quartus/libraries/megafunctions/altddio_out.tdf Line: 101
-Info (12128): Elaborating entity "altddio_out" for hierarchy "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_n" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 1386
-Info (12130): Elaborated megafunction instantiation "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_n" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 1386
-Info (12133): Instantiated megafunction "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_n" with the following parameter: File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 1386
+Info (12128): Elaborating entity "altddio_out" for hierarchy "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_n" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 1331
+Info (12130): Elaborated megafunction instantiation "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_n" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 1331
+Info (12133): Instantiated megafunction "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_n" with the following parameter: File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 1331
     Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
     Info (12134): Parameter "extend_oe_disable" = "OFF"
     Info (12134): Parameter "invert_output" = "ON"
@@ -1934,7 +1935,7 @@ Info (12133): Instantiated megafunction "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_
     Info (12134): Parameter "lpm_hint" = "UNUSED"
     Info (12134): Parameter "lpm_type" = "altddio_out"
 Info (12021): Found 1 design units, including 1 entities, in source file db/ddio_out_u6j.tdf
-    Info (12023): Found entity 1: ddio_out_u6j File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/db/ddio_out_u6j.tdf Line: 28
+    Info (12023): Found entity 1: ddio_out_u6j File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/db/ddio_out_u6j.tdf Line: 28
 Info (12128): Elaborating entity "ddio_out_u6j" for hierarchy "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_n|ddio_out_u6j:auto_generated" File: c:/develop/quartus/22.1le/quartus/libraries/megafunctions/altddio_out.tdf Line: 101
 Info (19000): Inferred 2 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio|hdmi_tx_scfifo:u_fifo|ram_rtl_0" 
@@ -1975,131 +1976,124 @@ Info (12133): Instantiated megafunction "hdmi_tx:u_tx|hdmi_tx_audiopacket_submod
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
     Info (12134): Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ctg1.tdf
-    Info (12023): Found entity 1: altsyncram_ctg1 File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/db/altsyncram_ctg1.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_ctg1 File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/db/altsyncram_ctg1.tdf Line: 28
 Info (12130): Elaborated megafunction instantiation "hdmi_tx:u_tx|hdmi_tx_delay:\gen_intgen:u_delay|altshift_taps:ram_rtl_0"
 Info (12133): Instantiated megafunction "hdmi_tx:u_tx|hdmi_tx_delay:\gen_intgen:u_delay|altshift_taps:ram_rtl_0" with the following parameter:
     Info (12134): Parameter "NUMBER_OF_TAPS" = "1"
     Info (12134): Parameter "TAP_DISTANCE" = "60"
     Info (12134): Parameter "WIDTH" = "26"
 Info (12021): Found 1 design units, including 1 entities, in source file db/shift_taps_08m.tdf
-    Info (12023): Found entity 1: shift_taps_08m File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/db/shift_taps_08m.tdf Line: 27
+    Info (12023): Found entity 1: shift_taps_08m File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/db/shift_taps_08m.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_0i81.tdf
-    Info (12023): Found entity 1: altsyncram_0i81 File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/db/altsyncram_0i81.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_0i81 File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/db/altsyncram_0i81.tdf Line: 28
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_4rf.tdf
-    Info (12023): Found entity 1: cntr_4rf File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/db/cntr_4rf.tdf Line: 28
+    Info (12023): Found entity 1: cntr_4rf File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/db/cntr_4rf.tdf Line: 28
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_sgc.tdf
-    Info (12023): Found entity 1: cmpr_sgc File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/db/cmpr_sgc.tdf Line: 23
+    Info (12023): Found entity 1: cmpr_sgc File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/db/cmpr_sgc.tdf Line: 23
 Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13034): The following nodes have both tri-state and non-tri-state drivers
-    Warning (13035): Inserted always-enabled tri-state buffer between "D[7]" and its non-tri-state driver. File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13035): Inserted always-enabled tri-state buffer between "D[9]" and its non-tri-state driver. File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13035): Inserted always-enabled tri-state buffer between "D[10]" and its non-tri-state driver. File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13035): Inserted always-enabled tri-state buffer between "D[11]" and its non-tri-state driver. File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13035): Inserted always-enabled tri-state buffer between "D[12]" and its non-tri-state driver. File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13035): Inserted always-enabled tri-state buffer between "D[13]" and its non-tri-state driver. File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13035): Inserted always-enabled tri-state buffer between "D[14]" and its non-tri-state driver. File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13035): Inserted always-enabled tri-state buffer between "D[15]" and its non-tri-state driver. File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13035): Inserted always-enabled tri-state buffer between "D[7]" and its non-tri-state driver. File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13035): Inserted always-enabled tri-state buffer between "D[9]" and its non-tri-state driver. File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13035): Inserted always-enabled tri-state buffer between "D[10]" and its non-tri-state driver. File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13035): Inserted always-enabled tri-state buffer between "D[11]" and its non-tri-state driver. File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13035): Inserted always-enabled tri-state buffer between "D[12]" and its non-tri-state driver. File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13035): Inserted always-enabled tri-state buffer between "D[13]" and its non-tri-state driver. File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13035): Inserted always-enabled tri-state buffer between "D[14]" and its non-tri-state driver. File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13035): Inserted always-enabled tri-state buffer between "D[15]" and its non-tri-state driver. File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
 Warning (13039): The following bidirectional pins have no drivers
-    Warning (13040): bidirectional pin "SDR_DQ[0]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 68
-    Warning (13040): bidirectional pin "SDR_DQ[1]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 68
-    Warning (13040): bidirectional pin "SDR_DQ[2]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 68
-    Warning (13040): bidirectional pin "SDR_DQ[3]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 68
-    Warning (13040): bidirectional pin "SDR_DQ[4]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 68
-    Warning (13040): bidirectional pin "SDR_DQ[5]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 68
-    Warning (13040): bidirectional pin "SDR_DQ[6]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 68
-    Warning (13040): bidirectional pin "SDR_DQ[7]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 68
-    Warning (13040): bidirectional pin "SDR_DQ[8]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 68
-    Warning (13040): bidirectional pin "SDR_DQ[9]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 68
-    Warning (13040): bidirectional pin "SDR_DQ[10]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 68
-    Warning (13040): bidirectional pin "SDR_DQ[11]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 68
-    Warning (13040): bidirectional pin "SDR_DQ[12]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 68
-    Warning (13040): bidirectional pin "SDR_DQ[13]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 68
-    Warning (13040): bidirectional pin "SDR_DQ[14]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 68
-    Warning (13040): bidirectional pin "SDR_DQ[15]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 68
-    Warning (13040): bidirectional pin "D[0]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13040): bidirectional pin "D[1]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13040): bidirectional pin "D[2]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13040): bidirectional pin "D[3]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13040): bidirectional pin "D[4]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13040): bidirectional pin "D[5]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13040): bidirectional pin "D[6]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13040): bidirectional pin "D[8]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13040): bidirectional pin "D[16]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13040): bidirectional pin "D[17]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13040): bidirectional pin "D[18]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13040): bidirectional pin "D[19]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13040): bidirectional pin "D[20]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13040): bidirectional pin "D[21]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13040): bidirectional pin "D[22]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13040): bidirectional pin "D[23]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13040): bidirectional pin "D[24]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13040): bidirectional pin "D[25]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13040): bidirectional pin "D[26]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13040): bidirectional pin "D[27]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-Info (13000): Registers with preset signals will power-up high File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 1344
+    Warning (13040): bidirectional pin "SDR_DQ[0]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 68
+    Warning (13040): bidirectional pin "SDR_DQ[1]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 68
+    Warning (13040): bidirectional pin "SDR_DQ[2]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 68
+    Warning (13040): bidirectional pin "SDR_DQ[3]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 68
+    Warning (13040): bidirectional pin "SDR_DQ[4]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 68
+    Warning (13040): bidirectional pin "SDR_DQ[5]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 68
+    Warning (13040): bidirectional pin "SDR_DQ[6]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 68
+    Warning (13040): bidirectional pin "SDR_DQ[7]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 68
+    Warning (13040): bidirectional pin "SDR_DQ[8]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 68
+    Warning (13040): bidirectional pin "SDR_DQ[9]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 68
+    Warning (13040): bidirectional pin "SDR_DQ[10]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 68
+    Warning (13040): bidirectional pin "SDR_DQ[11]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 68
+    Warning (13040): bidirectional pin "SDR_DQ[12]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 68
+    Warning (13040): bidirectional pin "SDR_DQ[13]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 68
+    Warning (13040): bidirectional pin "SDR_DQ[14]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 68
+    Warning (13040): bidirectional pin "SDR_DQ[15]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 68
+    Warning (13040): bidirectional pin "D[0]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13040): bidirectional pin "D[1]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13040): bidirectional pin "D[2]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13040): bidirectional pin "D[3]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13040): bidirectional pin "D[4]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13040): bidirectional pin "D[5]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13040): bidirectional pin "D[6]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13040): bidirectional pin "D[8]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13040): bidirectional pin "D[16]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13040): bidirectional pin "D[17]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13040): bidirectional pin "D[18]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13040): bidirectional pin "D[19]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13040): bidirectional pin "D[20]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13040): bidirectional pin "D[21]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13040): bidirectional pin "D[22]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13040): bidirectional pin "D[23]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13040): bidirectional pin "D[24]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13040): bidirectional pin "D[25]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13040): bidirectional pin "D[26]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13040): bidirectional pin "D[27]" has no driver File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+Info (13000): Registers with preset signals will power-up high File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/hdmi_tx.vhd Line: 1289
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13009): TRI or OPNDRN buffers permanently enabled
-    Warning (13010): Node "D[7]~synth" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13010): Node "D[9]~synth" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13010): Node "D[10]~synth" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13010): Node "D[11]~synth" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13010): Node "D[12]~synth" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13010): Node "D[13]~synth" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13010): Node "D[14]~synth" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
-    Warning (13010): Node "D[15]~synth" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13010): Node "D[7]~synth" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13010): Node "D[9]~synth" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13010): Node "D[10]~synth" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13010): Node "D[11]~synth" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13010): Node "D[12]~synth" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13010): Node "D[13]~synth" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13010): Node "D[14]~synth" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
+    Warning (13010): Node "D[15]~synth" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 72
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "EPCS_CSO_N" is stuck at VCC File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 42
-    Warning (13410): Pin "EPCS_DCLK" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 43
-    Warning (13410): Pin "EPCS_ASDO" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 44
-    Warning (13410): Pin "SD_PWR_N" is stuck at VCC File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 54
-    Warning (13410): Pin "SDRCLK_OUT" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 60
-    Warning (13410): Pin "SDR_CKE" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 61
-    Warning (13410): Pin "SDR_CS_N" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 62
-    Warning (13410): Pin "SDR_RAS_N" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 63
-    Warning (13410): Pin "SDR_CAS_N" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 64
-    Warning (13410): Pin "SDR_WE_N" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 65
-    Warning (13410): Pin "SDR_A[0]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 66
-    Warning (13410): Pin "SDR_A[1]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 66
-    Warning (13410): Pin "SDR_A[2]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 66
-    Warning (13410): Pin "SDR_A[3]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 66
-    Warning (13410): Pin "SDR_A[4]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 66
-    Warning (13410): Pin "SDR_A[5]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 66
-    Warning (13410): Pin "SDR_A[6]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 66
-    Warning (13410): Pin "SDR_A[7]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 66
-    Warning (13410): Pin "SDR_A[8]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 66
-    Warning (13410): Pin "SDR_A[9]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 66
-    Warning (13410): Pin "SDR_A[10]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 66
-    Warning (13410): Pin "SDR_A[11]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 66
-    Warning (13410): Pin "SDR_A[12]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 66
-    Warning (13410): Pin "SDR_BA[0]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 67
-    Warning (13410): Pin "SDR_BA[1]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 67
-    Warning (13410): Pin "SDR_DQM[0]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 69
-    Warning (13410): Pin "SDR_DQM[1]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 69
+    Warning (13410): Pin "EPCS_CSO_N" is stuck at VCC File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 42
+    Warning (13410): Pin "EPCS_DCLK" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 43
+    Warning (13410): Pin "EPCS_ASDO" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 44
+    Warning (13410): Pin "SD_PWR_N" is stuck at VCC File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 54
+    Warning (13410): Pin "SDRCLK_OUT" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 60
+    Warning (13410): Pin "SDR_CKE" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 61
+    Warning (13410): Pin "SDR_CS_N" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 62
+    Warning (13410): Pin "SDR_RAS_N" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 63
+    Warning (13410): Pin "SDR_CAS_N" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 64
+    Warning (13410): Pin "SDR_WE_N" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 65
+    Warning (13410): Pin "SDR_A[0]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 66
+    Warning (13410): Pin "SDR_A[1]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 66
+    Warning (13410): Pin "SDR_A[2]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 66
+    Warning (13410): Pin "SDR_A[3]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 66
+    Warning (13410): Pin "SDR_A[4]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 66
+    Warning (13410): Pin "SDR_A[5]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 66
+    Warning (13410): Pin "SDR_A[6]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 66
+    Warning (13410): Pin "SDR_A[7]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 66
+    Warning (13410): Pin "SDR_A[8]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 66
+    Warning (13410): Pin "SDR_A[9]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 66
+    Warning (13410): Pin "SDR_A[10]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 66
+    Warning (13410): Pin "SDR_A[11]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 66
+    Warning (13410): Pin "SDR_A[12]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 66
+    Warning (13410): Pin "SDR_BA[0]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 67
+    Warning (13410): Pin "SDR_BA[1]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 67
+    Warning (13410): Pin "SDR_DQM[0]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 69
+    Warning (13410): Pin "SDR_DQM[1]" is stuck at GND File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 69
 Info (286030): Timing-Driven Synthesis is running
-Critical Warning (18061): Ignored Power-Up Level option on the following registers
-    Critical Warning (18010): Register hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cnt[4] will power up to Low File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 1179
-    Critical Warning (18010): Register hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cnt[3] will power up to Low File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 1179
-    Critical Warning (18010): Register hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cnt[4] will power up to Low File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 1179
-    Critical Warning (18010): Register hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cnt[3] will power up to Low File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 1179
-    Critical Warning (18010): Register hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|cnt[4] will power up to Low File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 1179
-    Critical Warning (18010): Register hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|cnt[3] will power up to Low File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/hdmi_tx.vhd Line: 1179
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 3 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "EPCS_DATA0" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 45
-    Warning (15610): No output dependent on input pin "SD_DAT0" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 51
-    Warning (15610): No output dependent on input pin "SW_CD_N" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi_test/hdl/air_hdmi_test_top.v Line: 57
-Info (21057): Implemented 2125 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "EPCS_DATA0" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 45
+    Warning (15610): No output dependent on input pin "SD_DAT0" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 51
+    Warning (15610): No output dependent on input pin "SW_CD_N" File: C:/PROJECT/temp/hdmi_tx/hw/ubshield_hdmi/hdl/air_hdmi_test_top.v Line: 57
+Info (21057): Implemented 2053 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 32 output pins
     Info (21060): Implemented 44 bidirectional pins
-    Info (21061): Implemented 1992 logic cells
+    Info (21061): Implemented 1920 logic cells
     Info (21064): Implemented 43 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 103 warnings
-    Info: Peak virtual memory: 4858 megabytes
-    Info: Processing ended: Sat Dec 31 02:40:18 2022
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:38
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 96 warnings
+    Info: Peak virtual memory: 4850 megabytes
+    Info: Processing ended: Sat Dec 31 11:40:36 2022
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:41
 
 

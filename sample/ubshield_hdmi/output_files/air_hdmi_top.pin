@@ -65,7 +65,7 @@
  ---------------------------------------------------------------------------------
 
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-CHIP  "air_hdmi_test_top"  ASSIGNED TO AN: EP4CE6E22C8
+CHIP  "air_hdmi_top"  ASSIGNED TO AN: EP4CE6E22C8
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
