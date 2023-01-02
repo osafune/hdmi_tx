@@ -2,7 +2,7 @@
 -- TITLE : HDMI Transmitter
 --
 --     DESIGN : s.osafune@j7system.jp (J-7SYSTEM WORKS LIMITED)
---     DATE   : 2022/12/01 -> 2022/12/31
+--     DATE   : 2022/12/01 -> 2023/01/02
 --
 --
 -- ===================================================================
@@ -47,11 +47,14 @@
 --      SCANMODE        : string := "AUTO";     -- "AUTO"    : Displays decides
 --                                              -- "OVER"    : Overscanned display
 --                                              -- "UNDER"   : Underscanned display
---      ASPECTRATIO     : string := "AUTO";     -- "AUTO"    : Same as picture
+--      PICTUREASPECT   : string := "NONE";     -- "NONE"    : Picture aspect ratio information not present
+--                                              -- "4:3"     : 4:3 picture
+--                                              -- "16:9"    : 16:9 picture
+--      FORMATASPECT    : string := "AUTO";     -- "AUTO"    : Same as picture
 --                                              -- "4:3"     : 4:3 format
 --                                              -- "16:9"    : 16:9 format
 --                                              -- "14:9"    : 14:9 format
---                                              -- "NONE"    : Aspect information not present
+--                                              -- "NONE"    : Format aspect ratio information not present
 --      PICTURESCALING  : string := "FIT";      -- "FIT"     : Picture has been scaled H and V.
 --                                              -- "HEIGHT"  : Scaled vertically
 --                                              -- "WIDTH"   : Scaled horizontally
@@ -539,11 +542,14 @@ entity hdmi_tx_infopacket_submodule is
 		SCANMODE		: string := "AUTO";		-- "AUTO"    : Displays decides
 												-- "OVER"    : Overscanned display
 												-- "UNDER"   : Underscanned display
-		ASPECTRATIO		: string := "AUTO";		-- "AUTO"    : Same as picture
+		PICTUREASPECT	: string := "NONE";		-- "NONE"    : Picture aspect ratio information not present
+												-- "4:3"     : 4:3 picture
+												-- "16:9"    : 16:9 picture
+		FORMATASPECT	: string := "AUTO";		-- "AUTO"    : Same as picture
 												-- "4:3"     : 4:3 format
 												-- "16:9"    : 16:9 format
 												-- "14:9"    : 14:9 format
-												-- "NONE"    : Aspect information not present
+												-- "NONE"    : Format aspect ratio information not present
 		PICTURESCALING	: string := "FIT";		-- "FIT"     : Picture has been scaled H and V.
 												-- "HEIGHT"  : Scaled vertically
 												-- "WIDTH"   : Scaled horizontally
@@ -642,12 +648,13 @@ architecture RTL of hdmi_tx_infopacket_submodule is
 	constant ACR_TOP		: integer := 2*PACKET_LENGTH;
 
 	constant SCANINFO		: std_logic_vector(1 downto 0) := sel(SCANMODE="OVER", "01", sel(SCANMODE="UNDER", "10","00"));
-	constant PICTUREAR		: std_logic_vector(1 downto 0) := "00";		-- no data
+	constant PICTUREAR		: std_logic_vector(1 downto 0) :=
+				sel(PICTUREASPECT="4:3", "01", sel(PICTUREASPECT="16:9", "10","00"));
 	constant SCALING		: std_logic_vector(1 downto 0) :=
-				sel(PICTURESCALING="FIT", "11", sel(PICTURESCALING="HEIGHT", "10" ,sel(PICTURESCALING="WIDTH", "01","00")));
-	constant FORMATINFO		: std_logic_vector(0 downto 0) := sel(ASPECTRATIO="NONE", "0","1");
-	constant FORMATASPECT	: std_logic_vector(3 downto 0) :=
-				sel(ASPECTRATIO="NONE", "0000", sel(ASPECTRATIO="4:3", "1001", sel(ASPECTRATIO="16:9", "1010", sel(ASPECTRATIO="14:9" ,"1011", "1000"))));
+				sel(PICTURESCALING="FIT", "11", sel(PICTURESCALING="HEIGHT", "10", sel(PICTURESCALING="WIDTH", "01","00")));
+	constant FORMATINFO		: std_logic_vector(0 downto 0) := sel(FORMATASPECT="NONE", "0","1");
+	constant FORMATAR		: std_logic_vector(3 downto 0) :=
+				sel(FORMATASPECT="AUTO", "1000", sel(FORMATASPECT="4:3", "1001", sel(FORMATASPECT="16:9", "1010", sel(FORMATASPECT="14:9" ,"1011", "0000"))));
 	constant Y_CODE			: std_logic_vector(1 downto 0) := sel(COLORSPACE="RGB", "00","10");
 	constant COLORIMETRY	: std_logic_vector(1 downto 0) :=
 				sel(COLORSPACE="BT601", "01", sel(COLORSPACE="BT709", "10", sel(COLORSPACE="XVYCC601" or COLORSPACE="XVYCC709", "11","00")));
@@ -698,7 +705,7 @@ begin
 
 	infotable_sig(AVIINFO_TOP+ 0) <= checksum(infotable_sig, AVIINFO_TOP, 13);
 	infotable_sig(AVIINFO_TOP+ 1) <= '0' & Y_CODE & FORMATINFO & "00" & SCANINFO;
-	infotable_sig(AVIINFO_TOP+ 2) <= COLORIMETRY & PICTUREAR & FORMATASPECT;
+	infotable_sig(AVIINFO_TOP+ 2) <= COLORIMETRY & PICTUREAR & FORMATAR;
 	infotable_sig(AVIINFO_TOP+ 3) <= ITCONTENT & EXCOLORIMETRY & RGBQUANTRANGE & SCALING;
 	infotable_sig(AVIINFO_TOP+ 4) <= '0' & VIC_CODE;
 	infotable_sig(AVIINFO_TOP+ 5) <= YCCQUANTRANGE & CONTENTCODE & "0000";
@@ -1022,7 +1029,6 @@ entity hdmi_tx_tmds_encoder_submodule is
 		TMDS_CHANNEL	: integer := 0	-- 0,1,2
 	);
 	port(
-		reset	: in  std_logic;
 		clk		: in  std_logic;
 
 		mode	: in  std_logic_vector(2 downto 0); -- Encode mode
@@ -1078,8 +1084,8 @@ architecture RTL of hdmi_tx_tmds_encoder_submodule is
 	end;
 
 	-- signal 
-	signal sel_reg		: std_logic_vector(1 downto 0);
-	signal sel_dly_reg	: std_logic_vector(1 downto 0);
+	signal sel_reg		: std_logic_vector(1 downto 0) := "00";
+	signal sel_dly_reg	: std_logic_vector(1 downto 0) := "00";
 
 	signal cnt			: integer range -4 to 4;
 	signal qm_reg		: std_logic_vector(8 downto 0);
@@ -1093,12 +1099,10 @@ begin
 
 	-- 入力信号をラッチ --
 
-	process (clk, reset) begin
-		if is_true(reset) then
-			sel_reg <= "00";
-			sel_dly_reg <= "00";
+	process (clk) begin
+		if rising_edge(clk) then
+			sel_dly_reg <= sel_reg;
 
-		elsif rising_edge(clk) then
 			case mode is
 			when "001" =>
 				sel_reg <= "01";
@@ -1117,7 +1121,6 @@ begin
 				c_reg <= "00" & c_in;
 			end if;
 
-			sel_dly_reg <= sel_reg;
 		end if;
 	end process;
 
@@ -1241,7 +1244,6 @@ entity hdmi_tx_pdiff_submodule is
 		DEVICE_FAMILY	: string
 	);
 	port(
-		reset		: in  std_logic;
 		clk			: in  std_logic;		-- Rise edge drive clock
 		clk_x5		: in  std_logic;		-- Transmitter clock (It synchronizes with clk)
 
@@ -1259,9 +1261,10 @@ end hdmi_tx_pdiff_submodule;
 architecture RTL of hdmi_tx_pdiff_submodule is
 	-- Misc function
 	function is_true(S:std_logic) return boolean is begin return(S='1'); end;
+	function is_false(S:std_logic) return boolean is begin return(S='0'); end;
 
 	-- signal
-	signal start_reg	: std_logic_vector(4 downto 0) := "00001";
+	signal start_reg	: std_logic_vector(3 downto 0) := "0000";
 	signal data_in_reg	: std_logic_vector(3*10-1 downto 0);
 	signal ser_reg		: std_logic_vector(4*10-1 downto 0);
 	signal data_p_reg	: std_logic_vector(7 downto 0);
@@ -1269,8 +1272,8 @@ architecture RTL of hdmi_tx_pdiff_submodule is
 	signal ddo_n_sig	: std_logic_vector(3 downto 0);
 
 	attribute noprune : boolean;	-- レジスタ最適化を抑止 
+	attribute noprune of start_reg	: signal is true;
 	attribute noprune of ser_reg	: signal is true;
-	attribute noprune of data_p_reg	: signal is true;
 
 begin
 
@@ -1285,28 +1288,20 @@ begin
 
 	-- ラッチ信号の生成とシフトレジスタ --
 
-	process (clk_x5, reset) begin
-		if is_true(reset) then
-			start_reg <= "00001";
+	process (clk_x5) begin
+		if rising_edge(clk_x5) then
+			if is_false(start_reg(0)) then
+				start_reg <= "1111";
 
-		elsif rising_edge(clk_x5) then
-			start_reg <= start_reg(0) & start_reg(4 downto 1);
-
-			if is_true(start_reg(0)) then
 				ser_reg <= "0000011111" & data_in_reg;
 			else
+				start_reg <= '0' & start_reg(3 downto 1);
+
 				for i in 0 to 3 loop
 					ser_reg(i*10+9 downto i*10) <= "XX" & ser_reg(i*10+9 downto i*10+2);
 				end loop;
 			end if;
-		end if;
-	end process;
 
-
-	-- ビット出力 --
-
-	process (clk_x5) begin
-		if rising_edge(clk_x5) then
 			for i in 0 to 3 loop
 				data_p_reg(i+4) <= ser_reg(i*10+0);		-- positive side datain_h
 				data_p_reg(i+0) <= ser_reg(i*10+1);		-- positive side datain_l
@@ -1374,11 +1369,14 @@ entity hdmi_tx is
 		SCANMODE		: string := "AUTO";		-- "AUTO"    : Displays decides
 												-- "OVER"    : Overscanned display
 												-- "UNDER"   : Underscanned display
-		ASPECTRATIO		: string := "AUTO";		-- "AUTO"    : Same as picture
+		PICTUREASPECT	: string := "NONE";		-- "NONE"    : Picture aspect ratio information not present
+												-- "4:3"     : 4:3 picture
+												-- "16:9"    : 16:9 picture
+		FORMATASPECT	: string := "AUTO";		-- "AUTO"    : Same as picture
 												-- "4:3"     : 4:3 format
 												-- "16:9"    : 16:9 format
 												-- "14:9"    : 14:9 format
-												-- "NONE"    : Aspect information not present
+												-- "NONE"    : Format aspect ratio information not present
 		PICTURESCALING	: string := "FIT";		-- "FIT"     : Picture has been scaled H and V.
 												-- "HEIGHT"  : Scaled vertically
 												-- "WIDTH"   : Scaled horizontally
@@ -1455,7 +1453,7 @@ architecture RTL of hdmi_tx is
 	signal counter_reg		: std_logic_vector(5 downto 0);
 	signal start_bool		: boolean;
 	signal clear_bool		: boolean;
-	signal ready_sig		: std_logic;
+	signal ready_sig		: std_logic := '0';
 	signal pcm_ena_sig		: std_logic;
 
 	signal audio_ready_sig	: std_logic;
@@ -1590,7 +1588,8 @@ gen_info : if (ENCODE_MODE = "HDMI") generate
 		CLOCK_FREQUENCY	=> CLOCK_FREQUENCY,
 		AUDIO_FREQUENCY	=> AUDIO_FREQUENCY,
 		SCANMODE		=> SCANMODE,
-		ASPECTRATIO		=> ASPECTRATIO,
+		PICTUREASPECT	=> PICTUREASPECT,
+		FORMATASPECT	=> FORMATASPECT,
 		PICTURESCALING	=> PICTURESCALING,
 		COLORSPACE		=> COLORSPACE,
 		YCC_DATARANGE	=> YCC_DATARANGE,
@@ -1702,7 +1701,6 @@ end generate;
 			TMDS_CHANNEL => i
 		)
 		port map (
-			reset	=> reset,
 			clk		=> clk,
 			mode	=> mode_sig,
 			d_in	=> pixeldata_sig(i*8+7 downto i*8),
@@ -1717,7 +1715,6 @@ end generate;
 		DEVICE_FAMILY	=> DEVICE_FAMILY
 	)
 	port map (
-		reset		=> reset,
 		clk			=> clk,
 		clk_x5		=> clk_x5,
 

@@ -1,5 +1,5 @@
 Assembler report for air_hdmi_top
-Sat Dec 31 11:40:56 2022
+Mon Jan  2 18:04:13 2023
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -39,7 +39,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sat Dec 31 11:40:56 2022 ;
+; Assembler Status      ; Successful - Mon Jan  2 18:04:13 2023 ;
 ; Revision Name         ; air_hdmi_top                          ;
 ; Top-level Entity Name ; air_hdmi_test_top                     ;
 ; Family                ; Cyclone IV E                          ;
@@ -69,8 +69,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------+---------------------------------------------------------------------------------+
 ; Option         ; Setting                                                                         ;
 +----------------+---------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x0021D3ED                                                                      ;
-; Checksum       ; 0x0021D3ED                                                                      ;
+; JTAG usercode  ; 0x0021F922                                                                      ;
+; Checksum       ; 0x0021F922                                                                      ;
 +----------------+---------------------------------------------------------------------------------+
 
 
@@ -80,7 +80,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option             ; Setting                                                                     ;
 +--------------------+-----------------------------------------------------------------------------+
 ; JTAG usercode      ; 0x00000000                                                                  ;
-; Checksum           ; 0x1E34A181                                                                  ;
+; Checksum           ; 0x1E2EC88D                                                                  ;
 ; Compression Ratio  ; 2                                                                           ;
 +--------------------+-----------------------------------------------------------------------------+
 
@@ -91,15 +91,15 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Sat Dec 31 11:40:55 2022
+    Info: Processing started: Mon Jan  2 18:04:11 2023
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off air_hdmi -c air_hdmi_top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4700 megabytes
-    Info: Processing ended: Sat Dec 31 11:40:56 2022
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4712 megabytes
+    Info: Processing ended: Mon Jan  2 18:04:13 2023
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 

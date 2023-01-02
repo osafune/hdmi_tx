@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Sat Dec 31 11:40:36 2022
+Analysis & Synthesis Status : Successful - Mon Jan  2 18:03:53 2023
 Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 Revision Name : air_hdmi_top
 Top-level Entity Name : air_hdmi_test_top
 Family : Cyclone IV E
-Total logic elements : 1,854
-    Total combinational functions : 1,722
+Total logic elements : 1,851
+    Total combinational functions : 1,721
     Dedicated logic registers : 1,023
 Total registers : 1039
 Total pins : 81

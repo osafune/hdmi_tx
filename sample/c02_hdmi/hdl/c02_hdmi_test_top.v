@@ -1,14 +1,14 @@
 // ===================================================================
-// TITLE : C-02 HDMI output test (DMX-ELボード用)
+// TITLE : MAX10 HDMI output sample (C-02 + DMX-EL)
 //
 //     DESIGN : s.osafune@j7system.jp (J-7SYSTEM WORKS LIMITED)
-//     DATE   : 2020/04/21 -> 2020/04/21
-//     UPDATE : 2022/12/31
+//     DATE   : 2022/12/01 -> 2023/01/02
+//
 //
 // ===================================================================
 //
 // The MIT License (MIT)
-// Copyright (c) 2020,2022 J-7SYSTEM WORKS LIMITED.
+// Copyright (c) 2022 J-7SYSTEM WORKS LIMITED.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy of
 // this software and associated documentation files (the "Software"), to deal in
@@ -56,23 +56,26 @@ module c02_hdmi_test_top(
 
 /* ----- 内部パラメータ ------------------ */
 
+//	localparam COLORSPACE	= "RGB";
 //	localparam VGACLOCK_MHZ	= 25.2;
 //	localparam FSCLOCK_KHZ	= 48.0;
+//	localparam COLORSPACE	= "BT601";
 //	localparam VGACLOCK_MHZ	= 27.0;
 //	localparam FSCLOCK_KHZ	= 32.0;
+	localparam COLORSPACE	= "BT709";
 	localparam VGACLOCK_MHZ	= 74.286;
 	localparam FSCLOCK_KHZ	= 44.1;
+
 	localparam FSDIVIDER	= $unsigned(VGACLOCK_MHZ * 1000.0 / FSCLOCK_KHZ + 0.5) - 1;
 	localparam FSDIVHALF	= FSDIVIDER / 2;
-
 	localparam COUNTER_WIDTH= 11;
 	localparam FSDIVNUM		= FSDIVIDER[COUNTER_WIDTH-1:0];
 	localparam FSHALFNUM	= FSDIVHALF[COUNTER_WIDTH-1:0];
 
 
-/* ※以降のパラメータ宣言は禁止※ */
 
 /* ===== ノード宣言 ====================== */
+
 	wire			vga_clk_sig, tx_clk_sig, locked_sig, reset_sig;
 
 	reg  [12:0]		ms_counter_reg;
@@ -86,7 +89,6 @@ module c02_hdmi_test_top(
 	wire [7:0]		cb_r_sig, cb_g_sig, cb_b_sig;
 
 
-/* ※以降のwire、reg宣言は禁止※ */
 
 /* ===== テスト記述 ============== */
 
@@ -94,13 +96,31 @@ module c02_hdmi_test_top(
 
 /* ===== モジュール構造記述 ============== */
 
-
 	///// クロックとリセット /////
 
 	assign OSC_OE = 1'b1;
 
-//	hdmi_vgapll		// c0:25.2MHz, c1:c0x5(126.0MHz)
-//	hdmi_sdpll		// c0:27.0MHz, c1:c0 x5(135.0MHz)
+generate if (VGACLOCK_MHZ == 25.2) begin
+	hdmi_vgapll		// c0:25.2MHz, c1:c0x5(126.0MHz)
+	u_pll (
+		.areset		(1'b0),
+		.inclk0		(CLOCK_50),
+		.c0			(vga_clk_sig),
+		.c1			(tx_clk_sig),
+		.locked		(locked_sig)
+	);
+end
+else if (VGACLOCK_MHZ == 27.0) begin
+	hdmi_sdpll		// c0:27.0MHz, c1:c0 x5(135.0MHz)
+	u_pll (
+		.areset		(1'b0),
+		.inclk0		(CLOCK_50),
+		.c0			(vga_clk_sig),
+		.c1			(tx_clk_sig),
+		.locked		(locked_sig)
+	);
+end
+else if (VGACLOCK_MHZ == 74.286) begin
 	hdmi_hdpll		// c0:74.286MHz, c1:c0x5(371.43MHz)
 	u_pll (
 		.areset		(1'b0),
@@ -109,6 +129,8 @@ module c02_hdmi_test_top(
 		.c1			(tx_clk_sig),
 		.locked		(locked_sig)
 	);
+end
+endgenerate
 
 	assign reset_sig = ~locked_sig;
 
@@ -159,9 +181,10 @@ module c02_hdmi_test_top(
 
 	///// ビデオ同期信号・カラーバー生成 /////
 
+generate if (VGACLOCK_MHZ == 25.2) begin
 	video_syncgen #(
-/*		.BAR_MODE	("SD"),		// VGA(640x480) : 25.2MHz
-		.COLORSPACE	("RGB"),
+		.BAR_MODE	("SD"),		// VGA(640x480) : 25.2MHz
+		.COLORSPACE	(COLORSPACE),
 		.H_TOTAL	(800),
 		.H_SYNC		(96),
 		.H_BACKP	(48),
@@ -170,29 +193,6 @@ module c02_hdmi_test_top(
 		.V_SYNC		(2),
 		.V_BACKP	(33),
 		.V_ACTIVE	(480)
-*/
-/*		.BAR_MODE	("SD"),		// SD480p(720x480) : 27.00MHz
-		.COLORSPACE	("BT601"),
-		.H_TOTAL	(858),
-		.H_SYNC		(62),
-		.H_BACKP	(60),
-		.H_ACTIVE	(720),
-		.V_TOTAL	(525),
-		.V_SYNC		(6),
-		.V_BACKP	(30),
-		.V_ACTIVE	(480)
-*/
-		.BAR_MODE	("WIDE"),	// HD720p(1280x720) : 74.25MHz
-		.COLORSPACE	("BT709"),
-		.H_TOTAL	(1650),
-		.H_SYNC		(40),
-		.H_BACKP	(260),
-		.H_ACTIVE	(1280),
-		.V_TOTAL	(750),
-		.V_SYNC		(5),
-		.V_BACKP	(20),
-		.V_ACTIVE	(720)
-
 	)
 	u_vga (
 		.reset			(reset_sig),
@@ -204,7 +204,56 @@ module c02_hdmi_test_top(
 		.cb_gout		(cb_g_sig),
 		.cb_bout		(cb_b_sig)
 	);
-
+end
+else if (VGACLOCK_MHZ == 27.0) begin
+	video_syncgen #(
+		.BAR_MODE	("SD"),		// SD480p(720x480) : 27.00MHz
+		.COLORSPACE	(COLORSPACE),
+		.H_TOTAL	(858),
+		.H_SYNC		(62),
+		.H_BACKP	(60),
+		.H_ACTIVE	(720),
+		.V_TOTAL	(525),
+		.V_SYNC		(6),
+		.V_BACKP	(30),
+		.V_ACTIVE	(480)
+	)
+	u_vga (
+		.reset			(reset_sig),
+		.video_clk		(vga_clk_sig),
+		.hdmicontrol	(hdmicontrol_sig),
+		.hsync			(hsync_sig),
+		.vsync			(vsync_sig),
+		.cb_rout		(cb_r_sig),
+		.cb_gout		(cb_g_sig),
+		.cb_bout		(cb_b_sig)
+	);
+end
+else if (VGACLOCK_MHZ == 74.286) begin
+	video_syncgen #(
+		.BAR_MODE	("WIDE"),	// HD720p(1280x720) : 74.25MHz
+		.COLORSPACE	(COLORSPACE),
+		.H_TOTAL	(1650),
+		.H_SYNC		(40),
+		.H_BACKP	(260),
+		.H_ACTIVE	(1280),
+		.V_TOTAL	(750),
+		.V_SYNC		(5),
+		.V_BACKP	(20),
+		.V_ACTIVE	(720)
+	)
+	u_vga (
+		.reset			(reset_sig),
+		.video_clk		(vga_clk_sig),
+		.hdmicontrol	(hdmicontrol_sig),
+		.hsync			(hsync_sig),
+		.vsync			(vsync_sig),
+		.cb_rout		(cb_r_sig),
+		.cb_gout		(cb_g_sig),
+		.cb_bout		(cb_b_sig)
+	);
+end
+endgenerate
 
 
 	///// HDMI-TX /////
@@ -214,9 +263,7 @@ module c02_hdmi_test_top(
 		.USE_EXTCONTROL		("ON"),
 		.CLOCK_FREQUENCY	(VGACLOCK_MHZ),
 		.SCANMODE			("UNDER"),
-//		.COLORSPACE			("RGB"),
-//		.COLORSPACE			("BT601"),
-		.COLORSPACE			("BT709"),
+		.COLORSPACE			(COLORSPACE),
 		.AUDIO_FREQUENCY	(FSCLOCK_KHZ)
 	)
 	u_tx (

@@ -49,6 +49,8 @@ entity video_syncgen is
 		COLORSPACE	: string := "RGB";	-- "RGB"  : RGB888 Full range
 										-- "BT601": ITU-R BT.601 YCbCr Limited range
 										-- "BT709": ITU-R BT.709 YCbCr Limited range
+		START_SIG	: string := "PULSE";-- "PULSE": framestart and linestart are 1-clock pulse.
+										-- "WIDTH": framestart and linestart are hsync width.
 		EARLY_REQ	: integer := 0;		-- 0-16   : A value that causes "pixrequest" to assert before "active".
 
 		H_TOTAL		: integer := 800;	-- VGA(640x480) : 25.20MHz/25.175MHz
@@ -113,9 +115,9 @@ entity video_syncgen is
 		reset		: in  std_logic;		-- active high
 		video_clk	: in  std_logic;		-- typ 25.2MHz
 
-		scan_ena	: in  std_logic := '0';	-- Scan enable
-		framestart	: out std_logic;		-- Frame start signal (1-clock pulse)
-		linestart	: out std_logic;		-- Active line start signal (1-clock pluse)
+		scan_ena	: in  std_logic := '0';	-- Scan enable (async input)
+		framestart	: out std_logic;		-- Frame start signal (1-clock pulse or hsync width)
+		linestart	: out std_logic;		-- Active line start signal (1-clock pluse or hsync width)
 		pixrequest	: out std_logic;		-- Pixel data request (Assert earlier than "active".)
 
 		hdmicontrol	: out std_logic_vector(3 downto 0);	-- [0] : Indicate Active video period
@@ -289,8 +291,8 @@ architecture RTL of video_syncgen is
 	signal hs_old_reg	: std_logic;
 	signal scan_in_reg	: std_logic;
 	signal scanena_reg	: std_logic;
-	signal hs_rise_sig	: boolean;
-	signal vs_rise_sig	: boolean;
+	signal hsync_rise	: boolean;
+	signal vsync_rise	: boolean;
 
 	type STATE_CB_AREA is (LEFTBAND1, WHITE, YELLOW, CYAN, GREEN, MAGENTA, RED, BLUE, RIGHTBAND1,
 							LEFTBAND2, FULLWHITE, GRAY, RIGHTBAND2,
@@ -302,6 +304,13 @@ architecture RTL of video_syncgen is
 	signal cb_rgb_reg	: std_logic_vector(3*8-1 downto 0);
 	signal cblamp_reg	: std_logic_vector(15 downto 0);
 	signal chroma_sig	: std_logic_vector(7 downto 0);
+
+	-- Attribute
+	attribute altera_attribute : string;
+	attribute altera_attribute of RTL : architecture is
+	(
+		"-name SDC_STATEMENT ""set_false_path -to [get_registers {*video_syncgen:*|scan_in_reg}]"""
+	);
 
 begin
 
@@ -424,8 +433,8 @@ begin
 
 	-- フレームデータ読み出し信号生成 --
 
-	hs_rise_sig <= (is_false(hs_old_reg) and is_true(hsync_reg));
-	vs_rise_sig <= (is_false(vs_old_reg) and is_true(vsync_reg));
+	hsync_rise <= (is_false(hs_old_reg) and is_true(hsync_reg));
+	vsync_rise <= (is_false(vs_old_reg) and is_true(vsync_reg));
 
 	process (video_clk, reset) begin
 		if is_true(reset) then
@@ -439,14 +448,21 @@ begin
 			hs_old_reg <= hsync_reg;
 			scan_in_reg <= scan_ena;
 
-			if (vs_rise_sig) then
+			if (vsync_rise) then
 				scanena_reg <= scan_in_reg;
 			end if;
 		end if;
 	end process;
 
+gen_pulse : if (START_SIG = "PULSE") generate
 	framestart <= '1' when(hcount = 0 and vcount = FRAME_TOP) else '0';
-	linestart  <= scanena_reg when(hs_rise_sig and is_false(vblank_reg)) else '0';
+	linestart  <= scanena_reg when(hsync_rise and is_false(vblank_reg)) else '0';
+end generate;
+gen_width : if (START_SIG /= "PULSE") generate
+	framestart <= '1' when(is_true(hsync_reg) and vcount = FRAME_TOP) else '0';
+	linestart  <= scanena_reg when(is_true(hsync_reg) and is_false(vblank_reg)) else '0';
+end generate;
+
 	pixrequest <= scanena_reg when is_true(request_reg) else '0';
 
 

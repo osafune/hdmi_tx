@@ -1,14 +1,14 @@
 // ===================================================================
-// TITLE : UB-SHIELD HDMI output test
+// TITLE : CycloneIV E HDMI output sample (PERIDOT-Air + UB-SHIELD)
 //
 //     DESIGN : s.osafune@j7system.jp (J-7SYSTEM WORKS LIMITED)
-//     DATE   : 2020/04/21 -> 2020/04/21
-//     UPDATE : 2022/12/31
+//     DATE   : 2022/12/01 -> 2023/01/02
+//
 //
 // ===================================================================
 //
 // The MIT License (MIT)
-// Copyright (c) 2020,2022 J-7SYSTEM WORKS LIMITED.
+// Copyright (c) 2022 J-7SYSTEM WORKS LIMITED.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy of
 // this software and associated documentation files (the "Software"), to deal in
@@ -81,21 +81,22 @@ module air_hdmi_test_top(
 
 /* ----- 内部パラメータ ------------------ */
 
+//	localparam COLORSPACE	= "RGB";
 //	localparam VGACLOCK_MHZ	= 25.2;
 //	localparam FSCLOCK_KHZ	= 48.0;
+	localparam COLORSPACE	= "BT709";
 	localparam VGACLOCK_MHZ	= 74.286;
 	localparam FSCLOCK_KHZ	= 44.1;
+
 	localparam FSDIVIDER	= $unsigned(VGACLOCK_MHZ * 1000.0 / FSCLOCK_KHZ + 0.5) - 1;
 	localparam FSDIVHALF	= FSDIVIDER / 2;
-
 	localparam COUNTER_WIDTH= 11;
 	localparam FSDIVNUM		= FSDIVIDER[COUNTER_WIDTH-1:0];
 	localparam FSHALFNUM	= FSDIVHALF[COUNTER_WIDTH-1:0];
 
 
-/* ※以降のパラメータ宣言は禁止※ */
-
 /* ===== ノード宣言 ====================== */
+
 	wire			vga_clk_sig, tx_clk_sig, locked_sig, reset_sig;
 
 	reg  [12:0]		ms_counter_reg;
@@ -115,8 +116,6 @@ module air_hdmi_test_top(
 	wire			txclock_sig, txclock_n_sig;
 
 
-/* ※以降のwire、reg宣言は禁止※ */
-
 /* ===== テスト記述 ============== */
 
 
@@ -131,15 +130,27 @@ module air_hdmi_test_top(
 
 	///// クロックとリセット /////
 
-//	hdmi_vgapll		// c0:25.2MHz, c1:c0x5(126.0MHz)
-	hdmi_hdpll		// c0:74.286MHz, c1:c0x5(371.43MHz)
+generate if (VGACLOCK_MHZ == 25.2) begin
+	hdmi_vgapll		// c0:25.2MHz, c1:c0x5(126.0MHz)
 	u_pll (
-		.areset		(~RESET_N),
+		.areset		(1'b0),
 		.inclk0		(CLOCK_50),
 		.c0			(vga_clk_sig),
 		.c1			(tx_clk_sig),
 		.locked		(locked_sig)
 	);
+end
+else if (VGACLOCK_MHZ == 74.286) begin
+	hdmi_hdpll		// c0:74.286MHz, c1:c0x5(371.43MHz)
+	u_pll (
+		.areset		(1'b0),
+		.inclk0		(CLOCK_50),
+		.c0			(vga_clk_sig),
+		.c1			(tx_clk_sig),
+		.locked		(locked_sig)
+	);
+end
+endgenerate
 
 	assign reset_sig = ~locked_sig;
 	assign USER_LED[0] = locked_sig;
@@ -191,8 +202,12 @@ module air_hdmi_test_top(
 
 	///// ビデオ同期信号・カラーバー生成 /////
 
+	assign logo_move_sig = 1'b1;
+
+generate if (VGACLOCK_MHZ == 25.2) begin
 	video_syncgen #(
-/*		.BAR_MODE	("SD"),
+		.BAR_MODE	("SD"),
+		.COLORSPACE	(COLORSPACE),
 		.H_TOTAL	(800),		// VGA(640x480) : 25.20MHz/25.175MHz
 		.H_SYNC		(96),
 		.H_BACKP	(48),
@@ -201,9 +216,43 @@ module air_hdmi_test_top(
 		.V_SYNC		(2),
 		.V_BACKP	(33),
 		.V_ACTIVE	(480)
-*/
+	)
+	u_vga (
+		.reset			(reset_sig),
+		.video_clk		(vga_clk_sig),
+		.active			(active_sig),
+		.hsync			(hsync_sig),
+		.vsync			(vsync_sig),
+		.cb_rout		(cb_r_sig),
+		.cb_gout		(cb_g_sig),
+		.cb_bout		(cb_b_sig)
+	);
+
+	assign logo_color_sig = 24'hffffff;		// RGB
+
+	logo_overlay #(
+		.VIEW_X_SIZE	(640),
+		.VIEW_Y_SIZE	(480)
+	)
+	u_logo (
+		.reset			(reset_sig),
+		.clock			(vga_clk_sig),
+		.logo_color		(logo_color_sig),
+		.logo_move		(logo_move_sig),
+		.vsync_in		(vsync_sig),
+		.hsync_in		(hsync_sig),
+		.de_in			(active_sig),
+		.pixel_in		({cb_r_sig, cb_g_sig, cb_b_sig}),
+		.vsync_out		(vs_out_sig),
+		.hsync_out		(hs_out_sig),
+		.de_out			(de_out_sig),
+		.pixel_out		(pix_out_sig)
+	);
+end
+else if (VGACLOCK_MHZ == 74.286) begin
+	video_syncgen #(
 		.BAR_MODE	("WIDE"),
-		.COLORSPACE	("BT709"),
+		.COLORSPACE	(COLORSPACE),
 		.H_TOTAL	(1650),		// HD720p(1280x720) : 74.25MHz/74.176MHz
 		.H_SYNC		(40),
 		.H_BACKP	(260),
@@ -224,14 +273,9 @@ module air_hdmi_test_top(
 		.cb_bout		(cb_b_sig)
 	);
 
-	assign logo_move_sig = 1'b1;
-//	assign logo_color_sig = 24'hffffff;		// RGB
 	assign logo_color_sig = 24'h80eb80;		// YCbCr
 
 	logo_overlay #(
-/*		.VIEW_X_SIZE	(640),
-		.VIEW_Y_SIZE	(480)
-*/
 		.VIEW_X_SIZE	(1280),
 		.VIEW_Y_SIZE	(720)
 	)
@@ -249,6 +293,8 @@ module air_hdmi_test_top(
 		.de_out			(de_out_sig),
 		.pixel_out		(pix_out_sig)
 	);
+end
+endgenerate
 
 
 
@@ -258,7 +304,7 @@ module air_hdmi_test_top(
 		.DEVICE_FAMILY		("Cyclone IV E"),
 		.CLOCK_FREQUENCY	(VGACLOCK_MHZ),
 		.SCANMODE			("UNDER"),
-		.COLORSPACE			("BT709"),
+		.COLORSPACE			(COLORSPACE),
 		.AUDIO_FREQUENCY	(FSCLOCK_KHZ)
 	)
 	u_tx (

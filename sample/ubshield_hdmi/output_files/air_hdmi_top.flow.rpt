@@ -1,5 +1,5 @@
 Flow report for air_hdmi_top
-Sat Dec 31 11:41:04 2022
+Mon Jan  2 18:04:21 2023
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -41,15 +41,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
-; Flow Status                        ; Successful - Sat Dec 31 11:40:56 2022          ;
+; Flow Status                        ; Successful - Mon Jan  2 18:04:13 2023          ;
 ; Quartus Prime Version              ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                      ; air_hdmi_top                                   ;
 ; Top-level Entity Name              ; air_hdmi_test_top                              ;
 ; Family                             ; Cyclone IV E                                   ;
 ; Device                             ; EP4CE6E22C8                                    ;
 ; Timing Models                      ; Final                                          ;
-; Total logic elements               ; 1,837 / 6,272 ( 29 % )                         ;
-;     Total combinational functions  ; 1,723 / 6,272 ( 27 % )                         ;
+; Total logic elements               ; 1,831 / 6,272 ( 29 % )                         ;
+;     Total combinational functions  ; 1,721 / 6,272 ( 27 % )                         ;
 ;     Dedicated logic registers      ; 1,023 / 6,272 ( 16 % )                         ;
 ; Total registers                    ; 1039                                           ;
 ; Total pins                         ; 85 / 92 ( 92 % )                               ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/31/2022 11:40:15 ;
+; Start date & time ; 01/02/2023 18:03:32 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; air_hdmi_top        ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name       ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------------+------------+
-; COMPILER_SIGNATURE_ID               ; 53849985591009.167245441511708         ; --            ; --                ; --         ;
+; COMPILER_SIGNATURE_ID               ; 53849985591009.167265021207016         ; --            ; --                ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --                ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --                ; --         ;
 ; MISC_FILE                           ; ip/pll/hdmi_vgapll_bb.v                ; --            ; --                ; --         ;
@@ -103,11 +103,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:20     ; 1.0                     ; 4850 MB             ; 00:00:41                           ;
-; Fitter               ; 00:00:13     ; 1.1                     ; 5519 MB             ; 00:00:18                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4700 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.2                     ; 4798 MB             ; 00:00:04                           ;
-; Total                ; 00:00:37     ; --                      ; --                  ; 00:01:05                           ;
+; Analysis & Synthesis ; 00:00:21     ; 1.0                     ; 4854 MB             ; 00:00:41                           ;
+; Fitter               ; 00:00:13     ; 1.1                     ; 5524 MB             ; 00:00:17                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4712 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.2                     ; 4804 MB             ; 00:00:04                           ;
+; Total                ; 00:00:40     ; --                      ; --                  ; 00:01:04                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

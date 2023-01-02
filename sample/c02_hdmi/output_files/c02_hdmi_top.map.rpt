@@ -1,5 +1,5 @@
 Analysis & Synthesis report for c02_hdmi_top
-Sat Dec 31 11:41:50 2022
+Mon Jan  2 18:02:49 2023
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -84,15 +84,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Dec 31 11:41:50 2022          ;
+; Analysis & Synthesis Status        ; Successful - Mon Jan  2 18:02:49 2023          ;
 ; Quartus Prime Version              ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                      ; c02_hdmi_top                                   ;
 ; Top-level Entity Name              ; c02_hdmi_test_top                              ;
 ; Family                             ; MAX 10                                         ;
-; Total logic elements               ; 1,637                                          ;
+; Total logic elements               ; 1,634                                          ;
 ;     Total combinational functions  ; 1,575                                          ;
-;     Dedicated logic registers      ; 855                                            ;
-; Total registers                    ; 871                                            ;
+;     Dedicated logic registers      ; 854                                            ;
+; Total registers                    ; 870                                            ;
 ; Total pins                         ; 11                                             ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 2,304                                          ;
@@ -247,20 +247,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                      ;
 +---------------------------------------------+--------------------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 1,637                                                                                      ;
+; Estimated Total logic elements              ; 1,634                                                                                      ;
 ;                                             ;                                                                                            ;
 ; Total combinational functions               ; 1575                                                                                       ;
 ; Logic element usage by number of LUT inputs ;                                                                                            ;
-;     -- 4 input functions                    ; 650                                                                                        ;
-;     -- 3 input functions                    ; 558                                                                                        ;
-;     -- <=2 input functions                  ; 367                                                                                        ;
+;     -- 4 input functions                    ; 648                                                                                        ;
+;     -- 3 input functions                    ; 562                                                                                        ;
+;     -- <=2 input functions                  ; 365                                                                                        ;
 ;                                             ;                                                                                            ;
 ; Logic elements by mode                      ;                                                                                            ;
 ;     -- normal mode                          ; 1307                                                                                       ;
 ;     -- arithmetic mode                      ; 268                                                                                        ;
 ;                                             ;                                                                                            ;
-; Total registers                             ; 871                                                                                        ;
-;     -- Dedicated logic registers            ; 855                                                                                        ;
+; Total registers                             ; 870                                                                                        ;
+;     -- Dedicated logic registers            ; 854                                                                                        ;
 ;     -- I/O registers                        ; 32                                                                                         ;
 ;                                             ;                                                                                            ;
 ; I/O pins                                    ; 11                                                                                         ;
@@ -272,9 +272,9 @@ https://fpgasoftware.intel.com/eula.
 ;     -- PLLs                                 ; 1                                                                                          ;
 ;                                             ;                                                                                            ;
 ; Maximum fan-out node                        ; hdmi_hdpll:u_pll|altpll:altpll_component|hdmi_hdpll_altpll:auto_generated|wire_pll1_clk[0] ;
-; Maximum fan-out                             ; 906                                                                                        ;
-; Total fan-out                               ; 7544                                                                                       ;
-; Average fan-out                             ; 3.05                                                                                       ;
+; Maximum fan-out                             ; 905                                                                                        ;
+; Total fan-out                               ; 7543                                                                                       ;
+; Average fan-out                             ; 3.06                                                                                       ;
 +---------------------------------------------+--------------------------------------------------------------------------------------------+
 
 
@@ -283,30 +283,30 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+--------------+
 ; Compilation Hierarchy Node                               ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                                        ; Entity Name                    ; Library Name ;
 +----------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+--------------+
-; |c02_hdmi_test_top                                       ; 1575 (39)           ; 855 (25)                  ; 2304        ; 0          ; 0            ; 0       ; 0         ; 11   ; 0            ; 0          ; |c02_hdmi_test_top                                                                                                                                         ; c02_hdmi_test_top              ; work         ;
+; |c02_hdmi_test_top                                       ; 1575 (39)           ; 854 (25)                  ; 2304        ; 0          ; 0            ; 0       ; 0         ; 11   ; 0            ; 0          ; |c02_hdmi_test_top                                                                                                                                         ; c02_hdmi_test_top              ; work         ;
 ;    |hdmi_hdpll:u_pll|                                    ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_hdpll:u_pll                                                                                                                        ; hdmi_hdpll                     ; work         ;
 ;       |altpll:altpll_component|                          ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_hdpll:u_pll|altpll:altpll_component                                                                                                ; altpll                         ; work         ;
 ;          |hdmi_hdpll_altpll:auto_generated|              ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_hdpll:u_pll|altpll:altpll_component|hdmi_hdpll_altpll:auto_generated                                                               ; hdmi_hdpll_altpll              ; work         ;
-;    |hdmi_tx:u_tx|                                        ; 891 (6)             ; 624 (3)                   ; 2304        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx                                                                                                                            ; hdmi_tx                        ; work         ;
-;       |hdmi_tx_audiopacket_submodule:\gen_audio:u_audio| ; 121 (94)            ; 89 (64)                   ; 2304        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio                                                                           ; hdmi_tx_audiopacket_submodule  ; work         ;
+;    |hdmi_tx:u_tx|                                        ; 894 (6)             ; 623 (3)                   ; 2304        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx                                                                                                                            ; hdmi_tx                        ; work         ;
+;       |hdmi_tx_audiopacket_submodule:\gen_audio:u_audio| ; 122 (95)            ; 89 (64)                   ; 2304        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio                                                                           ; hdmi_tx_audiopacket_submodule  ; work         ;
 ;          |hdmi_tx_scfifo:u_fifo|                         ; 27 (27)             ; 25 (25)                   ; 2304        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio|hdmi_tx_scfifo:u_fifo                                                     ; hdmi_tx_scfifo                 ; work         ;
 ;             |altsyncram:ram_rtl_0|                       ; 0 (0)               ; 0 (0)                     ; 2304        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio|hdmi_tx_scfifo:u_fifo|altsyncram:ram_rtl_0                                ; altsyncram                     ; work         ;
 ;                |altsyncram_28g1:auto_generated|          ; 0 (0)               ; 0 (0)                     ; 2304        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio|hdmi_tx_scfifo:u_fifo|altsyncram:ram_rtl_0|altsyncram_28g1:auto_generated ; altsyncram_28g1                ; work         ;
 ;       |hdmi_tx_dataisland_submodule:\gen_data:u_data|    ; 383 (383)           ; 299 (299)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data                                                                              ; hdmi_tx_dataisland_submodule   ; work         ;
-;       |hdmi_tx_infopacket_submodule:\gen_info:u_info|    ; 64 (64)             ; 20 (20)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_infopacket_submodule:\gen_info:u_info                                                                              ; hdmi_tx_infopacket_submodule   ; work         ;
-;       |hdmi_tx_pdiff_submodule:u_ser|                    ; 36 (36)             ; 83 (83)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser                                                                                              ; hdmi_tx_pdiff_submodule        ; work         ;
+;       |hdmi_tx_infopacket_submodule:\gen_info:u_info|    ; 63 (63)             ; 20 (20)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_infopacket_submodule:\gen_info:u_info                                                                              ; hdmi_tx_infopacket_submodule   ; work         ;
+;       |hdmi_tx_pdiff_submodule:u_ser|                    ; 38 (38)             ; 82 (82)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser                                                                                              ; hdmi_tx_pdiff_submodule        ; work         ;
 ;          |altddio_out:u_ddo_n|                           ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_n                                                                          ; altddio_out                    ; work         ;
 ;             |ddio_out_khi:auto_generated|                ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_n|ddio_out_khi:auto_generated                                              ; ddio_out_khi                   ; work         ;
 ;          |altddio_out:u_ddo_p|                           ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p                                                                          ; altddio_out                    ; work         ;
 ;             |ddio_out_iki:auto_generated|                ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p|ddio_out_iki:auto_generated                                              ; ddio_out_iki                   ; work         ;
-;       |hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|      ; 101 (101)           ; 52 (52)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u                                                                                ; hdmi_tx_tmds_encoder_submodule ; work         ;
-;       |hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|      ; 88 (88)             ; 39 (39)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u                                                                                ; hdmi_tx_tmds_encoder_submodule ; work         ;
-;       |hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|      ; 92 (92)             ; 39 (39)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u                                                                                ; hdmi_tx_tmds_encoder_submodule ; work         ;
+;       |hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|      ; 104 (104)           ; 52 (52)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u                                                                                ; hdmi_tx_tmds_encoder_submodule ; work         ;
+;       |hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|      ; 89 (89)             ; 39 (39)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u                                                                                ; hdmi_tx_tmds_encoder_submodule ; work         ;
+;       |hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|      ; 89 (89)             ; 39 (39)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u                                                                                ; hdmi_tx_tmds_encoder_submodule ; work         ;
 ;    |melodychime:u_chime|                                 ; 228 (48)            ; 114 (22)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|melodychime:u_chime                                                                                                                     ; melodychime                    ; work         ;
 ;       |melodychime_seq:u_seq|                            ; 62 (62)             ; 26 (26)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|melodychime:u_chime|melodychime_seq:u_seq                                                                                               ; melodychime_seq                ; work         ;
 ;       |melodychime_sg:u_sg0|                             ; 59 (59)             ; 33 (33)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|melodychime:u_chime|melodychime_sg:u_sg0                                                                                                ; melodychime_sg                 ; work         ;
 ;       |melodychime_sg:u_sg1|                             ; 59 (59)             ; 33 (33)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|melodychime:u_chime|melodychime_sg:u_sg1                                                                                                ; melodychime_sg                 ; work         ;
-;    |video_syncgen:u_vga|                                 ; 417 (417)           ; 92 (92)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|video_syncgen:u_vga                                                                                                                     ; video_syncgen                  ; work         ;
+;    |video_syncgen:u_vga|                                 ; 414 (414)           ; 92 (92)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|video_syncgen:u_vga                                                                                                                     ; video_syncgen                  ; work         ;
 +----------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -363,61 +363,57 @@ Encoding Type:  One-Hot
 +----------------------+----------------------+--------------------+---------------------+----------------------+---------------------+---------------------+----------------------+-------------------+---------------------+----------------------+---------------------+---------------------+----------------------+----------------+---------------------+---------------------+----------------------+----------------+---------------+-------------------+-----------------+----------------+------------------+-----------------+---------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Protected by Synthesis                                                                                                                                         ;
-+----------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
-; Register Name                                            ; Protected by Synthesis Attribute or Preserve Register Assignment ; Not to be Touched by Netlist Optimizations ;
-+----------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[39]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[38]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[37]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[36]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[35]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[34]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[33]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[32]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[31]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[30]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[29]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[28]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[27]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[26]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[25]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[24]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[23]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[22]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[21]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[20]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[19]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[18]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[17]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[16]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[15]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[14]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[13]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[12]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[11]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[10]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[9]    ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[8]    ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[7]    ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[6]    ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[5]    ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[4]    ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[3]    ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[2]    ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[1]    ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[0]    ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|data_p_reg[0] ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|data_p_reg[1] ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|data_p_reg[2] ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|data_p_reg[3] ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|data_p_reg[4] ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|data_p_reg[5] ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|data_p_reg[6] ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|data_p_reg[7] ; yes                                                              ; yes                                        ;
-; Total number of protected registers is 48                ;                                                                  ;                                            ;
-+----------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Protected by Synthesis                                                                                                                                        ;
++---------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
+; Register Name                                           ; Protected by Synthesis Attribute or Preserve Register Assignment ; Not to be Touched by Netlist Optimizations ;
++---------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[0]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[1]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[2]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[3]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[4]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[5]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[6]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[7]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[8]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[9]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[10]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[11]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[12]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[13]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[14]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[15]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[16]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[17]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[18]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[19]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[20]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[21]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[22]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[23]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[24]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[25]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[26]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[27]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[28]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[29]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[30]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[31]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[32]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[33]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[34]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[35]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[36]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[37]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[38]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[39]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|start_reg[0] ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|start_reg[1] ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|start_reg[2] ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|start_reg[3] ; yes                                                              ; yes                                        ;
+; Total number of protected registers is 44               ;                                                                  ;                                            ;
++---------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -455,13 +451,13 @@ Encoding Type:  One-Hot
 ; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|sout_reg[8]                    ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|sout_reg[9]    ;
 ; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|sout_reg[8]                    ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|sout_reg[9]    ;
 ; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|sout_reg[8]                    ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|sout_reg[9]    ;
-; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg[6]                    ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg[9]    ;
-; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[6]                    ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[9]    ;
+; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[9]                    ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[6]    ;
+; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg[9]                    ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg[6]    ;
 ; video_syncgen:u_vga|hcount[0]                                                           ; Merged with melodychime:u_chime|count10us[0]                                        ;
-; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg[7]                    ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg[8]    ;
-; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[5]                    ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[9]    ;
-; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[7]                    ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[8]    ;
-; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg[5]                    ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg[9]    ;
+; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[6]                    ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[5]    ;
+; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg[8]                    ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg[7]    ;
+; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[8]                    ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cout_reg[7]    ;
+; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg[6]                    ; Merged with hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg[5]    ;
 ; Total Number of Removed Registers = 50                                                  ;                                                                                     ;
 +-----------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
 
@@ -491,12 +487,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 855   ;
+; Total registers                              ; 854   ;
 ; Number of registers using Synchronous Clear  ; 13    ;
 ; Number of registers using Synchronous Load   ; 110   ;
-; Number of registers using Asynchronous Clear ; 349   ;
+; Number of registers using Asynchronous Clear ; 340   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 539   ;
+; Number of registers using Clock Enable       ; 456   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -506,18 +502,17 @@ Encoding Type:  One-Hot
 +---------------------------------------------------------------------------+---------+
 ; Inverted Register                                                         ; Fan out ;
 +---------------------------------------------------------------------------+---------+
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|start_reg[0]                   ; 33      ;
-; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cnt[3]           ; 3       ;
-; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cnt[2]           ; 2       ;
-; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cnt[3]           ; 3       ;
-; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cnt[2]           ; 2       ;
 ; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|cnt[3]           ; 3       ;
 ; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|cnt[2]           ; 2       ;
-; hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|counter_reg[2] ; 7       ;
+; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cnt[3]           ; 3       ;
+; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|cnt[2]           ; 2       ;
+; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cnt[3]           ; 3       ;
+; hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cnt[2]           ; 2       ;
 ; hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|counter_reg[1] ; 7       ;
+; hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|counter_reg[2] ; 7       ;
 ; video_syncgen:u_vga|hblank_reg                                            ; 4       ;
 ; video_syncgen:u_vga|vblank_reg                                            ; 8       ;
-; Total number of inverted registers = 11                                   ;         ;
+; Total number of inverted registers = 10                                   ;         ;
 +---------------------------------------------------------------------------+---------+
 
 
@@ -535,67 +530,67 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------+
-; 3:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|data_in_reg[16]                ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg[8]      ;
+; 3:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|data_in_reg[1]                 ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg[5]      ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|cout_reg[8]      ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|counter_reg[0] ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[173]    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|hb_reg[2]      ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[175]    ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[112]    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[60]     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[5]      ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|hb_reg[4]      ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|bch_sb_reg[10] ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_infopacket_submodule:\gen_info:u_info|counter_reg[3] ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|bch_hb_reg[4]  ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[179]    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[122]    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[66]     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[14]     ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |c02_hdmi_test_top|melodychime:u_chime|melodychime_seq:u_seq|scorecount[2]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[58]     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[3]      ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|bch_sb_reg[5]  ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_infopacket_submodule:\gen_info:u_info|counter_reg[4] ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|bch_hb_reg[2]  ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[177]    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[121]    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[67]     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[12]     ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |c02_hdmi_test_top|melodychime:u_chime|melodychime_seq:u_seq|scorecount[0]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|hb_reg[11]     ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[185]    ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[133]    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[75]     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[77]     ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[17]     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|hb_reg[11]     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[198]    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[137]    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[86]     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[30]     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[203]    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[149]    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[94]     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[36]     ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|hb_reg[18]     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[197]    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[140]    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[84]     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[27]     ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|hb_reg[17]     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[202]    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[147]    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[89]     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[37]     ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[212]    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[152]    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[96]     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[42]     ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[223]    ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[217]    ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[167]    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[157]    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[99]     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[43]     ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[222]    ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[218]    ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[166]    ;
 ; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[161]    ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[111]    ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[107]    ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[110]    ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[105]    ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[54]     ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[48]     ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |c02_hdmi_test_top|melodychime:u_chime|melodychime_sg:u_sg1|env_count_reg[6]                 ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |c02_hdmi_test_top|melodychime:u_chime|melodychime_sg:u_sg0|env_count_reg[8]                 ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|bch_sb_reg[7]  ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|bch_sb_reg[8]  ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|datacount[0]   ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|sb_reg[52]     ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |c02_hdmi_test_top|melodychime:u_chime|melodychime_sg:u_sg1|env_count_reg[13]                ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |c02_hdmi_test_top|melodychime:u_chime|melodychime_sg:u_sg0|env_count_reg[10]                ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|bch_sb_reg[22] ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|bch_sb_reg[25] ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|datacount[4]   ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|bch_hb_reg[1]  ;
 ; 34:1               ; 2 bits    ; 44 LEs        ; 10 LEs               ; 34 LEs                 ; Yes        ; |c02_hdmi_test_top|video_syncgen:u_vga|cb_rgb_reg[22]                                        ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|counter_reg[1] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data|counter_reg[2] ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|cout_reg         ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |c02_hdmi_test_top|hdmi_tx:u_tx|mode_sig[1]                                                  ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |c02_hdmi_test_top|hdmi_tx:u_tx|mode_sig[2]                                                  ;
 ; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; No         ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio|Mux7        ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio|Mux1        ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|Add16            ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|Add16            ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio|Mux0        ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u|Add16            ;
-; 33:1               ; 4 bits    ; 88 LEs        ; 12 LEs               ; 76 LEs                 ; No         ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_infopacket_submodule:\gen_info:u_info|out_data[1]    ;
-; 33:1               ; 4 bits    ; 88 LEs        ; 8 LEs                ; 80 LEs                 ; No         ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_infopacket_submodule:\gen_info:u_info|out_data[7]    ;
-; 18:1               ; 5 bits    ; 60 LEs        ; 20 LEs               ; 40 LEs                 ; No         ; |c02_hdmi_test_top|video_syncgen:u_vga|Selector4                                             ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u|Add16            ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u|Add16            ;
+; 33:1               ; 4 bits    ; 88 LEs        ; 12 LEs               ; 76 LEs                 ; No         ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_infopacket_submodule:\gen_info:u_info|out_data[0]    ;
+; 33:1               ; 4 bits    ; 88 LEs        ; 8 LEs                ; 80 LEs                 ; No         ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_infopacket_submodule:\gen_info:u_info|out_data[4]    ;
+; 18:1               ; 5 bits    ; 60 LEs        ; 20 LEs               ; 40 LEs                 ; No         ; |c02_hdmi_test_top|video_syncgen:u_vga|Selector6                                             ;
 ; 20:1               ; 2 bits    ; 26 LEs        ; 4 LEs                ; 22 LEs                 ; No         ; |c02_hdmi_test_top|video_syncgen:u_vga|Selector11                                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------+
 
@@ -605,102 +600,94 @@ Encoding Type:  One-Hot
 +---------------------------+-------+------+------------------------+
 ; Assignment                ; Value ; From ; To                     ;
 +---------------------------+-------+------+------------------------+
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[39]            ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[39]            ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[38]            ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[38]            ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[37]            ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[37]            ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[36]            ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[36]            ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[35]            ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[35]            ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[34]            ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[34]            ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[33]            ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[33]            ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[32]            ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[32]            ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[31]            ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[31]            ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[30]            ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[30]            ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[29]            ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[29]            ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[28]            ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[28]            ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[27]            ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[27]            ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[26]            ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[26]            ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[25]            ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[25]            ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[24]            ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[24]            ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[23]            ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[23]            ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[22]            ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[22]            ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[21]            ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[21]            ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[20]            ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[20]            ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[19]            ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[19]            ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[18]            ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[18]            ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[17]            ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[17]            ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[16]            ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[16]            ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[15]            ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[15]            ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[14]            ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[14]            ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[13]            ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[13]            ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[12]            ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[12]            ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[11]            ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[11]            ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[10]            ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[10]            ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[9]             ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[9]             ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[8]             ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[8]             ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[7]             ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[7]             ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[6]             ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[6]             ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[5]             ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[5]             ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[4]             ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[4]             ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[3]             ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[3]             ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[2]             ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[2]             ;
-; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[1]             ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[1]             ;
 ; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[0]             ;
 ; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[0]             ;
-; PRESERVE_REGISTER         ; on    ; -    ; data_p_reg[0]          ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; data_p_reg[0]          ;
-; PRESERVE_REGISTER         ; on    ; -    ; data_p_reg[1]          ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; data_p_reg[1]          ;
-; PRESERVE_REGISTER         ; on    ; -    ; data_p_reg[2]          ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; data_p_reg[2]          ;
-; PRESERVE_REGISTER         ; on    ; -    ; data_p_reg[3]          ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; data_p_reg[3]          ;
-; PRESERVE_REGISTER         ; on    ; -    ; data_p_reg[4]          ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; data_p_reg[4]          ;
-; PRESERVE_REGISTER         ; on    ; -    ; data_p_reg[5]          ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; data_p_reg[5]          ;
-; PRESERVE_REGISTER         ; on    ; -    ; data_p_reg[6]          ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; data_p_reg[6]          ;
-; PRESERVE_REGISTER         ; on    ; -    ; data_p_reg[7]          ;
-; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; data_p_reg[7]          ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[1]             ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[1]             ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[2]             ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[2]             ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[3]             ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[3]             ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[4]             ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[4]             ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[5]             ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[5]             ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[6]             ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[6]             ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[7]             ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[7]             ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[8]             ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[8]             ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[9]             ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[9]             ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[10]            ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[10]            ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[11]            ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[11]            ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[12]            ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[12]            ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[13]            ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[13]            ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[14]            ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[14]            ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[15]            ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[15]            ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[16]            ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[16]            ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[17]            ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[17]            ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[18]            ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[18]            ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[19]            ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[19]            ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[20]            ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[20]            ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[21]            ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[21]            ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[22]            ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[22]            ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[23]            ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[23]            ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[24]            ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[24]            ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[25]            ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[25]            ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[26]            ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[26]            ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[27]            ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[27]            ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[28]            ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[28]            ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[29]            ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[29]            ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[30]            ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[30]            ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[31]            ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[31]            ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[32]            ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[32]            ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[33]            ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[33]            ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[34]            ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[34]            ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[35]            ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[35]            ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[36]            ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[36]            ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[37]            ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[37]            ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[38]            ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[38]            ;
+; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[39]            ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[39]            ;
+; PRESERVE_REGISTER         ; on    ; -    ; start_reg[0]           ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; start_reg[0]           ;
+; PRESERVE_REGISTER         ; on    ; -    ; start_reg[1]           ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; start_reg[1]           ;
+; PRESERVE_REGISTER         ; on    ; -    ; start_reg[2]           ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; start_reg[2]           ;
+; PRESERVE_REGISTER         ; on    ; -    ; start_reg[3]           ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; start_reg[3]           ;
 +---------------------------+-------+------+------------------------+
 
 
@@ -1178,6 +1165,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-----------------------------------------+
 ; bar_mode       ; WIDE  ; String                                  ;
 ; colorspace     ; BT709 ; String                                  ;
+; START_SIG      ; PULSE ; String                                  ;
 ; EARLY_REQ      ; 0     ; Signed Integer                          ;
 ; h_total        ; 1650  ; Signed Integer                          ;
 ; h_sync         ; 40    ; Signed Integer                          ;
@@ -1205,7 +1193,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; use_extcontrol   ; ON       ; String                      ;
 ; SYNC_POLARITY    ; NEGATIVE ; String                      ;
 ; scanmode         ; UNDER    ; String                      ;
-; ASPECTRATIO      ; AUTO     ; String                      ;
+; PICTUREASPECT    ; NONE     ; String                      ;
+; FORMATASPECT     ; AUTO     ; String                      ;
 ; PICTURESCALING   ; FIT      ; String                      ;
 ; colorspace       ; BT709    ; String                      ;
 ; YCC_DATARANGE    ; LIMITED  ; String                      ;
@@ -1251,7 +1240,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; clock_frequency ; 74.286   ; Signed Float                                                               ;
 ; audio_frequency ; 44.1     ; Signed Float                                                               ;
 ; scanmode        ; UNDER    ; String                                                                     ;
-; aspectratio     ; AUTO     ; String                                                                     ;
+; pictureaspect   ; NONE     ; String                                                                     ;
+; formataspect    ; AUTO     ; String                                                                     ;
 ; picturescaling  ; FIT      ; String                                                                     ;
 ; colorspace      ; BT709    ; String                                                                     ;
 ; ycc_datarange   ; LIMITED  ; String                                                                     ;
@@ -1519,11 +1509,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 11                          ;
-; cycloneiii_ff         ; 855                         ;
-;     CLR               ; 177                         ;
+; cycloneiii_ff         ; 854                         ;
+;     CLR               ; 168                         ;
 ;     CLR SCLR          ; 3                           ;
 ;     CLR SLD           ; 15                          ;
-;     ENA               ; 375                         ;
+;     ENA               ; 292                         ;
 ;     ENA CLR           ; 99                          ;
 ;     ENA CLR SCLR      ; 4                           ;
 ;     ENA CLR SLD       ; 51                          ;
@@ -1531,23 +1521,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA SLD           ; 9                           ;
 ;     SCLR              ; 5                           ;
 ;     SLD               ; 35                          ;
-;     plain             ; 81                          ;
+;     plain             ; 172                         ;
 ; cycloneiii_lcell_comb ; 1576                        ;
 ;     arith             ; 268                         ;
 ;         2 data inputs ; 183                         ;
 ;         3 data inputs ; 85                          ;
 ;     normal            ; 1308                        ;
 ;         0 data inputs ; 10                          ;
-;         1 data inputs ; 31                          ;
-;         2 data inputs ; 144                         ;
-;         3 data inputs ; 473                         ;
-;         4 data inputs ; 650                         ;
+;         1 data inputs ; 30                          ;
+;         2 data inputs ; 143                         ;
+;         3 data inputs ; 477                         ;
+;         4 data inputs ; 648                         ;
 ; cycloneiii_pll        ; 1                           ;
 ; cycloneiii_ram_block  ; 9                           ;
 ; fiftyfivenm_ddio_out  ; 8                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 9.00                        ;
-; Average LUT depth     ; 3.69                        ;
+; Average LUT depth     ; 3.72                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1556,7 +1546,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:05     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -1566,7 +1556,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Sat Dec 31 11:41:30 2022
+    Info: Processing started: Mon Jan  2 18:02:30 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off c02_hdmi -c c02_hdmi_top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1577,24 +1567,24 @@ Info (12021): Found 1 design units, including 1 entities, in source file ip/pll/
 Info (12021): Found 1 design units, including 1 entities, in source file ip/pll/hdmi_vgapll.v
     Info (12023): Found entity 1: hdmi_vgapll File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/ip/pll/hdmi_vgapll.v Line: 40
 Info (12021): Found 16 design units, including 8 entities, in source file hdl/hdmi_tx.vhd
-    Info (12022): Found design unit 1: hdmi_tx_scfifo-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 137
-    Info (12022): Found design unit 2: hdmi_tx_delay-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 240
-    Info (12022): Found design unit 3: hdmi_tx_audiopacket_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 307
-    Info (12022): Found design unit 4: hdmi_tx_infopacket_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 589
-    Info (12022): Found design unit 5: hdmi_tx_dataisland_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 846
-    Info (12022): Found design unit 6: hdmi_tx_tmds_encoder_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1042
-    Info (12022): Found design unit 7: hdmi_tx_pdiff_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1259
-    Info (12022): Found design unit 8: hdmi_tx-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1431
-    Info (12023): Found entity 1: hdmi_tx_scfifo File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 116
-    Info (12023): Found entity 2: hdmi_tx_delay File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 225
-    Info (12023): Found entity 3: hdmi_tx_audiopacket_submodule File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 281
-    Info (12023): Found entity 4: hdmi_tx_infopacket_submodule File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 534
-    Info (12023): Found entity 5: hdmi_tx_dataisland_submodule File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 823
-    Info (12023): Found entity 6: hdmi_tx_tmds_encoder_submodule File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1020
-    Info (12023): Found entity 7: hdmi_tx_pdiff_submodule File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1239
-    Info (12023): Found entity 8: hdmi_tx File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1361
+    Info (12022): Found design unit 1: hdmi_tx_scfifo-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 140
+    Info (12022): Found design unit 2: hdmi_tx_delay-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 243
+    Info (12022): Found design unit 3: hdmi_tx_audiopacket_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 310
+    Info (12022): Found design unit 4: hdmi_tx_infopacket_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 595
+    Info (12022): Found design unit 5: hdmi_tx_dataisland_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 853
+    Info (12022): Found design unit 6: hdmi_tx_tmds_encoder_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1048
+    Info (12022): Found design unit 7: hdmi_tx_pdiff_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1261
+    Info (12022): Found design unit 8: hdmi_tx-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1429
+    Info (12023): Found entity 1: hdmi_tx_scfifo File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 119
+    Info (12023): Found entity 2: hdmi_tx_delay File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 228
+    Info (12023): Found entity 3: hdmi_tx_audiopacket_submodule File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 284
+    Info (12023): Found entity 4: hdmi_tx_infopacket_submodule File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 537
+    Info (12023): Found entity 5: hdmi_tx_dataisland_submodule File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 830
+    Info (12023): Found entity 6: hdmi_tx_tmds_encoder_submodule File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1027
+    Info (12023): Found entity 7: hdmi_tx_pdiff_submodule File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1242
+    Info (12023): Found entity 8: hdmi_tx File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1356
 Info (12021): Found 2 design units, including 1 entities, in source file hdl/video_syncgen.vhd
-    Info (12022): Found design unit 1: video_syncgen-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/video_syncgen.vhd Line: 138
+    Info (12022): Found design unit 1: video_syncgen-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/video_syncgen.vhd Line: 140
     Info (12023): Found entity 1: video_syncgen File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/video_syncgen.vhd Line: 45
 Info (12021): Found 6 design units, including 3 entities, in source file hdl/melodychime.vhd
     Info (12022): Found design unit 1: melodychime_seq-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/melodychime.vhd Line: 63
@@ -1606,7 +1596,7 @@ Info (12021): Found 6 design units, including 3 entities, in source file hdl/mel
 Info (12021): Found 1 design units, including 1 entities, in source file hdl/c02_hdmi_test_top.v
     Info (12023): Found entity 1: c02_hdmi_test_top File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/c02_hdmi_test_top.v Line: 36
 Info (12127): Elaborating entity "c02_hdmi_test_top" for the top level hierarchy
-Info (12128): Elaborating entity "hdmi_hdpll" for hierarchy "hdmi_hdpll:u_pll" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/c02_hdmi_test_top.v Line: 111
+Info (12128): Elaborating entity "hdmi_hdpll" for hierarchy "hdmi_hdpll:u_pll" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/c02_hdmi_test_top.v Line: 131
 Info (12128): Elaborating entity "altpll" for hierarchy "hdmi_hdpll:u_pll|altpll:altpll_component" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/ip/pll/hdmi_hdpll.v Line: 108
 Info (12130): Elaborated megafunction instantiation "hdmi_hdpll:u_pll|altpll:altpll_component" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/ip/pll/hdmi_hdpll.v Line: 108
 Info (12133): Instantiated megafunction "hdmi_hdpll:u_pll|altpll:altpll_component" with the following parameter: File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/ip/pll/hdmi_hdpll.v Line: 108
@@ -1672,22 +1662,22 @@ Info (12133): Instantiated megafunction "hdmi_hdpll:u_pll|altpll:altpll_componen
 Info (12021): Found 1 design units, including 1 entities, in source file db/hdmi_hdpll_altpll.v
     Info (12023): Found entity 1: hdmi_hdpll_altpll File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/db/hdmi_hdpll_altpll.v Line: 31
 Info (12128): Elaborating entity "hdmi_hdpll_altpll" for hierarchy "hdmi_hdpll:u_pll|altpll:altpll_component|hdmi_hdpll_altpll:auto_generated" File: c:/develop/quartus/22.1le/quartus/libraries/megafunctions/altpll.tdf Line: 898
-Info (12128): Elaborating entity "melodychime" for hierarchy "melodychime:u_chime" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/c02_hdmi_test_top.v Line: 156
+Info (12128): Elaborating entity "melodychime" for hierarchy "melodychime:u_chime" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/c02_hdmi_test_top.v Line: 178
 Info (12128): Elaborating entity "melodychime_seq" for hierarchy "melodychime:u_chime|melodychime_seq:u_seq" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/melodychime.vhd Line: 545
 Info (12128): Elaborating entity "melodychime_sg" for hierarchy "melodychime:u_chime|melodychime_sg:u_sg0" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/melodychime.vhd Line: 565
-Info (12128): Elaborating entity "video_syncgen" for hierarchy "video_syncgen:u_vga" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/c02_hdmi_test_top.v Line: 206
-Info (12128): Elaborating entity "hdmi_tx" for hierarchy "hdmi_tx:u_tx" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/c02_hdmi_test_top.v Line: 242
-Info (12128): Elaborating entity "hdmi_tx_audiopacket_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1555
-Info (12128): Elaborating entity "hdmi_tx_scfifo" for hierarchy "hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio|hdmi_tx_scfifo:u_fifo" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 463
-Info (12128): Elaborating entity "hdmi_tx_infopacket_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_infopacket_submodule:\gen_info:u_info" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1588
-Info (12128): Elaborating entity "hdmi_tx_dataisland_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1626
-Info (12128): Elaborating entity "hdmi_tx_tmds_encoder_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1700
-Info (12128): Elaborating entity "hdmi_tx_tmds_encoder_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1700
-Info (12128): Elaborating entity "hdmi_tx_tmds_encoder_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1700
-Info (12128): Elaborating entity "hdmi_tx_pdiff_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1715
-Info (12128): Elaborating entity "altddio_out" for hierarchy "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1317
-Info (12130): Elaborated megafunction instantiation "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1317
-Info (12133): Instantiated megafunction "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p" with the following parameter: File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1317
+Info (12128): Elaborating entity "video_syncgen" for hierarchy "video_syncgen:u_vga" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/c02_hdmi_test_top.v Line: 254
+Info (12128): Elaborating entity "hdmi_tx" for hierarchy "hdmi_tx:u_tx" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/c02_hdmi_test_top.v Line: 289
+Info (12128): Elaborating entity "hdmi_tx_audiopacket_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1553
+Info (12128): Elaborating entity "hdmi_tx_scfifo" for hierarchy "hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio|hdmi_tx_scfifo:u_fifo" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 466
+Info (12128): Elaborating entity "hdmi_tx_infopacket_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_infopacket_submodule:\gen_info:u_info" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1586
+Info (12128): Elaborating entity "hdmi_tx_dataisland_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1625
+Info (12128): Elaborating entity "hdmi_tx_tmds_encoder_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1699
+Info (12128): Elaborating entity "hdmi_tx_tmds_encoder_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1699
+Info (12128): Elaborating entity "hdmi_tx_tmds_encoder_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1699
+Info (12128): Elaborating entity "hdmi_tx_pdiff_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1713
+Info (12128): Elaborating entity "altddio_out" for hierarchy "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1312
+Info (12130): Elaborated megafunction instantiation "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1312
+Info (12133): Instantiated megafunction "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p" with the following parameter: File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1312
     Info (12134): Parameter "intended_device_family" = "MAX 10"
     Info (12134): Parameter "extend_oe_disable" = "OFF"
     Info (12134): Parameter "invert_output" = "OFF"
@@ -1699,9 +1689,9 @@ Info (12133): Instantiated megafunction "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_
 Info (12021): Found 1 design units, including 1 entities, in source file db/ddio_out_iki.tdf
     Info (12023): Found entity 1: ddio_out_iki File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/db/ddio_out_iki.tdf Line: 28
 Info (12128): Elaborating entity "ddio_out_iki" for hierarchy "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p|ddio_out_iki:auto_generated" File: c:/develop/quartus/22.1le/quartus/libraries/megafunctions/altddio_out.tdf Line: 101
-Info (12128): Elaborating entity "altddio_out" for hierarchy "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_n" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1331
-Info (12130): Elaborated megafunction instantiation "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_n" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1331
-Info (12133): Instantiated megafunction "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_n" with the following parameter: File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1331
+Info (12128): Elaborating entity "altddio_out" for hierarchy "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_n" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1326
+Info (12130): Elaborated megafunction instantiation "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_n" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1326
+Info (12133): Instantiated megafunction "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_n" with the following parameter: File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1326
     Info (12134): Parameter "intended_device_family" = "MAX 10"
     Info (12134): Parameter "extend_oe_disable" = "OFF"
     Info (12134): Parameter "invert_output" = "ON"
@@ -1750,23 +1740,23 @@ Info (12133): Instantiated megafunction "hdmi_tx:u_tx|hdmi_tx_audiopacket_submod
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_28g1.tdf
     Info (12023): Found entity 1: altsyncram_28g1 File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/db/altsyncram_28g1.tdf Line: 28
 Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (13000): Registers with preset signals will power-up high File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1289
+Info (13000): Registers with preset signals will power-up high File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/video_syncgen.vhd Line: 332
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "OSC_OE" is stuck at VCC File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/c02_hdmi_test_top.v Line: 37
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1729 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1725 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 10 output pins
-    Info (21061): Implemented 1700 logic cells
+    Info (21061): Implemented 1696 logic cells
     Info (21064): Implemented 9 RAM segments
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4828 megabytes
-    Info: Processing ended: Sat Dec 31 11:41:50 2022
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:40
+    Info: Peak virtual memory: 4850 megabytes
+    Info: Processing ended: Mon Jan  2 18:02:49 2023
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:37
 
 
