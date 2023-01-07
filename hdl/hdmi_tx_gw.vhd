@@ -2,7 +2,7 @@
 -- TITLE : HDMI Transmitter (for GowinEDA)
 --
 --     DESIGN : s.osafune@j7system.jp (J-7SYSTEM WORKS LIMITED)
---     DATE   : 2022/12/01 -> 2023/01/02
+--     DATE   : 2022/12/01 -> 2023/01/06
 --
 --
 -- ===================================================================
@@ -27,6 +27,13 @@
 -- LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
+
+-- !! NOTICE !!
+--
+-- This source code does not include HDMI license.
+-- When developing and selling HDMI equipment products, it is necessary to become
+-- a member of HDMI Licensing Administrator, Inc.
+--  >>> https://www.hdmi.org/
 
 
 -- hdmi_tx component declaration ------------------------------------------------------------------

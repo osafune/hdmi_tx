@@ -1,5 +1,5 @@
 Analysis & Synthesis report for c02_hdmi_top
-Mon Jan  2 18:02:49 2023
+Sun Jan  8 02:03:00 2023
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -84,7 +84,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jan  2 18:02:49 2023          ;
+; Analysis & Synthesis Status        ; Successful - Sun Jan  8 02:03:00 2023          ;
 ; Quartus Prime Version              ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                      ; c02_hdmi_top                                   ;
 ; Top-level Entity Name              ; c02_hdmi_test_top                              ;
@@ -1546,7 +1546,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:04     ;
+; Top            ; 00:00:05     ;
 +----------------+--------------+
 
 
@@ -1556,7 +1556,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Mon Jan  2 18:02:30 2023
+    Info: Processing started: Sun Jan  8 02:02:40 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off c02_hdmi -c c02_hdmi_top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1567,22 +1567,22 @@ Info (12021): Found 1 design units, including 1 entities, in source file ip/pll/
 Info (12021): Found 1 design units, including 1 entities, in source file ip/pll/hdmi_vgapll.v
     Info (12023): Found entity 1: hdmi_vgapll File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/ip/pll/hdmi_vgapll.v Line: 40
 Info (12021): Found 16 design units, including 8 entities, in source file hdl/hdmi_tx.vhd
-    Info (12022): Found design unit 1: hdmi_tx_scfifo-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 140
-    Info (12022): Found design unit 2: hdmi_tx_delay-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 243
-    Info (12022): Found design unit 3: hdmi_tx_audiopacket_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 310
-    Info (12022): Found design unit 4: hdmi_tx_infopacket_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 595
-    Info (12022): Found design unit 5: hdmi_tx_dataisland_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 853
-    Info (12022): Found design unit 6: hdmi_tx_tmds_encoder_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1048
-    Info (12022): Found design unit 7: hdmi_tx_pdiff_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1261
-    Info (12022): Found design unit 8: hdmi_tx-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1429
-    Info (12023): Found entity 1: hdmi_tx_scfifo File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 119
-    Info (12023): Found entity 2: hdmi_tx_delay File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 228
-    Info (12023): Found entity 3: hdmi_tx_audiopacket_submodule File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 284
-    Info (12023): Found entity 4: hdmi_tx_infopacket_submodule File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 537
-    Info (12023): Found entity 5: hdmi_tx_dataisland_submodule File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 830
-    Info (12023): Found entity 6: hdmi_tx_tmds_encoder_submodule File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1027
-    Info (12023): Found entity 7: hdmi_tx_pdiff_submodule File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1242
-    Info (12023): Found entity 8: hdmi_tx File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1356
+    Info (12022): Found design unit 1: hdmi_tx_scfifo-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 147
+    Info (12022): Found design unit 2: hdmi_tx_delay-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 250
+    Info (12022): Found design unit 3: hdmi_tx_audiopacket_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 317
+    Info (12022): Found design unit 4: hdmi_tx_infopacket_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 602
+    Info (12022): Found design unit 5: hdmi_tx_dataisland_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 860
+    Info (12022): Found design unit 6: hdmi_tx_tmds_encoder_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1055
+    Info (12022): Found design unit 7: hdmi_tx_pdiff_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1268
+    Info (12022): Found design unit 8: hdmi_tx-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1436
+    Info (12023): Found entity 1: hdmi_tx_scfifo File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 126
+    Info (12023): Found entity 2: hdmi_tx_delay File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 235
+    Info (12023): Found entity 3: hdmi_tx_audiopacket_submodule File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 291
+    Info (12023): Found entity 4: hdmi_tx_infopacket_submodule File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 544
+    Info (12023): Found entity 5: hdmi_tx_dataisland_submodule File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 837
+    Info (12023): Found entity 6: hdmi_tx_tmds_encoder_submodule File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1034
+    Info (12023): Found entity 7: hdmi_tx_pdiff_submodule File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1249
+    Info (12023): Found entity 8: hdmi_tx File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1363
 Info (12021): Found 2 design units, including 1 entities, in source file hdl/video_syncgen.vhd
     Info (12022): Found design unit 1: video_syncgen-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/video_syncgen.vhd Line: 140
     Info (12023): Found entity 1: video_syncgen File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/video_syncgen.vhd Line: 45
@@ -1667,17 +1667,17 @@ Info (12128): Elaborating entity "melodychime_seq" for hierarchy "melodychime:u_
 Info (12128): Elaborating entity "melodychime_sg" for hierarchy "melodychime:u_chime|melodychime_sg:u_sg0" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/melodychime.vhd Line: 565
 Info (12128): Elaborating entity "video_syncgen" for hierarchy "video_syncgen:u_vga" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/c02_hdmi_test_top.v Line: 254
 Info (12128): Elaborating entity "hdmi_tx" for hierarchy "hdmi_tx:u_tx" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/c02_hdmi_test_top.v Line: 289
-Info (12128): Elaborating entity "hdmi_tx_audiopacket_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1553
-Info (12128): Elaborating entity "hdmi_tx_scfifo" for hierarchy "hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio|hdmi_tx_scfifo:u_fifo" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 466
-Info (12128): Elaborating entity "hdmi_tx_infopacket_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_infopacket_submodule:\gen_info:u_info" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1586
-Info (12128): Elaborating entity "hdmi_tx_dataisland_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1625
-Info (12128): Elaborating entity "hdmi_tx_tmds_encoder_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1699
-Info (12128): Elaborating entity "hdmi_tx_tmds_encoder_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1699
-Info (12128): Elaborating entity "hdmi_tx_tmds_encoder_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1699
-Info (12128): Elaborating entity "hdmi_tx_pdiff_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1713
-Info (12128): Elaborating entity "altddio_out" for hierarchy "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1312
-Info (12130): Elaborated megafunction instantiation "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1312
-Info (12133): Instantiated megafunction "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p" with the following parameter: File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1312
+Info (12128): Elaborating entity "hdmi_tx_audiopacket_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1560
+Info (12128): Elaborating entity "hdmi_tx_scfifo" for hierarchy "hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio|hdmi_tx_scfifo:u_fifo" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 473
+Info (12128): Elaborating entity "hdmi_tx_infopacket_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_infopacket_submodule:\gen_info:u_info" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1593
+Info (12128): Elaborating entity "hdmi_tx_dataisland_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1632
+Info (12128): Elaborating entity "hdmi_tx_tmds_encoder_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1706
+Info (12128): Elaborating entity "hdmi_tx_tmds_encoder_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1706
+Info (12128): Elaborating entity "hdmi_tx_tmds_encoder_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1706
+Info (12128): Elaborating entity "hdmi_tx_pdiff_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1720
+Info (12128): Elaborating entity "altddio_out" for hierarchy "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1319
+Info (12130): Elaborated megafunction instantiation "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1319
+Info (12133): Instantiated megafunction "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p" with the following parameter: File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1319
     Info (12134): Parameter "intended_device_family" = "MAX 10"
     Info (12134): Parameter "extend_oe_disable" = "OFF"
     Info (12134): Parameter "invert_output" = "OFF"
@@ -1689,9 +1689,9 @@ Info (12133): Instantiated megafunction "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_
 Info (12021): Found 1 design units, including 1 entities, in source file db/ddio_out_iki.tdf
     Info (12023): Found entity 1: ddio_out_iki File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/db/ddio_out_iki.tdf Line: 28
 Info (12128): Elaborating entity "ddio_out_iki" for hierarchy "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p|ddio_out_iki:auto_generated" File: c:/develop/quartus/22.1le/quartus/libraries/megafunctions/altddio_out.tdf Line: 101
-Info (12128): Elaborating entity "altddio_out" for hierarchy "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_n" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1326
-Info (12130): Elaborated megafunction instantiation "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_n" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1326
-Info (12133): Instantiated megafunction "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_n" with the following parameter: File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1326
+Info (12128): Elaborating entity "altddio_out" for hierarchy "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_n" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1333
+Info (12130): Elaborated megafunction instantiation "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_n" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1333
+Info (12133): Instantiated megafunction "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_n" with the following parameter: File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1333
     Info (12134): Parameter "intended_device_family" = "MAX 10"
     Info (12134): Parameter "extend_oe_disable" = "OFF"
     Info (12134): Parameter "invert_output" = "ON"
@@ -1755,8 +1755,8 @@ Info (21057): Implemented 1725 device resources after synthesis - the final reso
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 4850 megabytes
-    Info: Processing ended: Mon Jan  2 18:02:49 2023
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:37
+    Info: Processing ended: Sun Jan  8 02:03:00 2023
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:36
 
 

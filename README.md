@@ -21,12 +21,14 @@
 - ビデオ信号用にVSYNC, HSYNC, CSYNC, V-Blank, H-Blank, Active信号を生成
 - フレームバッファ制御用にframetop, linestart, pixelrequest信号を生成
 
-# LICENSE
+# License
 
 MIT License
 
-__! NOTICE !__  
-__This source does not include an HDMI license.__
+**!! NOTICE !!**  
+This source code does not include HDMI license.  
+When developing and selling HDMI equipment products, it is necessary to become a member of HDMI Licensing Administrator, Inc.  
+[https://www.hdmi.org/](https://www.hdmi.org/)  
 
 - 本ソースコードにはHDMIのライセンスは含まれません。HDMI機器製品を開発・販売する際にはHDMI Licensing Administrator, Inc.のアダプターメンバーになる必要があります。
 - 本ソースコードは研究・実験目的で公開されており、本ソースコードを直接あるいは間接的に利用した事ないし利用した物で発生した全ての問題に対し、本ソースコードの製作者および権利者は一切の責務を負いません。
