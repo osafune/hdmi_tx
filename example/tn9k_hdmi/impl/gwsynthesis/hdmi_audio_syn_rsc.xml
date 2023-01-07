@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="video_top" Register="25" Alu="12" Lut="26">
+    <SubModule name="u_tmds_rpll"/>
+    <SubModule name="u_chime" Register="21" Alu="17" Lut="25">
+        <SubModule name="u_seq" Register="26" Lut="63"/>
+        <SubModule name="u_sg0" Register="33" Alu="22" Lut="58"/>
+        <SubModule name="u_sg1" Register="33" Alu="22" Lut="58"/>
+    </SubModule>
+    <SubModule name="u_vga" Register="89" Lut="373"/>
+    <SubModule name="u_logo" Register="100" Alu="58" Lut="105">
+        <SubModule name="u_rom" Register="2" Lut="2" Bsram="3"/>
+    </SubModule>
+    <SubModule name="u_tx" Register="67" Lut="7">
+        <SubModule name="gen_intgen.u_delay" Register="6" Alu="10" Lut="3" Bsram="1"/>
+        <SubModule name="gen_audio.u_audio" Register="44" Alu="4" Lut="73">
+            <SubModule name="u_fifo" Register="25" Alu="16" Lut="23" Bsram="1"/>
+        </SubModule>
+        <SubModule name="gen_info.u_info" Register="20" Lut="51"/>
+        <SubModule name="gen_data.u_data" Register="299" Lut="390"/>
+        <SubModule name="gen_enc[0].u" Register="51" Alu="4" Lut="98"/>
+        <SubModule name="gen_enc[1].u" Register="42" Alu="4" Lut="88"/>
+        <SubModule name="gen_enc[2].u" Register="44" Alu="4" Lut="92"/>
+        <SubModule name="u_ser" Register="30"/>
+    </SubModule>
+</Module>

@@ -1,0 +1,30 @@
+Reading netlist file: "C:\PROJECT\temp\hdmi_tx\hw\tn9k_hdmi\impl\gwsynthesis\hdmi_audio.vg"
+Parsing netlist file "C:\PROJECT\temp\hdmi_tx\hw\tn9k_hdmi\impl\gwsynthesis\hdmi_audio.vg" completed
+WARN  (PA1003) : Invalid parameterized value 'GW2A-18C'(DEVICE) specified for instance 'u_tmds_rpll/rpll_inst'
+Processing netlist completed
+Reading constraint file: "C:\PROJECT\temp\hdmi_tx\hw\tn9k_hdmi\src\tangnano9k.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "C:\PROJECT\temp\hdmi_tx\hw\tn9k_hdmi\impl\pnr\hdmi_audio.power.html" completed
+Generate file "C:\PROJECT\temp\hdmi_tx\hw\tn9k_hdmi\impl\pnr\hdmi_audio.pin.html" completed
+Generate file "C:\PROJECT\temp\hdmi_tx\hw\tn9k_hdmi\impl\pnr\hdmi_audio.rpt.html" completed
+Generate file "C:\PROJECT\temp\hdmi_tx\hw\tn9k_hdmi\impl\pnr\hdmi_audio.rpt.txt" completed
+Generate file "C:\PROJECT\temp\hdmi_tx\hw\tn9k_hdmi\impl\pnr\hdmi_audio.tr.html" completed
+Sun Jan 08 02:54:11 2023
+
