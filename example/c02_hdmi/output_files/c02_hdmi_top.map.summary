@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Sun Jan  8 02:03:00 2023
+Analysis & Synthesis Status : Successful - Wed Jan 11 03:53:35 2023
 Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 Revision Name : c02_hdmi_top
 Top-level Entity Name : c02_hdmi_test_top
 Family : MAX 10
-Total logic elements : 1,634
+Total logic elements : 1,642
     Total combinational functions : 1,575
-    Dedicated logic registers : 854
-Total registers : 870
+    Dedicated logic registers : 862
+Total registers : 878
 Total pins : 11
 Total virtual pins : 0
 Total memory bits : 2,304

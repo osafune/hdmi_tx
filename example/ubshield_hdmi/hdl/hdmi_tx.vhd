@@ -2,7 +2,7 @@
 -- TITLE : HDMI Transmitter
 --
 --     DESIGN : s.osafune@j7system.jp (J-7SYSTEM WORKS LIMITED)
---     DATE   : 2022/12/01 -> 2023/01/06
+--     DATE   : 2022/12/01 -> 2023/01/10
 --
 --
 -- ===================================================================
@@ -77,11 +77,13 @@
 --                                              -- "PHOTO"   : for Digital still pictures
 --                                              -- "CINEMA"  : for Cinema material
 --                                              -- "GAME"    : for Game machine material
+--      REPETITION      : integer := 0;         -- Pixel Repetition Factor (0-9)
+--      VIDEO_CODE      : integer := 0;         -- Video Information Codes (1-59, 0=No data)
+--
 --      USE_AUDIO_PACKET: string := "ON";       -- "ON"      : Use Audio sample packet
 --                                              -- "OFF"     : Without Audio sample packet
 --      AUDIO_FREQUENCY : real := 44.1;         -- Audio sampling frequency (KHz) : 32.0, 44.1, 48.0, 88.2, 96.0, 176.4, 192.0
 --      PCMFIFO_DEPTH   : integer := 8;         -- Sample data fifo depth : 8=256word(35sample), 9=512word(72sample), 10=1024word(145sample)
---      VIC_CODE        : std_logic_vector(6 downto 0) := "0000000";    -- Option
 --      CATEGORY_CODE   : std_logic_vector(7 downto 0) := "00000000"    -- Option
 --  );
 --  port(
@@ -572,7 +574,8 @@ entity hdmi_tx_infopacket_submodule is
 												-- "PHOTO"   : for Digital still pictures
 												-- "CINEMA"  : for Cinema material
 												-- "GAME"    : for Game machine material
-		VIC_CODE		: std_logic_vector(6 downto 0) := "0000000"
+		REPETITION		: integer := 0;			-- Pixel Repetition Factor (0-9)
+		VIDEO_CODE		: integer := 0			-- Video Information Codes (1-59, 0=No data)
 	);
 	port(
 		reset		: in  std_logic;
@@ -671,6 +674,8 @@ architecture RTL of hdmi_tx_infopacket_submodule is
 	constant ITCONTENT		: std_logic_vector(0 downto 0) := sel(CONTENTTYPE="GRAPHICS", "1","0");
 	constant CONTENTCODE	: std_logic_vector(1 downto 0) :=
 				sel(CONTENTTYPE="PHOTO", "01", sel(CONTENTTYPE="CINEMA", "10", sel(CONTENTTYPE="GAME", "11","00")));
+	constant REPFACTOR		: std_logic_vector(3 downto 0) := to_vector(REPETITION, 4);
+	constant VIC_CODE		: std_logic_vector(6 downto 0) := to_vector(VIDEO_CODE, 7);
 
 	constant CODINGTYPE		: std_logic_vector(3 downto 0) := "0001";	-- IEC 60958 PCM
 	constant CHANNELCOUNT	: std_logic_vector(2 downto 0) := "001";	-- 2ch
@@ -715,7 +720,7 @@ begin
 	infotable_sig(AVIINFO_TOP+ 2) <= COLORIMETRY & PICTUREAR & FORMATAR;
 	infotable_sig(AVIINFO_TOP+ 3) <= ITCONTENT & EXCOLORIMETRY & RGBQUANTRANGE & SCALING;
 	infotable_sig(AVIINFO_TOP+ 4) <= '0' & VIC_CODE;
-	infotable_sig(AVIINFO_TOP+ 5) <= YCCQUANTRANGE & CONTENTCODE & "0000";
+	infotable_sig(AVIINFO_TOP+ 5) <= YCCQUANTRANGE & CONTENTCODE & REPFACTOR;
 
 	-- Audio infoframe
 	infotable_sig(AUDIOINFO_TOP+28) <= x"84";	-- Audio info header (0x84)
@@ -1275,12 +1280,15 @@ architecture RTL of hdmi_tx_pdiff_submodule is
 	signal data_in_reg	: std_logic_vector(3*10-1 downto 0);
 	signal ser_reg		: std_logic_vector(4*10-1 downto 0);
 	signal data_p_reg	: std_logic_vector(7 downto 0);
+	signal data_n_reg	: std_logic_vector(7 downto 0);
 	signal ddo_p_sig	: std_logic_vector(3 downto 0);
 	signal ddo_n_sig	: std_logic_vector(3 downto 0);
 
 	attribute noprune : boolean;	-- レジスタ最適化を抑止 
 	attribute noprune of start_reg	: signal is true;
 	attribute noprune of ser_reg	: signal is true;
+	attribute noprune of data_p_reg	: signal is true;
+	attribute noprune of data_n_reg	: signal is true;
 
 begin
 
@@ -1312,6 +1320,8 @@ begin
 			for i in 0 to 3 loop
 				data_p_reg(i+4) <= ser_reg(i*10+0);		-- positive side datain_h
 				data_p_reg(i+0) <= ser_reg(i*10+1);		-- positive side datain_l
+				data_n_reg(i+4) <= ser_reg(i*10+0);		-- negative side datain_h
+				data_n_reg(i+0) <= ser_reg(i*10+1);		-- negative side datain_l
 			end loop;
 		end if;
 	end process;
@@ -1339,8 +1349,8 @@ begin
 	)
 	port map (
 		outclock	=> clk_x5,
-		datain_h	=> data_p_reg(7 downto 4),
-		datain_l	=> data_p_reg(3 downto 0),
+		datain_h	=> data_n_reg(7 downto 4),
+		datain_l	=> data_n_reg(3 downto 0),
 		dataout		=> ddo_n_sig
 	);
 
@@ -1399,11 +1409,13 @@ entity hdmi_tx is
 												-- "PHOTO"   : for Digital still pictures
 												-- "CINEMA"  : for Cinema material
 												-- "GAME"    : for Game machine material
+		REPETITION		: integer := 0;			-- Pixel Repetition Factor (0-9)
+		VIDEO_CODE		: integer := 0;			-- Video Information Codes (1-59, 0=No data)
+
 		USE_AUDIO_PACKET: string := "ON";		-- "ON"      : Use Audio sample packet
 												-- "OFF"     : Without Audio sample packet
 		AUDIO_FREQUENCY	: real := 44.1;			-- Audio sampling frequency (KHz) : 32.0, 44.1, 48.0, 88.2, 96.0, 176.4, 192.0
 		PCMFIFO_DEPTH	: integer := 8;			-- Sample data fifo depth : 8=256word(35sample), 9=512word(72sample), 10=1024word(145sample)
-		VIC_CODE		: std_logic_vector(6 downto 0) := "0000000";
 		CATEGORY_CODE	: std_logic_vector(7 downto 0) := "00000000"
 	);
 	port(
@@ -1601,7 +1613,8 @@ gen_info : if (ENCODE_MODE = "HDMI") generate
 		COLORSPACE		=> COLORSPACE,
 		YCC_DATARANGE	=> YCC_DATARANGE,
 		CONTENTTYPE		=> CONTENTTYPE,
-		VIC_CODE		=> VIC_CODE
+		REPETITION		=> REPETITION,
+		VIDEO_CODE		=> VIDEO_CODE
 	)
 	port map (
 		reset		=> reset,

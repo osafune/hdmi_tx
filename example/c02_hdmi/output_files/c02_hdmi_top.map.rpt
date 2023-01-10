@@ -1,5 +1,5 @@
 Analysis & Synthesis report for c02_hdmi_top
-Sun Jan  8 02:03:00 2023
+Wed Jan 11 03:53:35 2023
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -84,15 +84,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Jan  8 02:03:00 2023          ;
+; Analysis & Synthesis Status        ; Successful - Wed Jan 11 03:53:35 2023          ;
 ; Quartus Prime Version              ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                      ; c02_hdmi_top                                   ;
 ; Top-level Entity Name              ; c02_hdmi_test_top                              ;
 ; Family                             ; MAX 10                                         ;
-; Total logic elements               ; 1,634                                          ;
+; Total logic elements               ; 1,642                                          ;
 ;     Total combinational functions  ; 1,575                                          ;
-;     Dedicated logic registers      ; 854                                            ;
-; Total registers                    ; 870                                            ;
+;     Dedicated logic registers      ; 862                                            ;
+; Total registers                    ; 878                                            ;
 ; Total pins                         ; 11                                             ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 2,304                                          ;
@@ -202,7 +202,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
@@ -247,7 +247,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                      ;
 +---------------------------------------------+--------------------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 1,634                                                                                      ;
+; Estimated Total logic elements              ; 1,642                                                                                      ;
 ;                                             ;                                                                                            ;
 ; Total combinational functions               ; 1575                                                                                       ;
 ; Logic element usage by number of LUT inputs ;                                                                                            ;
@@ -259,8 +259,8 @@ https://fpgasoftware.intel.com/eula.
 ;     -- normal mode                          ; 1307                                                                                       ;
 ;     -- arithmetic mode                      ; 268                                                                                        ;
 ;                                             ;                                                                                            ;
-; Total registers                             ; 870                                                                                        ;
-;     -- Dedicated logic registers            ; 854                                                                                        ;
+; Total registers                             ; 878                                                                                        ;
+;     -- Dedicated logic registers            ; 862                                                                                        ;
 ;     -- I/O registers                        ; 32                                                                                         ;
 ;                                             ;                                                                                            ;
 ; I/O pins                                    ; 11                                                                                         ;
@@ -272,9 +272,9 @@ https://fpgasoftware.intel.com/eula.
 ;     -- PLLs                                 ; 1                                                                                          ;
 ;                                             ;                                                                                            ;
 ; Maximum fan-out node                        ; hdmi_hdpll:u_pll|altpll:altpll_component|hdmi_hdpll_altpll:auto_generated|wire_pll1_clk[0] ;
-; Maximum fan-out                             ; 905                                                                                        ;
-; Total fan-out                               ; 7543                                                                                       ;
-; Average fan-out                             ; 3.06                                                                                       ;
+; Maximum fan-out                             ; 913                                                                                        ;
+; Total fan-out                               ; 7559                                                                                       ;
+; Average fan-out                             ; 3.05                                                                                       ;
 +---------------------------------------------+--------------------------------------------------------------------------------------------+
 
 
@@ -283,18 +283,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+--------------+
 ; Compilation Hierarchy Node                               ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                                        ; Entity Name                    ; Library Name ;
 +----------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+--------------+
-; |c02_hdmi_test_top                                       ; 1575 (39)           ; 854 (25)                  ; 2304        ; 0          ; 0            ; 0       ; 0         ; 11   ; 0            ; 0          ; |c02_hdmi_test_top                                                                                                                                         ; c02_hdmi_test_top              ; work         ;
+; |c02_hdmi_test_top                                       ; 1575 (39)           ; 862 (25)                  ; 2304        ; 0          ; 0            ; 0       ; 0         ; 11   ; 0            ; 0          ; |c02_hdmi_test_top                                                                                                                                         ; c02_hdmi_test_top              ; work         ;
 ;    |hdmi_hdpll:u_pll|                                    ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_hdpll:u_pll                                                                                                                        ; hdmi_hdpll                     ; work         ;
 ;       |altpll:altpll_component|                          ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_hdpll:u_pll|altpll:altpll_component                                                                                                ; altpll                         ; work         ;
 ;          |hdmi_hdpll_altpll:auto_generated|              ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_hdpll:u_pll|altpll:altpll_component|hdmi_hdpll_altpll:auto_generated                                                               ; hdmi_hdpll_altpll              ; work         ;
-;    |hdmi_tx:u_tx|                                        ; 894 (6)             ; 623 (3)                   ; 2304        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx                                                                                                                            ; hdmi_tx                        ; work         ;
+;    |hdmi_tx:u_tx|                                        ; 894 (6)             ; 631 (3)                   ; 2304        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx                                                                                                                            ; hdmi_tx                        ; work         ;
 ;       |hdmi_tx_audiopacket_submodule:\gen_audio:u_audio| ; 122 (95)            ; 89 (64)                   ; 2304        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio                                                                           ; hdmi_tx_audiopacket_submodule  ; work         ;
 ;          |hdmi_tx_scfifo:u_fifo|                         ; 27 (27)             ; 25 (25)                   ; 2304        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio|hdmi_tx_scfifo:u_fifo                                                     ; hdmi_tx_scfifo                 ; work         ;
 ;             |altsyncram:ram_rtl_0|                       ; 0 (0)               ; 0 (0)                     ; 2304        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio|hdmi_tx_scfifo:u_fifo|altsyncram:ram_rtl_0                                ; altsyncram                     ; work         ;
 ;                |altsyncram_28g1:auto_generated|          ; 0 (0)               ; 0 (0)                     ; 2304        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio|hdmi_tx_scfifo:u_fifo|altsyncram:ram_rtl_0|altsyncram_28g1:auto_generated ; altsyncram_28g1                ; work         ;
 ;       |hdmi_tx_dataisland_submodule:\gen_data:u_data|    ; 383 (383)           ; 299 (299)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data                                                                              ; hdmi_tx_dataisland_submodule   ; work         ;
 ;       |hdmi_tx_infopacket_submodule:\gen_info:u_info|    ; 63 (63)             ; 20 (20)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_infopacket_submodule:\gen_info:u_info                                                                              ; hdmi_tx_infopacket_submodule   ; work         ;
-;       |hdmi_tx_pdiff_submodule:u_ser|                    ; 38 (38)             ; 82 (82)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser                                                                                              ; hdmi_tx_pdiff_submodule        ; work         ;
+;       |hdmi_tx_pdiff_submodule:u_ser|                    ; 38 (38)             ; 90 (90)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser                                                                                              ; hdmi_tx_pdiff_submodule        ; work         ;
 ;          |altddio_out:u_ddo_n|                           ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_n                                                                          ; altddio_out                    ; work         ;
 ;             |ddio_out_khi:auto_generated|                ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_n|ddio_out_khi:auto_generated                                              ; ddio_out_khi                   ; work         ;
 ;          |altddio_out:u_ddo_p|                           ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |c02_hdmi_test_top|hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p                                                                          ; altddio_out                    ; work         ;
@@ -363,57 +363,73 @@ Encoding Type:  One-Hot
 +----------------------+----------------------+--------------------+---------------------+----------------------+---------------------+---------------------+----------------------+-------------------+---------------------+----------------------+---------------------+---------------------+----------------------+----------------+---------------------+---------------------+----------------------+----------------+---------------+-------------------+-----------------+----------------+------------------+-----------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Protected by Synthesis                                                                                                                                        ;
-+---------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
-; Register Name                                           ; Protected by Synthesis Attribute or Preserve Register Assignment ; Not to be Touched by Netlist Optimizations ;
-+---------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[0]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[1]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[2]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[3]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[4]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[5]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[6]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[7]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[8]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[9]   ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[10]  ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[11]  ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[12]  ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[13]  ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[14]  ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[15]  ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[16]  ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[17]  ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[18]  ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[19]  ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[20]  ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[21]  ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[22]  ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[23]  ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[24]  ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[25]  ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[26]  ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[27]  ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[28]  ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[29]  ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[30]  ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[31]  ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[32]  ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[33]  ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[34]  ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[35]  ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[36]  ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[37]  ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[38]  ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[39]  ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|start_reg[0] ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|start_reg[1] ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|start_reg[2] ; yes                                                              ; yes                                        ;
-; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|start_reg[3] ; yes                                                              ; yes                                        ;
-; Total number of protected registers is 44               ;                                                                  ;                                            ;
-+---------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Protected by Synthesis                                                                                                                                         ;
++----------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
+; Register Name                                            ; Protected by Synthesis Attribute or Preserve Register Assignment ; Not to be Touched by Netlist Optimizations ;
++----------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|data_n_reg[0] ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|data_n_reg[1] ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|data_n_reg[2] ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|data_n_reg[3] ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|data_n_reg[4] ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|data_n_reg[5] ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|data_n_reg[6] ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|data_n_reg[7] ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|data_p_reg[0] ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|data_p_reg[1] ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|data_p_reg[2] ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|data_p_reg[3] ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|data_p_reg[4] ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|data_p_reg[5] ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|data_p_reg[6] ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|data_p_reg[7] ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[0]    ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[1]    ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[2]    ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[3]    ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[4]    ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[5]    ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[6]    ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[7]    ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[8]    ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[9]    ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[10]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[11]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[12]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[13]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[14]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[15]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[16]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[17]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[18]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[19]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[20]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[21]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[22]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[23]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[24]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[25]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[26]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[27]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[28]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[29]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[30]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[31]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[32]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[33]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[34]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[35]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[36]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[37]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[38]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|ser_reg[39]   ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|start_reg[0]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|start_reg[1]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|start_reg[2]  ; yes                                                              ; yes                                        ;
+; hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|start_reg[3]  ; yes                                                              ; yes                                        ;
+; Total number of protected registers is 60                ;                                                                  ;                                            ;
++----------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -487,7 +503,7 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 854   ;
+; Total registers                              ; 862   ;
 ; Number of registers using Synchronous Clear  ; 13    ;
 ; Number of registers using Synchronous Load   ; 110   ;
 ; Number of registers using Asynchronous Clear ; 340   ;
@@ -600,6 +616,38 @@ Encoding Type:  One-Hot
 +---------------------------+-------+------+------------------------+
 ; Assignment                ; Value ; From ; To                     ;
 +---------------------------+-------+------+------------------------+
+; PRESERVE_REGISTER         ; on    ; -    ; data_n_reg[0]          ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; data_n_reg[0]          ;
+; PRESERVE_REGISTER         ; on    ; -    ; data_n_reg[1]          ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; data_n_reg[1]          ;
+; PRESERVE_REGISTER         ; on    ; -    ; data_n_reg[2]          ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; data_n_reg[2]          ;
+; PRESERVE_REGISTER         ; on    ; -    ; data_n_reg[3]          ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; data_n_reg[3]          ;
+; PRESERVE_REGISTER         ; on    ; -    ; data_n_reg[4]          ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; data_n_reg[4]          ;
+; PRESERVE_REGISTER         ; on    ; -    ; data_n_reg[5]          ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; data_n_reg[5]          ;
+; PRESERVE_REGISTER         ; on    ; -    ; data_n_reg[6]          ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; data_n_reg[6]          ;
+; PRESERVE_REGISTER         ; on    ; -    ; data_n_reg[7]          ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; data_n_reg[7]          ;
+; PRESERVE_REGISTER         ; on    ; -    ; data_p_reg[0]          ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; data_p_reg[0]          ;
+; PRESERVE_REGISTER         ; on    ; -    ; data_p_reg[1]          ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; data_p_reg[1]          ;
+; PRESERVE_REGISTER         ; on    ; -    ; data_p_reg[2]          ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; data_p_reg[2]          ;
+; PRESERVE_REGISTER         ; on    ; -    ; data_p_reg[3]          ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; data_p_reg[3]          ;
+; PRESERVE_REGISTER         ; on    ; -    ; data_p_reg[4]          ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; data_p_reg[4]          ;
+; PRESERVE_REGISTER         ; on    ; -    ; data_p_reg[5]          ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; data_p_reg[5]          ;
+; PRESERVE_REGISTER         ; on    ; -    ; data_p_reg[6]          ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; data_p_reg[6]          ;
+; PRESERVE_REGISTER         ; on    ; -    ; data_p_reg[7]          ;
+; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; data_p_reg[7]          ;
 ; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[0]             ;
 ; PRESERVE_FANOUT_FREE_NODE ; on    ; -    ; ser_reg[0]             ;
 ; PRESERVE_REGISTER         ; on    ; -    ; ser_reg[1]             ;
@@ -1199,10 +1247,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; colorspace       ; BT709    ; String                      ;
 ; YCC_DATARANGE    ; LIMITED  ; String                      ;
 ; CONTENTTYPE      ; GRAPHICS ; String                      ;
+; REPETITION       ; 0        ; Signed Integer              ;
+; VIDEO_CODE       ; 0        ; Signed Integer              ;
 ; USE_AUDIO_PACKET ; ON       ; String                      ;
 ; audio_frequency  ; 44.1     ; Signed Float                ;
 ; PCMFIFO_DEPTH    ; 8        ; Signed Integer              ;
-; VIC_CODE         ; 0000000  ; Unsigned Binary             ;
 ; CATEGORY_CODE    ; 00000000 ; Unsigned Binary             ;
 +------------------+----------+-----------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
@@ -1246,7 +1295,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; colorspace      ; BT709    ; String                                                                     ;
 ; ycc_datarange   ; LIMITED  ; String                                                                     ;
 ; contenttype     ; GRAPHICS ; String                                                                     ;
-; vic_code        ; 0000000  ; Unsigned Binary                                                            ;
+; repetition      ; 0        ; Signed Integer                                                             ;
+; video_code      ; 0        ; Signed Integer                                                             ;
 +-----------------+----------+----------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1509,7 +1559,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 11                          ;
-; cycloneiii_ff         ; 854                         ;
+; cycloneiii_ff         ; 862                         ;
 ;     CLR               ; 168                         ;
 ;     CLR SCLR          ; 3                           ;
 ;     CLR SLD           ; 15                          ;
@@ -1521,7 +1571,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA SLD           ; 9                           ;
 ;     SCLR              ; 5                           ;
 ;     SLD               ; 35                          ;
-;     plain             ; 172                         ;
+;     plain             ; 180                         ;
 ; cycloneiii_lcell_comb ; 1576                        ;
 ;     arith             ; 268                         ;
 ;         2 data inputs ; 183                         ;
@@ -1537,7 +1587,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; fiftyfivenm_ddio_out  ; 8                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 9.00                        ;
-; Average LUT depth     ; 3.72                        ;
+; Average LUT depth     ; 3.71                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1546,7 +1596,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:05     ;
+; Top            ; 00:00:07     ;
 +----------------+--------------+
 
 
@@ -1556,7 +1606,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Sun Jan  8 02:02:40 2023
+    Info: Processing started: Wed Jan 11 03:53:10 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off c02_hdmi -c c02_hdmi_top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1567,22 +1617,22 @@ Info (12021): Found 1 design units, including 1 entities, in source file ip/pll/
 Info (12021): Found 1 design units, including 1 entities, in source file ip/pll/hdmi_vgapll.v
     Info (12023): Found entity 1: hdmi_vgapll File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/ip/pll/hdmi_vgapll.v Line: 40
 Info (12021): Found 16 design units, including 8 entities, in source file hdl/hdmi_tx.vhd
-    Info (12022): Found design unit 1: hdmi_tx_scfifo-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 147
-    Info (12022): Found design unit 2: hdmi_tx_delay-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 250
-    Info (12022): Found design unit 3: hdmi_tx_audiopacket_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 317
-    Info (12022): Found design unit 4: hdmi_tx_infopacket_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 602
-    Info (12022): Found design unit 5: hdmi_tx_dataisland_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 860
-    Info (12022): Found design unit 6: hdmi_tx_tmds_encoder_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1055
-    Info (12022): Found design unit 7: hdmi_tx_pdiff_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1268
-    Info (12022): Found design unit 8: hdmi_tx-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1436
-    Info (12023): Found entity 1: hdmi_tx_scfifo File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 126
-    Info (12023): Found entity 2: hdmi_tx_delay File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 235
-    Info (12023): Found entity 3: hdmi_tx_audiopacket_submodule File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 291
-    Info (12023): Found entity 4: hdmi_tx_infopacket_submodule File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 544
-    Info (12023): Found entity 5: hdmi_tx_dataisland_submodule File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 837
-    Info (12023): Found entity 6: hdmi_tx_tmds_encoder_submodule File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1034
-    Info (12023): Found entity 7: hdmi_tx_pdiff_submodule File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1249
-    Info (12023): Found entity 8: hdmi_tx File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1363
+    Info (12022): Found design unit 1: hdmi_tx_scfifo-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 149
+    Info (12022): Found design unit 2: hdmi_tx_delay-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 252
+    Info (12022): Found design unit 3: hdmi_tx_audiopacket_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 319
+    Info (12022): Found design unit 4: hdmi_tx_infopacket_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 605
+    Info (12022): Found design unit 5: hdmi_tx_dataisland_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 865
+    Info (12022): Found design unit 6: hdmi_tx_tmds_encoder_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1060
+    Info (12022): Found design unit 7: hdmi_tx_pdiff_submodule-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1273
+    Info (12022): Found design unit 8: hdmi_tx-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1448
+    Info (12023): Found entity 1: hdmi_tx_scfifo File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 128
+    Info (12023): Found entity 2: hdmi_tx_delay File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 237
+    Info (12023): Found entity 3: hdmi_tx_audiopacket_submodule File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 293
+    Info (12023): Found entity 4: hdmi_tx_infopacket_submodule File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 546
+    Info (12023): Found entity 5: hdmi_tx_dataisland_submodule File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 842
+    Info (12023): Found entity 6: hdmi_tx_tmds_encoder_submodule File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1039
+    Info (12023): Found entity 7: hdmi_tx_pdiff_submodule File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1254
+    Info (12023): Found entity 8: hdmi_tx File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1373
 Info (12021): Found 2 design units, including 1 entities, in source file hdl/video_syncgen.vhd
     Info (12022): Found design unit 1: video_syncgen-RTL File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/video_syncgen.vhd Line: 140
     Info (12023): Found entity 1: video_syncgen File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/video_syncgen.vhd Line: 45
@@ -1667,17 +1717,17 @@ Info (12128): Elaborating entity "melodychime_seq" for hierarchy "melodychime:u_
 Info (12128): Elaborating entity "melodychime_sg" for hierarchy "melodychime:u_chime|melodychime_sg:u_sg0" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/melodychime.vhd Line: 565
 Info (12128): Elaborating entity "video_syncgen" for hierarchy "video_syncgen:u_vga" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/c02_hdmi_test_top.v Line: 254
 Info (12128): Elaborating entity "hdmi_tx" for hierarchy "hdmi_tx:u_tx" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/c02_hdmi_test_top.v Line: 289
-Info (12128): Elaborating entity "hdmi_tx_audiopacket_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1560
-Info (12128): Elaborating entity "hdmi_tx_scfifo" for hierarchy "hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio|hdmi_tx_scfifo:u_fifo" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 473
-Info (12128): Elaborating entity "hdmi_tx_infopacket_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_infopacket_submodule:\gen_info:u_info" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1593
-Info (12128): Elaborating entity "hdmi_tx_dataisland_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1632
-Info (12128): Elaborating entity "hdmi_tx_tmds_encoder_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1706
-Info (12128): Elaborating entity "hdmi_tx_tmds_encoder_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1706
-Info (12128): Elaborating entity "hdmi_tx_tmds_encoder_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1706
-Info (12128): Elaborating entity "hdmi_tx_pdiff_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1720
-Info (12128): Elaborating entity "altddio_out" for hierarchy "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1319
-Info (12130): Elaborated megafunction instantiation "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1319
-Info (12133): Instantiated megafunction "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p" with the following parameter: File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1319
+Info (12128): Elaborating entity "hdmi_tx_audiopacket_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1572
+Info (12128): Elaborating entity "hdmi_tx_scfifo" for hierarchy "hdmi_tx:u_tx|hdmi_tx_audiopacket_submodule:\gen_audio:u_audio|hdmi_tx_scfifo:u_fifo" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 475
+Info (12128): Elaborating entity "hdmi_tx_infopacket_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_infopacket_submodule:\gen_info:u_info" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1605
+Info (12128): Elaborating entity "hdmi_tx_dataisland_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_dataisland_submodule:\gen_data:u_data" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1645
+Info (12128): Elaborating entity "hdmi_tx_tmds_encoder_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:0:u" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1719
+Info (12128): Elaborating entity "hdmi_tx_tmds_encoder_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:1:u" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1719
+Info (12128): Elaborating entity "hdmi_tx_tmds_encoder_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_tmds_encoder_submodule:\gen_enc:2:u" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1719
+Info (12128): Elaborating entity "hdmi_tx_pdiff_submodule" for hierarchy "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1733
+Info (12128): Elaborating entity "altddio_out" for hierarchy "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1329
+Info (12130): Elaborated megafunction instantiation "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1329
+Info (12133): Instantiated megafunction "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p" with the following parameter: File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1329
     Info (12134): Parameter "intended_device_family" = "MAX 10"
     Info (12134): Parameter "extend_oe_disable" = "OFF"
     Info (12134): Parameter "invert_output" = "OFF"
@@ -1689,9 +1739,9 @@ Info (12133): Instantiated megafunction "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_
 Info (12021): Found 1 design units, including 1 entities, in source file db/ddio_out_iki.tdf
     Info (12023): Found entity 1: ddio_out_iki File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/db/ddio_out_iki.tdf Line: 28
 Info (12128): Elaborating entity "ddio_out_iki" for hierarchy "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_p|ddio_out_iki:auto_generated" File: c:/develop/quartus/22.1le/quartus/libraries/megafunctions/altddio_out.tdf Line: 101
-Info (12128): Elaborating entity "altddio_out" for hierarchy "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_n" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1333
-Info (12130): Elaborated megafunction instantiation "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_n" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1333
-Info (12133): Instantiated megafunction "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_n" with the following parameter: File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1333
+Info (12128): Elaborating entity "altddio_out" for hierarchy "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_n" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1343
+Info (12130): Elaborated megafunction instantiation "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_n" File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1343
+Info (12133): Instantiated megafunction "hdmi_tx:u_tx|hdmi_tx_pdiff_submodule:u_ser|altddio_out:u_ddo_n" with the following parameter: File: C:/PROJECT/temp/hdmi_tx/hw/c02_hdmi/hdl/hdmi_tx.vhd Line: 1343
     Info (12134): Parameter "intended_device_family" = "MAX 10"
     Info (12134): Parameter "extend_oe_disable" = "OFF"
     Info (12134): Parameter "invert_output" = "ON"
@@ -1747,16 +1797,16 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1725 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1733 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 10 output pins
-    Info (21061): Implemented 1696 logic cells
+    Info (21061): Implemented 1704 logic cells
     Info (21064): Implemented 9 RAM segments
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 4850 megabytes
-    Info: Processing ended: Sun Jan  8 02:03:00 2023
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:36
+    Info: Processing ended: Wed Jan 11 03:53:35 2023
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:47
 
 

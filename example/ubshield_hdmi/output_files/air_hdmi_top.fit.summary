@@ -1,14 +1,14 @@
-Fitter Status : Successful - Sun Jan  8 02:04:17 2023
+Fitter Status : Successful - Wed Jan 11 03:54:59 2023
 Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 Revision Name : air_hdmi_top
 Top-level Entity Name : air_hdmi_test_top
 Family : Cyclone IV E
 Device : EP4CE6E22C8
 Timing Models : Final
-Total logic elements : 1,831 / 6,272 ( 29 % )
+Total logic elements : 1,854 / 6,272 ( 30 % )
     Total combinational functions : 1,721 / 6,272 ( 27 % )
-    Dedicated logic registers : 1,023 / 6,272 ( 16 % )
-Total registers : 1039
+    Dedicated logic registers : 1,031 / 6,272 ( 16 % )
+Total registers : 1047
 Total pins : 85 / 92 ( 92 % )
 Total virtual pins : 0
 Total memory bits : 69,348 / 276,480 ( 25 % )
