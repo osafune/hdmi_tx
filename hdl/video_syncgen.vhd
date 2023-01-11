@@ -44,14 +44,14 @@ use ieee.std_logic_arith.all;
 
 entity video_syncgen is
 	generic (
-		BAR_MODE	: string := "WIDE";	-- "WIDE" : ARIB STD-B28 Multi-colorbar like
-										-- "SD"   : ARIB 75% Colorbar like
-		COLORSPACE	: string := "RGB";	-- "RGB"  : RGB888 Full range
-										-- "BT601": ITU-R BT.601 YCbCr Limited range
-										-- "BT709": ITU-R BT.709 YCbCr Limited range
-		START_SIG	: string := "PULSE";-- "PULSE": framestart and linestart are 1-clock pulse.
-										-- "WIDTH": framestart and linestart are hsync width.
-		EARLY_REQ	: integer := 0;		-- 0-16   : A value that causes "pixrequest" to assert before "active".
+		BAR_MODE	: string := "WIDE";		-- "WIDE"  : ARIB STD-B28 Multi-colorbar like
+											-- "SD"    : ARIB 75% Colorbar like
+		COLORSPACE	: string := "RGB";		-- "RGB"   : RGB888 Full range
+											-- "BT601" : ITU-R BT.601 YCbCr Limited range
+											-- "BT709" : ITU-R BT.709 YCbCr Limited range
+		START_SIG	: string := "SINGLE";	-- "SINGLE": framestart and linestart are 1-clock pulse.
+											-- "WIDTH" : framestart and linestart are hsync width.
+		EARLY_REQ	: integer := 0;			-- 0-16    : A value that causes "pixrequest" to assert before "active".
 
 		H_TOTAL		: integer := 800;	-- VGA(640x480) : 25.20MHz/25.175MHz
 		H_SYNC		: integer := 96;
@@ -454,11 +454,11 @@ begin
 		end if;
 	end process;
 
-gen_pulse : if (START_SIG = "PULSE") generate
+gen_pulse : if (START_SIG = "SINGLE") generate
 	framestart <= '1' when(hcount = 0 and vcount = FRAME_TOP) else '0';
 	linestart  <= scanena_reg when(hsync_rise and is_false(vblank_reg)) else '0';
 end generate;
-gen_width : if (START_SIG /= "PULSE") generate
+gen_width : if (START_SIG /= "SINGLE") generate
 	framestart <= '1' when(is_true(hsync_reg) and vcount = FRAME_TOP) else '0';
 	linestart  <= scanena_reg when(is_true(hsync_reg) and is_false(vblank_reg)) else '0';
 end generate;

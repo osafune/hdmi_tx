@@ -115,7 +115,7 @@ When developing and selling HDMI equipment products, it is necessary to become a
 |---|:---:|:---:|---|
 |reset|1|in|コアの非同期リセット入力です。`'1'`でリセットアサートします。|
 |clk|1|in|コアのクロック入力です。全ての入力は立ち上がりエッジでラッチされます。|
-|clk_x5|1|in|シリアライザロック入力です。`clk`に同期した5倍のクロックを入力します。`clk`と`clk_x5`の位相は0 degです。|
+|clk_x5|1|in|シリアライザロック入力です。`clk`に同期した5倍のクロックを入力します。`clk`と`clk_x5`の位相は0 degで、同一のPLLから供給します。|
 |control|4|in|外部からHDMIタイミング制御を行う場合に使用します。`USE_EXTCONTROL="ON"`の場合のみ有効です。DVIの場合は参照しません。使用しない場合は未接続にします。|
 |active|1|in|ビデオアクティブ期間の入力信号です。`USE_EXTCONTROL="OFF"`の場合に有効です。使用しない場合は未接続にします。|
 |r_data|8|in|色空間がRGBの場合はR、色差の場合はCrのデータ入力です。|
@@ -182,7 +182,7 @@ When developing and selling HDMI equipment products, it is necessary to become a
 |---|---|---|---|
 |BAR_MODE|"WIDE"<br>"SD"|"WIDE"|カラーバーの出力モードを指定します。<br>`"WIDE"`:16:9用のカラーバーを出力<br>`"SD"`:4:3用のカラーバーを出力|
 |COLORSPACE|"RGB"<br>"BT601"<br>"BT709"|"RGB"|カラーバーの色空間を指定します。<br>`"RGB"`:RGB888 Full range<br>`"BT601"`:ITU-R BT.601 YCbCr Limited range<br>`"BT709"`:ITU-R BT.709 YCbCr Limited range|
-|START_SIG|"PULSE"<br>"WIDTH"|"PULSE"|`framestart`、`linestart`の信号出力幅を指定します。<br>`"PULSE"`:`video_clk`で1クロック幅の信号<br>`"WIDE"`:HSYNC幅の信号|
+|START_SIG|"SINGLE"<br>"WIDTH"|"SINGLE"|`framestart`、`linestart`の信号出力幅を指定します。<br>`"SINGLE"`:`video_clk`で1クロック幅の信号<br>`"WIDTH"`:HSYNC幅の信号|
 |EARLY_REQ|0 - 16|0|`pixrequest`のアサートタイミングを`active`からいくつ早めるかを指定します。ピクセルデータ読み出しのパイプライン分の遅延補償のために使用します。|
 |H_TOTAL|1 - 4096||水平トータルピクセル数(クロック数)です。|
 |H_SYNC|1 - 1024||水平同期信号のピクセル数(クロック数)です。|
