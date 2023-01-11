@@ -1,0 +1,1200 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+                              obj/default/loadbmp.o (__divsi3)
+c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+                              obj/default/loadbmp.o (__mulsi3)
+c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o)
+                              obj/default/loadbmp.o (malloc)
+c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-freer.o)
+                              c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o) (_free_r)
+c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+                              c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o) (_malloc_r)
+c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o)
+                              c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o) (_sbrk_r)
+c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcat.o)
+                              obj/default/main.o (strcat)
+c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcpy.o)
+                              obj/default/main.o (strcpy)
+c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+                              obj/default/getfilename.o (strlen)
+c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+                              c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o) (_impure_ptr)
+c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+                              c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o) (errno)
+c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_iic.o)
+                              obj/default/playwav.o (alt_ic_isr_register)
+c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                              c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_iic.o) (alt_iic_isr_register)
+c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                              c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_iic_isr_register.o) (alt_irq_entry)
+c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                              c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_iic_isr_register.o) (alt_irq_handler)
+c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                              c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_iic.o) (alt_irq_active)
+c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_load.o)
+                              c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp//obj/HAL/src/crt0.o (alt_load)
+c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_main.o)
+                              c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp//obj/HAL/src/crt0.o (alt_main)
+c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_malloc_lock.o)
+                              c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-freer.o) (__malloc_lock)
+c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_putchar.o)
+                              obj/default/main.o (alt_putchar)
+c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_sbrk.o)
+                              c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o) (sbrk)
+c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_sys_init.o)
+                              c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_main.o) (alt_irq_init)
+c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+                              c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_putchar.o) (altera_avalon_uart_write)
+c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(peridot_sdif.o)
+                              c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_sys_init.o) (peridot_sdif_init)
+c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(pff.o)
+                              c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_sys_init.o) (pf_mount)
+c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                              c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_load.o) (alt_dcache_flush_all)
+c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_errno.o)
+                              c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(altera_avalon_uart_write.o) (alt_errno)
+c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                              c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_entry.o) (alt_exception)
+c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                              c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_load.o) (alt_icache_flush_all)
+c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                              c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_exception_entry.o) (alt_instruction_exception_entry)
+c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                              c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_nios2_gen2_irq_init)
+c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(peridot_sdif_pff_diskio.o)
+                              c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(pff.o) (disk_initialize)
+c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+                              c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_load.o) (memcpy)
+c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+                              c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(pff.o) (memset)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+sdram            0x0000000000000000 0x0000000002000000
+reset            0x000000000f000000 0x0000000000000020
+boot             0x000000000f000020 0x0000000000003fe0
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp//obj/HAL/src/crt0.o
+LOAD obj/default/getfilename.o
+LOAD obj/default/loadbmp.o
+LOAD obj/default/main.o
+LOAD obj/default/playwav.o
+LOAD obj/default/xprintf.o
+LOAD c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libstdc++.a
+LOAD c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libm.a
+LOAD c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/mno-hw-mul\libgcc.a
+START GROUP
+LOAD c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a
+LOAD c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/mno-hw-mul\libgcc.a
+LOAD c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a
+LOAD c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libm.a
+END GROUP
+LOAD c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/mno-hw-mul\libgcc.a
+                0x0000000000000000                __alt_mem_sdram = 0x0
+                0x000000000f000000                __alt_mem_boot = 0xf000000
+
+.entry          0x000000000f000000       0x20
+ *(.entry)
+ .entry         0x000000000f000000       0x20 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp//obj/HAL/src/crt0.o
+                0x000000000f000000                __reset
+                0x000000000f00000c                _exit
+
+.exceptions     0x000000000f000020      0x160
+                0x000000000f000020                PROVIDE (__ram_exceptions_start = ABSOLUTE (.))
+                0x000000000f000020                . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ .exceptions.entry.label
+                0x000000000f000020        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                0x000000000f000020                alt_irq_entry
+ .exceptions.entry.label
+                0x000000000f000020        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                0x000000000f000020                alt_exception
+ *(.exceptions.entry.user)
+ *(.exceptions.entry.ecc_fatal)
+ *(.exceptions.entry)
+ .exceptions.entry
+                0x000000000f000020       0x54 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ .exceptions.irqtest
+                0x000000000f000074       0x10 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ .exceptions.irqhandler
+                0x000000000f000084        0x4 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ .exceptions.irqreturn
+                0x000000000f000088        0x4 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.label)
+ .exceptions.notirq.label
+                0x000000000f00008c        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ .exceptions.notirq
+                0x000000000f00008c        0x8 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ .exceptions.unknown
+                0x000000000f000094       0x14 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.label)
+ .exceptions.exit.label
+                0x000000000f0000a8        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .exceptions.exit.label
+                0x000000000f0000a8        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ .exceptions.exit
+                0x000000000f0000a8       0x54 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions)
+ .exceptions    0x000000000f0000fc       0x60 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x000000000f0000fc                alt_irq_handler
+ .exceptions    0x000000000f00015c       0x24 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x000000000f00015c                alt_instruction_exception_entry
+                0x000000000f000180                PROVIDE (__ram_exceptions_end = ABSOLUTE (.))
+                0x000000000f000020                PROVIDE (__flash_exceptions_start = LOADADDR (.exceptions))
+
+.text           0x000000000f000180     0x2ab0
+                [!provide]                        PROVIDE (stext = ABSOLUTE (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.rel.dyn)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x000000000f000180       0x3c c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp//obj/HAL/src/crt0.o
+                0x000000000f000180                _start
+ .text          0x000000000f0001bc      0x124 obj/default/getfilename.o
+                0x000000000f0001bc                open_wavdir
+                0x000000000f0001e8                get_wavfilename
+ .text          0x000000000f0002e0      0x29c obj/default/loadbmp.o
+                0x000000000f0002e0                loadbmp
+ .text          0x000000000f00057c        0x0 obj/default/main.o
+ .text.startup  0x000000000f00057c      0x194 obj/default/main.o
+                0x000000000f00057c                main
+ .text          0x000000000f000710      0x35c obj/default/playwav.o
+                0x000000000f0007d0                play_init
+                0x000000000f00081c                play_status
+                0x000000000f000830                play_getbuffdata
+                0x000000000f000848                play_setvol
+                0x000000000f000890                play_stop
+                0x000000000f0008b8                play_wav
+ .text          0x000000000f000a6c      0x5c4 obj/default/xprintf.o
+                0x000000000f000a6c                xfputc
+                0x000000000f000a94                xputc
+                0x000000000f000f54                xfputs
+                0x000000000f000f98                xputs
+                0x000000000f000fa4                xprintf
+                0x000000000f000fd4                xfprintf
+                0x000000000f000ff8                xsprintf
+ .text          0x000000000f001030      0x1b4 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+                0x000000000f001030                __divsi3
+                0x000000000f0010b0                __modsi3
+                0x000000000f001124                __udivsi3
+                0x000000000f001188                __umodsi3
+ .text          0x000000000f0011e4       0x28 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+                0x000000000f0011e4                __mulsi3
+ .text          0x000000000f00120c        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o)
+ .text.malloc   0x000000000f00120c       0x10 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o)
+                0x000000000f00120c                malloc
+ .text.free     0x000000000f00121c       0x10 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o)
+                0x000000000f00121c                free
+ .text          0x000000000f00122c        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-freer.o)
+ .text._free_r  0x000000000f00122c      0x100 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-freer.o)
+                0x000000000f00122c                _free_r
+ .text          0x000000000f00132c        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+ .text.sbrk_aligned
+                0x000000000f00132c       0x8c c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+ .text._malloc_r
+                0x000000000f0013b8      0x1c4 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+                0x000000000f0013b8                _malloc_r
+ .text          0x000000000f00157c        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o)
+ .text._sbrk_r  0x000000000f00157c       0x48 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o)
+                0x000000000f00157c                _sbrk_r
+ .text          0x000000000f0015c4        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcat.o)
+ .text.strcat   0x000000000f0015c4       0x48 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcat.o)
+                0x000000000f0015c4                strcat
+ .text          0x000000000f00160c        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcpy.o)
+ .text.strcpy   0x000000000f00160c       0x28 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcpy.o)
+                0x000000000f00160c                strcpy
+ .text          0x000000000f001634        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .text.strlen   0x000000000f001634       0x1c c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+                0x000000000f001634                strlen
+ .text          0x000000000f001650        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .text          0x000000000f001650        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .text          0x000000000f001650       0x8c c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_iic.o)
+                0x000000000f001650                alt_ic_isr_register
+                0x000000000f001654                alt_ic_irq_enable
+                0x000000000f00168c                alt_ic_irq_disable
+                0x000000000f0016c4                alt_ic_irq_enabled
+ .text          0x000000000f0016dc       0x68 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                0x000000000f0016dc                alt_iic_isr_register
+ .text          0x000000000f001744        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .text          0x000000000f001744        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .text          0x000000000f001744        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .text          0x000000000f001744       0x84 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_load.o)
+                0x000000000f001744                alt_load
+ .text          0x000000000f0017c8       0x2c c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_main.o)
+                0x000000000f0017c8                alt_main
+ .text          0x000000000f0017f4        0x8 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_malloc_lock.o)
+                0x000000000f0017f4                __malloc_lock
+                0x000000000f0017f8                __malloc_unlock
+ .text          0x000000000f0017fc       0x48 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_putchar.o)
+                0x000000000f0017fc                alt_putchar
+ .text          0x000000000f001844       0x4c c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_sbrk.o)
+                0x000000000f001844                sbrk
+ .text          0x000000000f001890       0x54 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x000000000f001890                alt_irq_init
+                0x000000000f0018b0                alt_sys_init
+ .text          0x000000000f0018e4       0x84 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+                0x000000000f0018e4                altera_avalon_uart_write
+ .text          0x000000000f001968      0x14c c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(peridot_sdif.o)
+                0x000000000f001968                peridot_sdif_init
+                0x000000000f001988                peridot_sdif_assert
+                0x000000000f00199c                peridot_sdif_negate
+                0x000000000f0019b8                peridot_sdif_sendbyte
+                0x000000000f0019e4                peridot_sdif_recvbyte
+                0x000000000f001a10                peridot_sdif_card_insert
+                0x000000000f001a24                peridot_sdif_pwr_on
+                0x000000000f001a38                peridot_sdif_pwr_off
+                0x000000000f001a54                peridot_sdif_setpp
+                0x000000000f001a64                peridot_sdif_setdd
+                0x000000000f001a74                peridot_sdif_wait
+                0x000000000f001a8c                peridot_sdif_wait_ms
+ .text          0x000000000f001ab4      0xc00 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(pff.o)
+                0x000000000f001fd4                pf_mount
+                0x000000000f0021a8                pf_open
+                0x000000000f002240                pf_read
+                0x000000000f002384                pf_lseek
+                0x000000000f0024c0                pf_opendir
+                0x000000000f002534                pf_readdir
+ .text          0x000000000f0026b4        0x4 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x000000000f0026b4                alt_dcache_flush_all
+ .text          0x000000000f0026b8        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_errno.o)
+ .text          0x000000000f0026b8        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .text          0x000000000f0026b8        0x4 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                0x000000000f0026b8                alt_icache_flush_all
+ .text          0x000000000f0026bc       0x24 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x000000000f0026bc                alt_exception_cause_generated_bad_addr
+ .text          0x000000000f0026e0        0x8 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                0x000000000f0026e0                altera_nios2_gen2_irq_init
+ .text          0x000000000f0026e8      0x500 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(peridot_sdif_pff_diskio.o)
+                0x000000000f00288c                disk_initialize
+                0x000000000f002ac4                disk_readp
+ .text          0x000000000f002be8        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .text.memcpy   0x000000000f002be8       0x28 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+                0x000000000f002be8                memcpy
+ .text          0x000000000f002c10        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .text.memset   0x000000000f002c10       0x20 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+                0x000000000f002c10                memset
+ *(.gnu.warning.*)
+ *(.fini)
+                [!provide]                        PROVIDE (__etext = ABSOLUTE (.))
+                [!provide]                        PROVIDE (_etext = ABSOLUTE (.))
+                [!provide]                        PROVIDE (etext = ABSOLUTE (.))
+ *(.eh_frame_hdr)
+                0x000000000f002c30                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__preinit_array_start = ABSOLUTE (.))
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end = ABSOLUTE (.))
+                [!provide]                        PROVIDE (__init_array_start = ABSOLUTE (.))
+ *(.init_array)
+                [!provide]                        PROVIDE (__init_array_end = ABSOLUTE (.))
+                [!provide]                        PROVIDE (__fini_array_start = ABSOLUTE (.))
+ *(.fini_array)
+                [!provide]                        PROVIDE (__fini_array_end = ABSOLUTE (.))
+ *(.eh_frame)
+ *(.gcc_except_table .gcc_except_table.*)
+ *(.dynamic)
+                [!provide]                        PROVIDE (__CTOR_LIST__ = ABSOLUTE (.))
+ *(.ctors)
+ *(SORT_BY_NAME(.ctors.*))
+                [!provide]                        PROVIDE (__CTOR_END__ = ABSOLUTE (.))
+                [!provide]                        PROVIDE (__DTOR_LIST__ = ABSOLUTE (.))
+ *(.dtors)
+ *(SORT_BY_NAME(.dtors.*))
+                [!provide]                        PROVIDE (__DTOR_END__ = ABSOLUTE (.))
+ *(.jcr)
+                0x000000000f002c30                . = ALIGN (0x4)
+
+.rodata         0x000000000f002c30      0x210
+                0x000000000f002c30                PROVIDE (__ram_rodata_start = ABSOLUTE (.))
+                0x000000000f002c30                . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.4
+                0x000000000f002c30       0xbe obj/default/loadbmp.o
+                                         0xc2 (size before relaxing)
+ *fill*         0x000000000f002cee        0x2 
+ .rodata.str1.4
+                0x000000000f002cf0      0x126 obj/default/main.o
+ *fill*         0x000000000f002e16        0x2 
+ .rodata.str1.4
+                0x000000000f002e18       0x28 obj/default/playwav.o
+                                         0x68 (size before relaxing)
+ .rodata.str1.4
+                0x000000000f002e40       0x28 obj/default/xprintf.o
+                                          0x1 (size before relaxing)
+ *(.rodata1)
+                0x000000000f002e68                . = ALIGN (0x4)
+                0x000000000f002e40                PROVIDE (__ram_rodata_end = ABSOLUTE (.))
+                0x000000000f002c30                PROVIDE (__flash_rodata_start = LOADADDR (.rodata))
+
+.rwdata         0x000000000f002e40      0x114 load address 0x000000000f002f54
+                0x000000000f002e40                PROVIDE (__ram_rwdata_start = ABSOLUTE (.))
+                0x000000000f002e40                . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x000000000f002e40        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp//obj/HAL/src/crt0.o
+ .data          0x000000000f002e40        0x0 obj/default/getfilename.o
+ .data          0x000000000f002e40        0x0 obj/default/loadbmp.o
+ .data          0x000000000f002e40        0x0 obj/default/main.o
+ .data          0x000000000f002e40        0x0 obj/default/playwav.o
+ .data          0x000000000f002e40        0x0 obj/default/xprintf.o
+ .data          0x000000000f002e40        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .data          0x000000000f002e40        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .data          0x000000000f002e40        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o)
+ .data          0x000000000f002e40        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-freer.o)
+ .data          0x000000000f002e40        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+ .data          0x000000000f002e40        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o)
+ .data          0x000000000f002e40        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcat.o)
+ .data          0x000000000f002e40        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcpy.o)
+ .data          0x000000000f002e40        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .data          0x000000000f002e40        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .data.impure_data
+                0x000000000f002e40       0xe4 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .data          0x000000000f002f24        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .data          0x000000000f002f24        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_iic.o)
+ .data          0x000000000f002f24        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .data          0x000000000f002f24        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .data          0x000000000f002f24        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .data          0x000000000f002f24        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .data          0x000000000f002f24        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_load.o)
+ .data          0x000000000f002f24        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_main.o)
+ .data          0x000000000f002f24        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_malloc_lock.o)
+ .data          0x000000000f002f24        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_putchar.o)
+ .data          0x000000000f002f24        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_sbrk.o)
+ .data          0x000000000f002f24       0x18 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x000000000f002f24                peridot_sdif_0
+ .data          0x000000000f002f3c        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .data          0x000000000f002f3c        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(peridot_sdif.o)
+ .data          0x000000000f002f3c        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(pff.o)
+ .data          0x000000000f002f3c        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x000000000f002f3c        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_errno.o)
+ .data          0x000000000f002f3c        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .data          0x000000000f002f3c        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x000000000f002f3c        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .data          0x000000000f002f3c        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .data          0x000000000f002f3c        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(peridot_sdif_pff_diskio.o)
+ .data          0x000000000f002f3c        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .data          0x000000000f002f3c        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+                0x000000000f00af3c                _gp = ABSOLUTE ((. + 0x8000))
+                [!provide]                        PROVIDE (gp = _gp)
+ *(.rwdata .rwdata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata._global_impure_ptr
+                0x000000000f002f3c        0x4 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+                0x000000000f002f3c                _global_impure_ptr
+ .sdata._impure_ptr
+                0x000000000f002f40        0x4 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+                0x000000000f002f40                _impure_ptr
+ .sdata         0x000000000f002f44        0x4 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x000000000f002f44                alt_priority_mask
+ .sdata         0x000000000f002f48        0x4 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_sbrk.o)
+ .sdata         0x000000000f002f4c        0x4 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x000000000f002f4c                sysuart
+ .sdata         0x000000000f002f50        0x4 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_errno.o)
+                0x000000000f002f50                alt_errno
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x000000000f002f54                . = ALIGN (0x4)
+                0x000000000f002f54                _edata = ABSOLUTE (.)
+                [!provide]                        PROVIDE (edata = ABSOLUTE (.))
+                0x000000000f002f54                PROVIDE (__ram_rwdata_end = ABSOLUTE (.))
+                0x000000000f002f54                PROVIDE (__flash_rwdata_start = LOADADDR (.rwdata))
+
+.bss            0x000000000f003068      0x5a8
+                0x000000000f003068                __bss_start = ABSOLUTE (.)
+                [!provide]                        PROVIDE (__sbss_start = ABSOLUTE (.))
+                [!provide]                        PROVIDE (___sbss_start = ABSOLUTE (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x000000000f003068        0x4 obj/default/playwav.o
+ .sbss          0x000000000f00306c        0x8 obj/default/xprintf.o
+                0x000000000f003070                xfunc_output
+ .sbss.__malloc_sbrk_start
+                0x000000000f003074        0x4 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+                0x000000000f003074                __malloc_sbrk_start
+ .sbss.__malloc_free_list
+                0x000000000f003078        0x4 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+                0x000000000f003078                __malloc_free_list
+ .sbss.errno    0x000000000f00307c        0x4 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+                0x000000000f00307c                errno
+ .sbss          0x000000000f003080        0x4 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x000000000f003080                alt_irq_active
+ .sbss          0x000000000f003084        0xc c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_main.o)
+                0x000000000f003084                alt_envp
+                0x000000000f003088                alt_argv
+                0x000000000f00308c                alt_argc
+ .sbss          0x000000000f003090        0x4 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(pff.o)
+ .sbss          0x000000000f003094        0x4 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x000000000f003094                alt_instruction_exception_handler
+ .sbss          0x000000000f003098        0x1 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(peridot_sdif_pff_diskio.o)
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                [!provide]                        PROVIDE (__sbss_end = ABSOLUTE (.))
+                [!provide]                        PROVIDE (___sbss_end = ABSOLUTE (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x000000000f003099        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp//obj/HAL/src/crt0.o
+ *fill*         0x000000000f003099        0x3 
+ .bss           0x000000000f00309c       0x2c obj/default/getfilename.o
+ .bss           0x000000000f0030c8        0x0 obj/default/loadbmp.o
+ .bss           0x000000000f0030c8       0x17 obj/default/main.o
+ *fill*         0x000000000f0030df        0x1 
+ .bss           0x000000000f0030e0      0x400 obj/default/playwav.o
+ .bss           0x000000000f0034e0        0x0 obj/default/xprintf.o
+ .bss           0x000000000f0034e0        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .bss           0x000000000f0034e0        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .bss           0x000000000f0034e0        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o)
+ .bss           0x000000000f0034e0        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-freer.o)
+ .bss           0x000000000f0034e0        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+ .bss           0x000000000f0034e0        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o)
+ .bss           0x000000000f0034e0        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcat.o)
+ .bss           0x000000000f0034e0        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcpy.o)
+ .bss           0x000000000f0034e0        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .bss           0x000000000f0034e0        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .bss           0x000000000f0034e0        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .bss           0x000000000f0034e0        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_iic.o)
+ .bss           0x000000000f0034e0        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .bss           0x000000000f0034e0        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .bss           0x000000000f0034e0      0x100 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x000000000f0034e0                alt_irq
+ .bss           0x000000000f0035e0        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .bss           0x000000000f0035e0        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_load.o)
+ .bss           0x000000000f0035e0        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_main.o)
+ .bss           0x000000000f0035e0        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_malloc_lock.o)
+ .bss           0x000000000f0035e0        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_putchar.o)
+ .bss           0x000000000f0035e0        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_sbrk.o)
+ .bss           0x000000000f0035e0       0x30 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x000000000f0035e0                peridot_sdif_pff
+ .bss           0x000000000f003610        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .bss           0x000000000f003610        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(peridot_sdif.o)
+ .bss           0x000000000f003610        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(pff.o)
+ .bss           0x000000000f003610        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x000000000f003610        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_errno.o)
+ .bss           0x000000000f003610        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .bss           0x000000000f003610        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x000000000f003610        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .bss           0x000000000f003610        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .bss           0x000000000f003610        0x0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(peridot_sdif_pff_diskio.o)
+ .bss           0x000000000f003610        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .bss           0x000000000f003610        0x0 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ *(COMMON)
+                0x000000000f003610                . = ALIGN (0x4)
+                0x000000000f003610                __bss_end = ABSOLUTE (.)
+
+.sdram          0x0000000000000000        0x0 load address 0x000000000f003610
+                [!provide]                        PROVIDE (_alt_partition_sdram_start = ABSOLUTE (.))
+ *(.sdram .sdram. sdram.*)
+                0x0000000000000000                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (_alt_partition_sdram_end = ABSOLUTE (.))
+                0x0000000000000000                _end = ABSOLUTE (.)
+                0x0000000000000000                end = ABSOLUTE (.)
+                [!provide]                        PROVIDE (_alt_partition_sdram_load_addr = LOADADDR (.sdram))
+
+.boot           0x000000000f003610        0x0
+                [!provide]                        PROVIDE (_alt_partition_boot_start = ABSOLUTE (.))
+ *(.boot .boot. boot.*)
+                0x000000000f003610                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (_alt_partition_boot_end = ABSOLUTE (.))
+                0x000000000f003610                __alt_stack_base = ABSOLUTE (.)
+                [!provide]                        PROVIDE (_alt_partition_boot_load_addr = LOADADDR (.boot))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x2d
+ *(.comment)
+ .comment       0x0000000000000000       0x2d obj/default/getfilename.o
+                                         0x2e (size before relaxing)
+ .comment       0x000000000000002d       0x2e obj/default/loadbmp.o
+ .comment       0x000000000000002d       0x2e obj/default/main.o
+ .comment       0x000000000000002d       0x2e obj/default/playwav.o
+ .comment       0x000000000000002d       0x2e obj/default/xprintf.o
+ .comment       0x000000000000002d       0x2e c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .comment       0x000000000000002d       0x2e c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .comment       0x000000000000002d       0x2e c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o)
+ .comment       0x000000000000002d       0x2e c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-freer.o)
+ .comment       0x000000000000002d       0x2e c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+ .comment       0x000000000000002d       0x2e c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o)
+ .comment       0x000000000000002d       0x2e c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcat.o)
+ .comment       0x000000000000002d       0x2e c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcpy.o)
+ .comment       0x000000000000002d       0x2e c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .comment       0x000000000000002d       0x2e c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .comment       0x000000000000002d       0x2e c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .comment       0x000000000000002d       0x2e c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_iic.o)
+ .comment       0x000000000000002d       0x2e c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .comment       0x000000000000002d       0x2e c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .comment       0x000000000000002d       0x2e c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .comment       0x000000000000002d       0x2e c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_load.o)
+ .comment       0x000000000000002d       0x2e c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_main.o)
+ .comment       0x000000000000002d       0x2e c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_malloc_lock.o)
+ .comment       0x000000000000002d       0x2e c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_putchar.o)
+ .comment       0x000000000000002d       0x2e c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_sbrk.o)
+ .comment       0x000000000000002d       0x2e c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .comment       0x000000000000002d       0x2e c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .comment       0x000000000000002d       0x2e c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(peridot_sdif.o)
+ .comment       0x000000000000002d       0x2e c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(pff.o)
+ .comment       0x000000000000002d       0x2e c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .comment       0x000000000000002d       0x2e c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_errno.o)
+ .comment       0x000000000000002d       0x2e c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .comment       0x000000000000002d       0x2e c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .comment       0x000000000000002d       0x2e c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .comment       0x000000000000002d       0x2e c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(peridot_sdif_pff_diskio.o)
+ .comment       0x000000000000002d       0x2e c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .comment       0x000000000000002d       0x2e c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x520
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x28 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp//obj/HAL/src/crt0.o
+ .debug_aranges
+                0x0000000000000028       0x20 obj/default/getfilename.o
+ .debug_aranges
+                0x0000000000000048       0x20 obj/default/loadbmp.o
+ .debug_aranges
+                0x0000000000000068       0x20 obj/default/main.o
+ .debug_aranges
+                0x0000000000000088       0x20 obj/default/playwav.o
+ .debug_aranges
+                0x00000000000000a8       0x20 obj/default/xprintf.o
+ .debug_aranges
+                0x00000000000000c8       0x20 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_aranges
+                0x00000000000000e8       0x20 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_aranges
+                0x0000000000000108       0x28 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o)
+ .debug_aranges
+                0x0000000000000130       0x20 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-freer.o)
+ .debug_aranges
+                0x0000000000000150       0x28 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+ .debug_aranges
+                0x0000000000000178       0x20 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o)
+ .debug_aranges
+                0x0000000000000198       0x20 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcat.o)
+ .debug_aranges
+                0x00000000000001b8       0x20 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcpy.o)
+ .debug_aranges
+                0x00000000000001d8       0x20 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .debug_aranges
+                0x00000000000001f8       0x18 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .debug_aranges
+                0x0000000000000210       0x18 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .debug_aranges
+                0x0000000000000228       0x20 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_aranges
+                0x0000000000000248       0x20 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_aranges
+                0x0000000000000268       0x30 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_aranges
+                0x0000000000000298       0x20 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_aranges
+                0x00000000000002b8       0x18 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_aranges
+                0x00000000000002d0       0x20 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_aranges
+                0x00000000000002f0       0x20 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x0000000000000310       0x20 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_malloc_lock.o)
+ .debug_aranges
+                0x0000000000000330       0x20 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_putchar.o)
+ .debug_aranges
+                0x0000000000000350       0x20 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_sbrk.o)
+ .debug_aranges
+                0x0000000000000370       0x20 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x0000000000000390       0x20 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_aranges
+                0x00000000000003b0       0x20 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(peridot_sdif.o)
+ .debug_aranges
+                0x00000000000003d0       0x20 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(pff.o)
+ .debug_aranges
+                0x00000000000003f0       0x20 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_aranges
+                0x0000000000000410       0x18 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_aranges
+                0x0000000000000428       0x30 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_aranges
+                0x0000000000000458       0x20 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_aranges
+                0x0000000000000478       0x28 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_aranges
+                0x00000000000004a0       0x20 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_aranges
+                0x00000000000004c0       0x20 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(peridot_sdif_pff_diskio.o)
+ .debug_aranges
+                0x00000000000004e0       0x20 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_aranges
+                0x0000000000000500       0x20 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0x8141
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000       0x22 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp//obj/HAL/src/crt0.o
+ .debug_info    0x0000000000000022      0x372 obj/default/getfilename.o
+ .debug_info    0x0000000000000394      0x47b obj/default/loadbmp.o
+ .debug_info    0x000000000000080f      0x59b obj/default/main.o
+ .debug_info    0x0000000000000daa      0x506 obj/default/playwav.o
+ .debug_info    0x00000000000012b0      0x5c6 obj/default/xprintf.o
+ .debug_info    0x0000000000001876      0x347 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_info    0x0000000000001bbd       0xc4 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_info    0x0000000000001c81      0x653 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o)
+ .debug_info    0x00000000000022d4      0x705 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-freer.o)
+ .debug_info    0x00000000000029d9      0x88a c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+ .debug_info    0x0000000000003263      0x634 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o)
+ .debug_info    0x0000000000003897       0xe1 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcat.o)
+ .debug_info    0x0000000000003978       0xd9 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcpy.o)
+ .debug_info    0x0000000000003a51       0xd1 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .debug_info    0x0000000000003b22      0x5cf c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .debug_info    0x00000000000040f1       0x85 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .debug_info    0x0000000000004176      0x3d8 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_info    0x000000000000454e      0x27f c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_info    0x00000000000047cd       0x22 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_info    0x00000000000047ef      0x195 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_info    0x0000000000004984       0x88 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_info    0x0000000000004a0c      0x239 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_info    0x0000000000004c45      0x13e c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x0000000000004d83      0x8c9 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_malloc_lock.o)
+ .debug_info    0x000000000000564c      0x130 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_putchar.o)
+ .debug_info    0x000000000000577c      0x1c2 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_sbrk.o)
+ .debug_info    0x000000000000593e      0x3ad c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x0000000000005ceb      0x19d c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_info    0x0000000000005e88      0x391 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(peridot_sdif.o)
+ .debug_info    0x0000000000006219     0x11b8 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(pff.o)
+ .debug_info    0x00000000000073d1       0x8d c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x000000000000745e       0xa8 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_info    0x0000000000007506       0x22 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_info    0x0000000000007528       0x8d c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x00000000000075b5      0x208 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_info    0x00000000000077bd       0x8d c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_info    0x000000000000784a      0x6f0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(peridot_sdif_pff_diskio.o)
+ .debug_info    0x0000000000007f3a      0x121 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_info    0x000000000000805b       0xe6 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+
+.debug_abbrev   0x0000000000000000     0x2e5a
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000       0x12 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp//obj/HAL/src/crt0.o
+ .debug_abbrev  0x0000000000000012      0x1ab obj/default/getfilename.o
+ .debug_abbrev  0x00000000000001bd      0x169 obj/default/loadbmp.o
+ .debug_abbrev  0x0000000000000326      0x18d obj/default/main.o
+ .debug_abbrev  0x00000000000004b3      0x1a2 obj/default/playwav.o
+ .debug_abbrev  0x0000000000000655      0x270 obj/default/xprintf.o
+ .debug_abbrev  0x00000000000008c5      0x10c c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_abbrev  0x00000000000009d1       0x80 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_abbrev  0x0000000000000a51      0x1fa c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o)
+ .debug_abbrev  0x0000000000000c4b      0x266 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-freer.o)
+ .debug_abbrev  0x0000000000000eb1      0x26c c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+ .debug_abbrev  0x000000000000111d      0x1f1 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o)
+ .debug_abbrev  0x000000000000130e       0x86 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcat.o)
+ .debug_abbrev  0x0000000000001394       0x7f c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcpy.o)
+ .debug_abbrev  0x0000000000001413       0x8c c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .debug_abbrev  0x000000000000149f      0x185 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .debug_abbrev  0x0000000000001624       0x39 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .debug_abbrev  0x000000000000165d      0x1dd c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_abbrev  0x000000000000183a      0x1d9 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_abbrev  0x0000000000001a13       0x12 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_abbrev  0x0000000000001a25      0x147 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_abbrev  0x0000000000001b6c       0x46 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_abbrev  0x0000000000001bb2      0x12c c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x0000000000001cde       0xeb c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x0000000000001dc9      0x201 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_malloc_lock.o)
+ .debug_abbrev  0x0000000000001fca       0xca c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_putchar.o)
+ .debug_abbrev  0x0000000000002094      0x147 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_sbrk.o)
+ .debug_abbrev  0x00000000000021db      0x187 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x0000000000002362      0x10d c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_abbrev  0x000000000000246f      0x148 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(peridot_sdif.o)
+ .debug_abbrev  0x00000000000025b7      0x2f6 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(pff.o)
+ .debug_abbrev  0x00000000000028ad       0x43 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x00000000000028f0       0x70 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_abbrev  0x0000000000002960       0x12 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_abbrev  0x0000000000002972       0x43 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x00000000000029b5      0x113 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_abbrev  0x0000000000002ac8       0x43 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_abbrev  0x0000000000002b0b      0x1f0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(peridot_sdif_pff_diskio.o)
+ .debug_abbrev  0x0000000000002cfb       0xc1 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_abbrev  0x0000000000002dbc       0x9e c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+
+.debug_line     0x0000000000000000     0x384c
+ *(.debug_line)
+ .debug_line    0x0000000000000000       0x66 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp//obj/HAL/src/crt0.o
+ .debug_line    0x0000000000000066      0x144 obj/default/getfilename.o
+ .debug_line    0x00000000000001aa      0x29c obj/default/loadbmp.o
+ .debug_line    0x0000000000000446      0x193 obj/default/main.o
+ .debug_line    0x00000000000005d9      0x2b1 obj/default/playwav.o
+ .debug_line    0x000000000000088a      0x57b obj/default/xprintf.o
+ .debug_line    0x0000000000000e05      0x2e3 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_line    0x00000000000010e8       0x88 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_line    0x0000000000001170       0x93 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o)
+ .debug_line    0x0000000000001203      0x1ac c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-freer.o)
+ .debug_line    0x00000000000013af      0x2d7 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+ .debug_line    0x0000000000001686       0xa8 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o)
+ .debug_line    0x000000000000172e       0x9e c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcat.o)
+ .debug_line    0x00000000000017cc       0x90 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcpy.o)
+ .debug_line    0x000000000000185c       0x7c c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .debug_line    0x00000000000018d8       0x51 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .debug_line    0x0000000000001929       0x3a c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .debug_line    0x0000000000001963      0x152 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_line    0x0000000000001ab5      0x115 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_line    0x0000000000001bca       0x6b c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_line    0x0000000000001c35       0xf9 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_line    0x0000000000001d2e       0x43 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_line    0x0000000000001d71       0xd2 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_line    0x0000000000001e43       0xa2 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x0000000000001ee5       0x6b c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_malloc_lock.o)
+ .debug_line    0x0000000000001f50       0x82 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_putchar.o)
+ .debug_line    0x0000000000001fd2       0xea c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_sbrk.o)
+ .debug_line    0x00000000000020bc       0xd6 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x0000000000002192       0xe5 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_line    0x0000000000002277      0x1cd c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(peridot_sdif.o)
+ .debug_line    0x0000000000002444      0xc1a c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(pff.o)
+ .debug_line    0x000000000000305e       0x4e c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x00000000000030ac       0x4c c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_line    0x00000000000030f8       0x9d c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_line    0x0000000000003195       0x4c c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x00000000000031e1       0xb0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_line    0x0000000000003291       0x54 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_line    0x00000000000032e5      0x454 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(peridot_sdif_pff_diskio.o)
+ .debug_line    0x0000000000003739       0x8c c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_line    0x00000000000037c5       0x87 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+
+.debug_frame    0x0000000000000000      0xb70
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x58 obj/default/getfilename.o
+ .debug_frame   0x0000000000000058       0x54 obj/default/loadbmp.o
+ .debug_frame   0x00000000000000ac       0x40 obj/default/main.o
+ .debug_frame   0x00000000000000ec       0xd0 obj/default/playwav.o
+ .debug_frame   0x00000000000001bc      0x100 obj/default/xprintf.o
+ .debug_frame   0x00000000000002bc       0x50 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_frame   0x000000000000030c       0x20 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_frame   0x000000000000032c       0x30 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o)
+ .debug_frame   0x000000000000035c       0x38 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-freer.o)
+ .debug_frame   0x0000000000000394       0x68 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x00000000000003fc       0x30 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o)
+ .debug_frame   0x000000000000042c       0x20 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcat.o)
+ .debug_frame   0x000000000000044c       0x20 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcpy.o)
+ .debug_frame   0x000000000000046c       0x20 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .debug_frame   0x000000000000048c       0x50 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_frame   0x00000000000004dc       0x38 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_frame   0x0000000000000514       0x34 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_frame   0x0000000000000548       0x2c c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_frame   0x0000000000000574       0x2c c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x00000000000005a0       0x30 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_malloc_lock.o)
+ .debug_frame   0x00000000000005d0       0x30 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_putchar.o)
+ .debug_frame   0x0000000000000600       0x20 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_sbrk.o)
+ .debug_frame   0x0000000000000620       0x48 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x0000000000000668       0x38 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_frame   0x00000000000006a0       0xd0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(peridot_sdif.o)
+ .debug_frame   0x0000000000000770      0x250 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(pff.o)
+ .debug_frame   0x00000000000009c0       0x20 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_frame   0x00000000000009e0       0x20 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_frame   0x0000000000000a00       0x30 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_frame   0x0000000000000a30       0x20 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_frame   0x0000000000000a50       0xe0 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(peridot_sdif_pff_diskio.o)
+ .debug_frame   0x0000000000000b30       0x20 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_frame   0x0000000000000b50       0x20 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+
+.debug_str      0x0000000000000000     0x15dd
+ *(.debug_str)
+ .debug_str     0x0000000000000000       0x5e c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp//obj/HAL/src/crt0.o
+ .debug_str     0x000000000000005e      0x1b9 obj/default/getfilename.o
+                                        0x226 (size before relaxing)
+ .debug_str     0x0000000000000217       0xb6 obj/default/loadbmp.o
+                                        0x216 (size before relaxing)
+ .debug_str     0x00000000000002cd      0x113 obj/default/main.o
+                                        0x2ea (size before relaxing)
+ .debug_str     0x00000000000003e0       0xc9 obj/default/playwav.o
+                                        0x279 (size before relaxing)
+ .debug_str     0x00000000000004a9       0x68 obj/default/xprintf.o
+                                        0x194 (size before relaxing)
+ .debug_str     0x0000000000000511       0xba c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+                                        0x122 (size before relaxing)
+ .debug_str     0x00000000000005cb       0xe6 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_str     0x00000000000005cb      0x331 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o)
+                                        0x407 (size before relaxing)
+ .debug_str     0x00000000000008fc       0x7a c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-freer.o)
+                                        0x463 (size before relaxing)
+ .debug_str     0x0000000000000976       0x67 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+                                        0x4c2 (size before relaxing)
+ .debug_str     0x00000000000009dd        0xa c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o)
+                                        0x3ec (size before relaxing)
+ .debug_str     0x00000000000009e7       0xfa c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcat.o)
+ .debug_str     0x00000000000009e7        0xa c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcpy.o)
+                                        0x104 (size before relaxing)
+ .debug_str     0x00000000000009f1        0xa c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+                                        0x107 (size before relaxing)
+ .debug_str     0x00000000000009f1       0x1f c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+                                        0x3f5 (size before relaxing)
+ .debug_str     0x0000000000000a10       0xf9 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .debug_str     0x0000000000000a10       0xc4 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_iic.o)
+                                        0x1f6 (size before relaxing)
+ .debug_str     0x0000000000000ad4       0x18 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                                        0x1b5 (size before relaxing)
+ .debug_str     0x0000000000000aec       0x18 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                                         0x67 (size before relaxing)
+ .debug_str     0x0000000000000b04       0x20 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                                        0x144 (size before relaxing)
+ .debug_str     0x0000000000000b24       0x12 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                                         0xf3 (size before relaxing)
+ .debug_str     0x0000000000000b36      0x111 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_load.o)
+                                        0x208 (size before relaxing)
+ .debug_str     0x0000000000000c47       0x4b c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_main.o)
+                                        0x138 (size before relaxing)
+ .debug_str     0x0000000000000c92      0x11c c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_malloc_lock.o)
+                                        0x4c6 (size before relaxing)
+ .debug_str     0x0000000000000dae       0x3c c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_putchar.o)
+                                        0x130 (size before relaxing)
+ .debug_str     0x0000000000000dea       0x38 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_sbrk.o)
+                                        0x172 (size before relaxing)
+ .debug_str     0x0000000000000e22       0xcd c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_sys_init.o)
+                                        0x33b (size before relaxing)
+ .debug_str     0x0000000000000eef       0x1e c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+                                        0x178 (size before relaxing)
+ .debug_str     0x0000000000000f0d       0xe3 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(peridot_sdif.o)
+                                        0x24f (size before relaxing)
+ .debug_str     0x0000000000000ff0      0x12e c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(pff.o)
+                                        0x3a9 (size before relaxing)
+ .debug_str     0x000000000000111e       0xfd c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_str     0x000000000000111e        0x8 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_errno.o)
+                                         0xfa (size before relaxing)
+ .debug_str     0x0000000000001126       0x1e c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                                         0x6d (size before relaxing)
+ .debug_str     0x0000000000001144       0xfd c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_str     0x0000000000001144      0x461 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                                        0x546 (size before relaxing)
+ .debug_str     0x00000000000015a5      0x103 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_str     0x00000000000015a5       0x2e c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(peridot_sdif_pff_diskio.o)
+                                        0x2ee (size before relaxing)
+ .debug_str     0x00000000000015d3        0xa c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+                                        0x115 (size before relaxing)
+ .debug_str     0x00000000000015dd      0x101 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x0000000000000000       0x10
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x0000000000000000       0x10 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp//obj/HAL/src/crt0.o
+                0x000000000f004000                __alt_data_end = 0xf004000
+                0x000000000f004000                PROVIDE (__alt_stack_pointer = __alt_data_end)
+                [!provide]                        PROVIDE (__alt_stack_limit = __alt_stack_base)
+                0x0000000000000000                PROVIDE (__alt_heap_start = end)
+                0x0000000002000000                PROVIDE (__alt_heap_limit = 0x2000000)
+OUTPUT(c4e_wavplayer.elf elf32-littlenios2)
+LOAD linker stubs
+
+.debug_ranges   0x0000000000000000       0x70
+ .debug_ranges  0x0000000000000000       0x20 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp//obj/HAL/src/crt0.o
+ .debug_ranges  0x0000000000000020       0x28 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_ranges  0x0000000000000048       0x28 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_exception_entry.o)
+
+.debug_loclists
+                0x0000000000000000     0x2b2e
+ .debug_loclists
+                0x0000000000000000       0xa4 obj/default/getfilename.o
+ .debug_loclists
+                0x00000000000000a4      0x2a3 obj/default/loadbmp.o
+ .debug_loclists
+                0x0000000000000347       0x6d obj/default/main.o
+ .debug_loclists
+                0x00000000000003b4      0x2b0 obj/default/playwav.o
+ .debug_loclists
+                0x0000000000000664      0x6a1 obj/default/xprintf.o
+ .debug_loclists
+                0x0000000000000d05      0x37a c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_loclists
+                0x000000000000107f       0x5b c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_loclists
+                0x00000000000010da       0x48 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o)
+ .debug_loclists
+                0x0000000000001122       0xcf c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-freer.o)
+ .debug_loclists
+                0x00000000000011f1      0x26c c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+ .debug_loclists
+                0x000000000000145d       0x4c c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o)
+ .debug_loclists
+                0x00000000000014a9       0x4f c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcat.o)
+ .debug_loclists
+                0x00000000000014f8       0x48 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcpy.o)
+ .debug_loclists
+                0x0000000000001540       0x32 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .debug_loclists
+                0x0000000000001572       0xf9 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_loclists
+                0x000000000000166b      0x130 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_loclists
+                0x000000000000179b       0x6e c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_loclists
+                0x0000000000001809       0x25 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_putchar.o)
+ .debug_loclists
+                0x000000000000182e       0x46 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_sbrk.o)
+ .debug_loclists
+                0x0000000000001874       0x1e c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_loclists
+                0x0000000000001892      0x10f c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_loclists
+                0x00000000000019a1      0x19c c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(peridot_sdif.o)
+ .debug_loclists
+                0x0000000000001b3d      0xb7e c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(pff.o)
+ .debug_loclists
+                0x00000000000026bb       0x47 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_loclists
+                0x0000000000002702      0x2e4 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(peridot_sdif_pff_diskio.o)
+ .debug_loclists
+                0x00000000000029e6       0xcc c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_loclists
+                0x0000000000002ab2       0x7c c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+
+.debug_rnglists
+                0x0000000000000000      0x22c
+ .debug_rnglists
+                0x0000000000000000       0x18 obj/default/getfilename.o
+ .debug_rnglists
+                0x0000000000000018       0x14 obj/default/main.o
+ .debug_rnglists
+                0x000000000000002c       0x3f c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_rnglists
+                0x000000000000006b       0x19 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o)
+ .debug_rnglists
+                0x0000000000000084       0x20 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-freer.o)
+ .debug_rnglists
+                0x00000000000000a4       0x31 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+ .debug_rnglists
+                0x00000000000000d5       0x13 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o)
+ .debug_rnglists
+                0x00000000000000e8       0x13 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcat.o)
+ .debug_rnglists
+                0x00000000000000fb       0x13 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcpy.o)
+ .debug_rnglists
+                0x000000000000010e       0x13 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .debug_rnglists
+                0x0000000000000121       0x13 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_rnglists
+                0x0000000000000134       0x1f c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_rnglists
+                0x0000000000000153       0x23 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_rnglists
+                0x0000000000000176       0x14 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_rnglists
+                0x000000000000018a       0x63 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(pff.o)
+ .debug_rnglists
+                0x00000000000001ed       0x19 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_rnglists
+                0x0000000000000206       0x13 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_rnglists
+                0x0000000000000219       0x13 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+
+.debug_line_str
+                0x0000000000000000      0xea6
+ .debug_line_str
+                0x0000000000000000      0x21c obj/default/getfilename.o
+                                        0x27a (size before relaxing)
+ .debug_line_str
+                0x000000000000021c       0x71 obj/default/loadbmp.o
+                                        0x209 (size before relaxing)
+ .debug_line_str
+                0x000000000000028d       0xd9 obj/default/main.o
+                                        0x3a5 (size before relaxing)
+ .debug_line_str
+                0x0000000000000366       0x14 obj/default/playwav.o
+                                        0x1a2 (size before relaxing)
+ .debug_line_str
+                0x000000000000037a       0x13 obj/default/xprintf.o
+                                        0x166 (size before relaxing)
+ .debug_line_str
+                0x000000000000038d       0xf2 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+                                        0x1b6 (size before relaxing)
+ .debug_line_str
+                0x000000000000047f       0x3a c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+                                        0x1ad (size before relaxing)
+ .debug_line_str
+                0x00000000000004b9      0x23b c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o)
+                                        0x323 (size before relaxing)
+ .debug_line_str
+                0x00000000000006f4       0x45 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-freer.o)
+                                        0x335 (size before relaxing)
+ .debug_line_str
+                0x0000000000000739       0x63 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+                                        0x3bb (size before relaxing)
+ .debug_line_str
+                0x000000000000079c       0xff c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o)
+                                        0x31a (size before relaxing)
+ .debug_line_str
+                0x000000000000089b      0x103 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcat.o)
+                                        0x23d (size before relaxing)
+ .debug_line_str
+                0x000000000000099e       0x3f c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcpy.o)
+                                        0x23d (size before relaxing)
+ .debug_line_str
+                0x00000000000009dd       0x3f c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+                                        0x2b3 (size before relaxing)
+ .debug_line_str
+                0x0000000000000a1c       0x3e c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+                                        0x2ba (size before relaxing)
+ .debug_line_str
+                0x0000000000000a5a       0x41 c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+                                        0x1dd (size before relaxing)
+ .debug_line_str
+                0x0000000000000a9b       0xa9 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_iic.o)
+                                        0x11b (size before relaxing)
+ .debug_line_str
+                0x0000000000000b44       0x2f c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                                        0x12a (size before relaxing)
+ .debug_line_str
+                0x0000000000000b73       0x1a c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                                         0xfc (size before relaxing)
+ .debug_line_str
+                0x0000000000000b8d       0x17 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                                         0xdb (size before relaxing)
+ .debug_line_str
+                0x0000000000000ba4       0x35 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_load.o)
+                                         0xff (size before relaxing)
+ .debug_line_str
+                0x0000000000000bd9       0x31 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_main.o)
+                                         0xfe (size before relaxing)
+ .debug_line_str
+                0x0000000000000c0a       0x21 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_malloc_lock.o)
+                                        0x19e (size before relaxing)
+ .debug_line_str
+                0x0000000000000c2b       0x16 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_putchar.o)
+                                         0xc2 (size before relaxing)
+ .debug_line_str
+                0x0000000000000c41       0x13 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_sbrk.o)
+                                        0x12b (size before relaxing)
+ .debug_line_str
+                0x0000000000000c54       0x74 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_sys_init.o)
+                                        0x21c (size before relaxing)
+ .debug_line_str
+                0x0000000000000cc8       0x3f c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+                                        0x148 (size before relaxing)
+ .debug_line_str
+                0x0000000000000d07       0x1b c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(peridot_sdif.o)
+                                        0x104 (size before relaxing)
+ .debug_line_str
+                0x0000000000000d22       0x33 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(pff.o)
+                                        0x1a5 (size before relaxing)
+ .debug_line_str
+                0x0000000000000d55       0x1f c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                                         0xdd (size before relaxing)
+ .debug_line_str
+                0x0000000000000d74       0x14 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_errno.o)
+                                        0x130 (size before relaxing)
+ .debug_line_str
+                0x0000000000000d88       0x1f c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                                         0xdd (size before relaxing)
+ .debug_line_str
+                0x0000000000000da7       0x3b c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                                        0x133 (size before relaxing)
+ .debug_line_str
+                0x0000000000000de2       0x20 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                                         0xe0 (size before relaxing)
+ .debug_line_str
+                0x0000000000000e02       0x26 c:/PROJECT/temp/hdmi_tx/hw/wavplayer/software/c4e_wavplayer_bsp/\libhal_bsp.a(peridot_sdif_pff_diskio.o)
+                                        0x209 (size before relaxing)
+ .debug_line_str
+                0x0000000000000e28       0x3f c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+                                        0x2b3 (size before relaxing)
+ .debug_line_str
+                0x0000000000000e67       0x3f c:/develop/quartus/22.1le/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+                                        0x2b3 (size before relaxing)

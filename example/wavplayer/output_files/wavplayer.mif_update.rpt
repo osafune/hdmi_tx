@@ -1,0 +1,84 @@
+MIF/HEX Update report for wavplayer
+Wed Jan 11 10:43:37 2023
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. MIF/HEX Update Summary
+  3. MIF/HEX Update Processed Files
+  4. MIF/HEX Update Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++---------------------------------------------------------------+
+; MIF/HEX Update Summary                                        ;
++-----------------------+---------------------------------------+
+; MIF/HEX Update Status ; Successful - Wed Jan 11 10:43:37 2023 ;
+; Revision Name         ; wavplayer                             ;
+; Top-level Entity Name ; wavplayer_top                         ;
+; Family                ; Cyclone IV E                          ;
+; Device                ; EP4CE6E22C8                           ;
++-----------------------+---------------------------------------+
+
+
++-----------------------------------------------+
+; MIF/HEX Update Processed Files                ;
++-----------------------------------------------+
+; File Name                                     ;
++-----------------------------------------------+
+; C:/PROJECT/temp/hdmi_tx/hw/wavplayer/boot.hex ;
++-----------------------------------------------+
+
+
++-------------------------+
+; MIF/HEX Update Messages ;
++-------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime MIF/HEX Update
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Wed Jan 11 10:43:36 2023
+Info: Command: quartus_cdb wavplayer -c wavplayer --update_mif
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Warning (113015): Width of data items in "boot.hex" is greater than the memory width. Wrapping data items to subsequent addresses. Found 512 warnings, reporting 10 File: C:/PROJECT/temp/hdmi_tx/hw/wavplayer/boot.hex Line: 1
+    Warning (113009): Data at line (2) of memory initialization file "boot.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: C:/PROJECT/temp/hdmi_tx/hw/wavplayer/boot.hex Line: 2
+    Warning (113009): Data at line (3) of memory initialization file "boot.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: C:/PROJECT/temp/hdmi_tx/hw/wavplayer/boot.hex Line: 3
+    Warning (113009): Data at line (4) of memory initialization file "boot.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: C:/PROJECT/temp/hdmi_tx/hw/wavplayer/boot.hex Line: 4
+    Warning (113009): Data at line (5) of memory initialization file "boot.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: C:/PROJECT/temp/hdmi_tx/hw/wavplayer/boot.hex Line: 5
+    Warning (113009): Data at line (6) of memory initialization file "boot.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: C:/PROJECT/temp/hdmi_tx/hw/wavplayer/boot.hex Line: 6
+    Warning (113009): Data at line (7) of memory initialization file "boot.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: C:/PROJECT/temp/hdmi_tx/hw/wavplayer/boot.hex Line: 7
+    Warning (113009): Data at line (8) of memory initialization file "boot.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: C:/PROJECT/temp/hdmi_tx/hw/wavplayer/boot.hex Line: 8
+    Warning (113009): Data at line (9) of memory initialization file "boot.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: C:/PROJECT/temp/hdmi_tx/hw/wavplayer/boot.hex Line: 9
+    Warning (113009): Data at line (10) of memory initialization file "boot.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: C:/PROJECT/temp/hdmi_tx/hw/wavplayer/boot.hex Line: 10
+    Warning (113009): Data at line (11) of memory initialization file "boot.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: C:/PROJECT/temp/hdmi_tx/hw/wavplayer/boot.hex Line: 11
+Info (39024): Processed the following Memory Initialization File(s)
+    Info (39025): Processed Memory Initialization File C:/PROJECT/temp/hdmi_tx/hw/wavplayer/boot.hex File: C:/PROJECT/temp/hdmi_tx/hw/wavplayer/boot.hex Line: 0
+Info: Quartus Prime MIF/HEX Update was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 4719 megabytes
+    Info: Processing ended: Wed Jan 11 10:43:38 2023
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+
