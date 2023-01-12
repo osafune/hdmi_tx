@@ -2,7 +2,7 @@
 -- TITLE : HDMI Transmitter (for GowinEDA)
 --
 --     DESIGN : s.osafune@j7system.jp (J-7SYSTEM WORKS LIMITED)
---     DATE   : 2022/12/01 -> 2023/01/10
+--     DATE   : 2022/12/01 -> 2023/01/13
 --
 --
 -- ===================================================================

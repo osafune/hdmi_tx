@@ -41,7 +41,7 @@ When developing and selling HDMI equipment products, it is necessary to become a
 
 # 1. 使い方
 
-1. `/hdl`以下の`hdmi_tx.vhd`(Intel用)または`hdmi_tx_ge.vhd`(Gowin用)をプロジェクトに追加します。  
+1. `/hdl`以下の`hdmi_tx.vhd`(Intel用)または`hdmi_tx_gw.vhd`(Gowin用)をプロジェクトに追加します。  
 1. 次のようにインスタンスします。  
 	**Verilogの例**
 	```verilog
@@ -114,8 +114,8 @@ When developing and selling HDMI equipment products, it is necessary to become a
 |Signal|Width|Direction|Description|
 |---|:---:|:---:|---|
 |reset|1|in|コアの非同期リセット入力です。`'1'`でリセットアサートします。|
-|clk|1|in|コアのクロック入力です。全ての入力は立ち上がりエッジでラッチされます。|
-|clk_x5|1|in|シリアライザロック入力です。`clk`に同期した5倍のクロックを入力します。`clk`と`clk_x5`の位相は0 degで、同一のPLLから供給します。|
+|clk|1|in|コアのクロック入力です。全ての入力は `clk` の立ち上がりでアサートされます。|
+|clk_x5|1|in|シリアライザロック入力です。`clk` に同期した5倍のクロックを入力します。|
 |control|4|in|外部からHDMIタイミング制御を行う場合に使用します。`USE_EXTCONTROL="ON"`の場合のみ有効です。DVIの場合は参照しません。使用しない場合は未接続にします。|
 |active|1|in|ビデオアクティブ期間の入力信号です。`USE_EXTCONTROL="OFF"`の場合に有効です。使用しない場合は未接続にします。|
 |r_data|8|in|色空間がRGBの場合はR、色差の場合はCrのデータ入力です。|
@@ -131,7 +131,11 @@ When developing and selling HDMI equipment products, it is necessary to become a
 |clock|1|out|TMDSクロックチャネルのシリアライズ出力です。出力ピンに配置してください。|
 |clock_n|1|out|`clock`の反転出力です。疑似差動を使う場合はペアピンに配置してください。このポートはIntel FPGAのみです。|
 
+* `clk` と `clk_x5` は同じPLLから生成された位相差なし(0 deg)の信号を供給してください。別PLLとする場合は `clk_x5` をゼロ・ディレイバッファーモードで出力してください。
+* `pcm_fs`、`pcm_l`、`pcm_r` 以外の入力信号は全て `clk` クロックドメインの同期信号を入力してください。  
+
 ## 2.2 hdmi_tx Parameters
+
 |Parameter|Legal<br />values|Default<br />values|Description|
 |---|---|---|---|
 |DEVICE_FAMILY|"MAX 10"<br>"Cyclone 10 LP"<br>"Cyclone V"<br>"Cyclone IV E"<br>"Cyclone IV GX"<br> "Cyclone III"|"Cyclone III"|インスタンスするFPGAファミリを指定します。このパラメーターはIntel FPGAのみです。|
@@ -174,7 +178,7 @@ When developing and selling HDMI equipment products, it is necessary to become a
 |cb_gout|8|out|カラーバーのG出力です。色空間がBT601/709の場合はYになります。|
 |cb_bout|8|out|カラーバーのB出力です。色空間がBT601/709の場合はCbになります。|
 
-※カラーバーの映像出力は`pixrequest`のタイミングで行われます。
+* カラーバーの映像出力は `pixrequest` のタイミングで行われます。  
 
 ## 2.4 video_syncgen Parameters
 
@@ -196,6 +200,7 @@ When developing and selling HDMI equipment products, it is necessary to become a
 |START_HPOS||0|外部同期時に使用するオプションです。|
 |START_VPOS||0|外部同期時に使用するオプションです。|
 
+
 # 3. 技術情報
 
 ## 3.1 FPGAピン配置のガイドライン
@@ -203,40 +208,39 @@ When developing and selling HDMI equipment products, it is necessary to become a
 hdmi_txモジュールはTMDS信号出力用にシリアライザを内蔵しています。シリアライザは `clk` と同期した5倍の送信用クロック `clk_x5` で駆動されるDDR出力回路によって、ビデオクロックの10倍のビットレートを出力します。  
 そのため、TMDS信号を出力する `data[2:0]`、`data_n[2:0]`、`clock` および `clock_n` ポートはトップエンティティのピン出力に接続しなければなりません。トップエンティティまで複数のモジュール階層に渡る場合、それぞれのモジュールでポートを接続し、途中に不要な回路が入らないよう注意してください。  
 
-TMDS信号を配置するFPGAピンには、IOブロックにDDRIOが配置された高速I/Oピンを指定します。以下のピンには配置できません。  
-- ❌ 高速I/O出力に対応していないピン（VREF、CLK、AIN等）
-- ❌ コンフィグレーションで使用される、またはコンフィグレーション機能が割り当てられているピン
-- ❌ DDRIO機能が無いピン
-- ❌ 3.3V-LVCMOS または 2.5V-CMOS が使えないピン
+TMDS信号を出力するFPGAピンには、IOブロックにDDRIOが配置された高速I/Oピンを指定します。以下のピンには配置できません。  
+- :x: 高速I/O出力に対応していないピン（VREF、CLK、AIN等）
+- :x: コンフィグレーションで使用される、またはコンフィグレーション機能が割り当てられているピン
+- :x: DDRIO機能が無いピン
+- :x: 3.3V-LVCMOS または 2.5V-CMOS が使えないピン
 
-疑似差動出力では `data[x]` と `data_n[x]`、`clock` と `clock_n` のペアがそれぞれ揃ったスキューで動作する必要があります。配置するピンは以下を推奨します。
-- ✅ LVDSペア同士のピン
-- ✅ 同一DQSグループ内のDQピン
-- ✅ 同一バンク内で隣接している、または近い場所にあるDDRIO機能ピン
+疑似差動出力では `data[2]` と `data_n[2]`、`data[1]` と `data_n[1]`、`data[0]` と `data_n[0]` および `clock` と `clock_n` の4組のペアがそれぞれ揃ったスキューで動作する必要があります。配置するピンは以下を推奨します。
+- :white_check_mark: LVDSペア同士のピン
+- :white_check_mark: 同一DQSグループ内のDQピン
+- :white_check_mark: 同一バンク内で隣接している、または近い場所にあるDDRIO機能ピン
 
 また既存ボードを使用して実装を行う場合はピンの組み合わせよりも基板上の配線品質（隣接配線、長さの揃っている配線、viaで層間移動の無いあるいは可能な限り少ない配線、GND還流が阻害されない配線など）を重視してください。信号ペア間が大きく離れるような配線は使用できません。LVDSが使用できるようなペアパターンがあればそこを使うのが望ましいでしょう。
 
 LVDS出力で使用する場合は `data[2:0]` および `clock` の4本のみをピンに配置し `data_n[2:0]`、`clock_n` は未接続にします。  
-
 
 ## 3.2 疑似差動TMDSのガイドライン
 
 FPGA I/Oピンからコネクターまでのアートワークは以下の点に注意してください。  
 ![TMDS配線](img/tmds_design.png)
 
-- **(a) FPGAピンからダンピング抵抗まで**  
-	220Ωまたは240Ωのダンピング抵抗は極力ピンのそばに配置するようにします。既存ボードの拡張端子などを使う場合は端子ピンの直近に配置します。パッドや配線でペアの平衡が崩れないよう、p側/n側の対称性を心がけた配置をしてください。
-- **(b) ダンピング抵抗からDCカットキャパシタまで**
+- **(a) FPGAピンから出力抵抗まで**  
+	220Ωまたは240Ωの出力抵抗はTMDSレシーバー側の終端抵抗と合わせて伝送路ネットワークを形成します。これらは極力ピンのそばに配置するようにします。  
+	既存ボードの拡張端子などを使う場合は端子ピンの直近に配置します。パッドや配線でペアの平衡が崩れないよう、p側/n側の対称性を心がけた配置をしてください。
+- **(b) 出力抵抗からDCカットキャパシタまで**
 	FPGAとコネクターの間が離れている場合、ここのラインを延長します。配線はかならずペア配線となるように引き回し、viaによる層間移動やノイズ源（特にDC/DCコンバーターなどのインダクタノイズ）の干渉が少なくなるよう注意してください。
 - **(c) コネクター周辺**
 	DCカットキャパシタおよびTVS保護素子はコネクター直近に配置するようにします。キャパシタやTVSの配線でもペア配線の対称性を心がけた配置をしてください。コネクターのコモンGND(ペア配線の共通GND)は必ず全て結線し、信号ラインの直近を流れるGND配線に接続します。
 - **(d) 還流GND**
-	TMDSは電流モードの信号のため還流用にコモン信号線が必要です。通常この信号線にはGNDが使われます。そのため、コネクターGNDからFPGA I/OのGNDへの配線はペア信号の直近を通るインピーダンスの低いラインが必要です。GNDが分断されていたり大きく迂回するような配線は避けるようにします。
+	TMDSは電流モードの信号のため還流用にコモン信号線が必要です。通常この信号線にはGNDが使われます。そのためコネクターGNDからFPGA I/OのGNDへの配線は、ペア信号の直近を通るインピーダンスの低いラインが必要です。GNDが分断されていたり大きく迂回するような配線は避けるようにします。
 
 より詳細なアートワークについては各社で公開されている高速差動回路の基本的な資料を参照してください。
 - [TI LVDSオーナーズ・マニュアル Part1](https://www.ti.com/jp/lit/ml/jaja441/jaja441.pdf)
 - [TI LVDSオーナーズ・マニュアル Part2](https://www.ti.com/jp/lit/ug/jaja442/jaja442.pdf)
-
 
 ## 3.3 ビデオ信号タイミング
 

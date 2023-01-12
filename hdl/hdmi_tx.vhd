@@ -2,7 +2,7 @@
 -- TITLE : HDMI Transmitter
 --
 --     DESIGN : s.osafune@j7system.jp (J-7SYSTEM WORKS LIMITED)
---     DATE   : 2022/12/01 -> 2023/01/10
+--     DATE   : 2022/12/01 -> 2023/01/13
 --
 --
 -- ===================================================================
@@ -1284,11 +1284,11 @@ architecture RTL of hdmi_tx_pdiff_submodule is
 	signal ddo_p_sig	: std_logic_vector(3 downto 0);
 	signal ddo_n_sig	: std_logic_vector(3 downto 0);
 
-	attribute noprune : boolean;	-- レジスタ最適化を抑止 
-	attribute noprune of start_reg	: signal is true;
-	attribute noprune of ser_reg	: signal is true;
-	attribute noprune of data_p_reg	: signal is true;
-	attribute noprune of data_n_reg	: signal is true;
+	attribute preserve  : boolean;	-- レジスタ最適化を抑止 
+	attribute preserve  of start_reg	: signal is true;
+	attribute preserve  of ser_reg		: signal is true;
+	attribute preserve  of data_p_reg	: signal is true;
+	attribute preserve  of data_n_reg	: signal is true;
 
 begin
 
