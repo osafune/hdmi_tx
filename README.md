@@ -115,7 +115,7 @@ When developing and selling HDMI equipment products, it is necessary to become a
 |---|:---:|:---:|---|
 |reset|1|in|コアの非同期リセット入力です。`'1'`でリセットアサートします。|
 |clk|1|in|コアのクロック入力です。全ての入力は `clk` の立ち上がりでアサートされます。|
-|clk_x5|1|in|シリアライザロック入力です。`clk` に同期した5倍のクロックを入力します。|
+|clk_x5|1|in|シリアライザクロック入力です。`clk` に同期した5倍のクロックを入力します。|
 |control|4|in|外部からHDMIタイミング制御を行う場合に使用します。`USE_EXTCONTROL="ON"`の場合のみ有効です。DVIの場合は参照しません。使用しない場合は未接続にします。|
 |active|1|in|ビデオアクティブ期間の入力信号です。`USE_EXTCONTROL="OFF"`の場合に有効です。使用しない場合は未接続にします。|
 |r_data|8|in|色空間がRGBの場合はR、色差の場合はCrのデータ入力です。|
@@ -133,29 +133,30 @@ When developing and selling HDMI equipment products, it is necessary to become a
 
 * `clk` と `clk_x5` は同じPLLから生成された位相差なし(0 deg)の信号を供給してください。別PLLとする場合は `clk_x5` をゼロ・ディレイバッファーモードで出力してください。
 * `pcm_fs`、`pcm_l`、`pcm_r` 以外の入力信号は全て `clk` クロックドメインの同期信号を入力してください。  
+* オーディオストリームを使用する場合は、64クロック以上のHブランク期間が必要です。
 
 ## 2.2 hdmi_tx Parameters
 
 |Parameter|Legal<br />values|Default<br />values|Description|
 |---|---|---|---|
-|DEVICE_FAMILY|"MAX 10"<br>"Cyclone 10 LP"<br>"Cyclone V"<br>"Cyclone IV E"<br>"Cyclone IV GX"<br> "Cyclone III"|"Cyclone III"|インスタンスするFPGAファミリを指定します。このパラメーターはIntel FPGAのみです。|
+|DEVICE_FAMILY|"MAX 10",<br>"Cyclone 10 LP",<br>"Cyclone V",<br>"Cyclone IV E",<br>"Cyclone IV GX",<br>"Cyclone III"|"Cyclone III"|インスタンスするFPGAファミリを指定します。このパラメーターはIntel FPGAのみです。|
 |CLOCK_FREQUENCY|25.0 - 148.5|25.2|`clk`ポートに入力するクロックの周波数を`MHz`で与えます。パケットスケジュールリングに参照されるため、正確なクロック数を入力してください。|
-|ENCODE_MODE|"HDMI"<br>"LITEHDMI"<br>"DVI"|"HDMI"|エンコードモードを指定します。<br>`"LITEHDMI"`はNullパケットのみの送信をおこなう縮小HDMIトランスミッタです。|
-|USE_EXTCONTROL|"ON"<br>"OFF"|"OFF"|HDMIモードのときに外部コントロールを使うかどうか指定します。外部コントロールを使う場合、active信号からのタイミング再生を行わないため省リソースになります。|
-|SYNC_POLARITY|"POSITIVE"<br>"NEGATIVE"|"NEGATIVE"|送出する同期信号の極性を指定します。|
-|SCANMODE|"AUTO"<br>"OVER"<br>"UNDER"|"AUTO"|HDMIシンク機器へスキャンモードの情報を与えます。<br>`"AUTO"`:シンク機器側で判断<br>`"OVER"`:オーバースキャン<br>`"UNDER"`:アンダースキャン|
-|PICTUREASPECT|"NONE"<br>"4:3"<br>"16:9"|"NONE"|HDMIシンク機器へ画像のアスペクト比情報を与えます。<br>`"NONE"`:情報なし<br>`"4:3"`:アスペクト比4:3<br>`"16:9"`:アスペクト比16:9|
-|FORMATASPECT|"AUTO"<br>"4:3"<br>"16:9"<br>"14:9"|"AUTO"|HDMIシンク機器へ映像出力のアスペクト比情報を与えます。<br>`"AUTO"`:シンク機器側で判断<br>`"4:3"`:出力モード4:3<br>`"16:9"`:出力モード16:9<br>`"14:9"`:出力モード14:9|
-|PICTURESCALING|"FIT"<br>"HEIGHT"<br>"WIDTH"<br>"NONE"|"FIT"|HDMIシンク機器へ映像出力のスケーリング情報を与えます。<br>`"FIT"`:映像出力に合わせる<br>`"HEIGHT"`:高さに合わせる<br>`"WIDTH"`:幅に合わせる<br>`"NONE"`:スケーリング情報なし|
-|COLORSPACE|"RGB"<br>"BT601"<br>"BT709"<br>"XVYCC601"<br>"XVYCC709"|"RGB"|HDMIシンク機器へビデオデータの色空間情報を与えます。<br>`"RGB"`:RGB888(Fullscale)<br>`"BT601"`:YCbCr444(ITU-R BT.601/SMPTE170M)<br>`"BT709"`:YCbCr444(ITU-R BT.709)<br>`"XVYCC601"`:YCbCr444(xvYCC BT.601)<br>`"XVYCC709"`:YCbCr444(xvYCC BT.709)|
-|YCC_DATARANGE|"LIMITED"<br>"FULL"|"LIMITED"|色空間がYCbCrの場合にデータ範囲を示唆します。|
-|CONTENTTYPE|"GRAPHICS"<br>"PHOTO"<br>"CINEMA"<br>"GAME"|"GRAPHICS"|HDMIシンク機器へ映像コンテンツタイプを与えます。<br>`"GRAPHICS"`:PCグラフィックス<br>`"PHOTO"`:写真・静止画<br>`"CINEMA"`:映画<br>`"GAME"`:ゲーム機器|
+|ENCODE_MODE|"HDMI",<br>"LITEHDMI",<br>"DVI"|"HDMI"|エンコードモードを指定します。<br>`"LITEHDMI"`はNullパケットのみの送信をおこなう縮小HDMIトランスミッタです。|
+|USE_EXTCONTROL|"ON", "OFF"|"OFF"|HDMIモードのときに外部コントロールを使うかどうか指定します。外部コントロールを使う場合、active信号からのタイミング再生を行わないため省リソースになります。|
+|SYNC_POLARITY|"POSITIVE",<br>"NEGATIVE"|"NEGATIVE"|送出する同期信号の極性を指定します。|
+|SCANMODE|"AUTO",<br>"OVER",<br>"UNDER"|"AUTO"|HDMIシンク機器へスキャンモードの情報を与えます。<br>`"AUTO"`:シンク機器側で判断<br>`"OVER"`:オーバースキャン<br>`"UNDER"`:アンダースキャン|
+|PICTUREASPECT|"NONE",<br>"4:3",<br>"16:9"|"NONE"|HDMIシンク機器へ画像のアスペクト比情報を与えます。<br>`"NONE"`:情報なし<br>`"4:3"`:アスペクト比4:3<br>`"16:9"`:アスペクト比16:9|
+|FORMATASPECT|"AUTO",<br>"4:3",<br>"16:9",<br>"14:9"|"AUTO"|HDMIシンク機器へ映像出力のアスペクト比情報を与えます。<br>`"AUTO"`:シンク機器側で判断<br>`"4:3"`:出力モード4:3<br>`"16:9"`:出力モード16:9<br>`"14:9"`:出力モード14:9|
+|PICTURESCALING|"FIT",<br>"HEIGHT",<br>"WIDTH"<br>"NONE"|"FIT"|HDMIシンク機器へ映像出力のスケーリング情報を与えます。<br>`"FIT"`:映像出力に合わせる<br>`"HEIGHT"`:高さに合わせる<br>`"WIDTH"`:幅に合わせる<br>`"NONE"`:スケーリング情報なし|
+|COLORSPACE|"RGB",<br>"BT601",<br>"BT709",<br>"XVYCC601",<br>"XVYCC709"|"RGB"|HDMIシンク機器へビデオデータの色空間情報を与えます。<br>`"RGB"`:RGB888(Fullscale)<br>`"BT601"`:YCbCr444(ITU-R BT.601/SMPTE170M)<br>`"BT709"`:YCbCr444(ITU-R BT.709)<br>`"XVYCC601"`:YCbCr444(xvYCC BT.601)<br>`"XVYCC709"`:YCbCr444(xvYCC BT.709)|
+|YCC_DATARANGE|"LIMITED",<br>"FULL"|"LIMITED"|色空間がYCbCrの場合にデータ範囲を示唆します。|
+|CONTENTTYPE|"GRAPHICS",<br>"PHOTO",<br>"CINEMA",<br>"GAME"|"GRAPHICS"|HDMIシンク機器へ映像コンテンツタイプを与えます。<br>`"GRAPHICS"`:PCグラフィックス<br>`"PHOTO"`:写真・静止画<br>`"CINEMA"`:映画<br>`"GAME"`:ゲーム機器|
 |REPETITION|0 - 10|0|ピクセルリピテーションの値を指定します。詳しくはCEA-861-Dを参照してください。|
 |VIDEO_CODE|0 - 127|0|ビデオコードの値を指定します。詳しくはCEA-861-Dを参照してください。|
-|USE_AUDIO_PACKET|"ON"<br>"OFF"|"ON"|オーディオストリームを使うかどうか指定します。|
+|USE_AUDIO_PACKET|"ON", "OFF"|"ON"|オーディオストリームを使うかどうか指定します。|
 |AUDIO_FREQUENCY|32.0, 44.1, 48.0, 88.2, 96.0, 176.4, 192.0|44.1|PCMサンプリング周波数を`kHz`で指定します。|
 |PCMFIFO_DEPTH|8, 9, 10|8|サンプリングデータFIFOの深さを指定します。|
-|CATEGORY_CODE||"00000000"|ソース機器のカテゴリ情報を設定します。詳しくはIEC60958-3を参照してください。|
+|CATEGORY_CODE||8'b00000000|ソース機器のカテゴリ情報を設定します。詳しくはIEC60958-3を参照してください。|
 
 ## 2.3 video_syncgen Module interface
 
@@ -184,9 +185,9 @@ When developing and selling HDMI equipment products, it is necessary to become a
 
 |Parameter|Legal<br />values|Default<br />values|Description|
 |---|---|---|---|
-|BAR_MODE|"WIDE"<br>"SD"|"WIDE"|カラーバーの出力モードを指定します。<br>`"WIDE"`:16:9用のカラーバーを出力<br>`"SD"`:4:3用のカラーバーを出力|
-|COLORSPACE|"RGB"<br>"BT601"<br>"BT709"|"RGB"|カラーバーの色空間を指定します。<br>`"RGB"`:RGB888 Full range<br>`"BT601"`:ITU-R BT.601 YCbCr Limited range<br>`"BT709"`:ITU-R BT.709 YCbCr Limited range|
-|START_SIG|"SINGLE"<br>"WIDTH"|"SINGLE"|`framestart`、`linestart`の信号出力幅を指定します。<br>`"SINGLE"`:`video_clk`で1クロック幅の信号<br>`"WIDTH"`:HSYNC幅の信号|
+|BAR_MODE|"WIDE",<br>"SD"|"WIDE"|カラーバーの出力モードを指定します。<br>`"WIDE"`:16:9用のカラーバーを出力<br>`"SD"`:4:3用のカラーバーを出力|
+|COLORSPACE|"RGB",<br>"BT601",<br>"BT709"|"RGB"|カラーバーの色空間を指定します。<br>`"RGB"`:RGB888 Full range<br>`"BT601"`:ITU-R BT.601 YCbCr Limited range<br>`"BT709"`:ITU-R BT.709 YCbCr Limited range|
+|START_SIG|"SINGLE",<br>"WIDTH"|"SINGLE"|`framestart`、`linestart`の信号出力幅を指定します。<br>`"SINGLE"`:`video_clk`で1クロック幅の信号<br>`"WIDTH"`:HSYNC幅の信号|
 |EARLY_REQ|0 - 16|0|`pixrequest`のアサートタイミングを`active`からいくつ早めるかを指定します。ピクセルデータ読み出しのパイプライン分の遅延補償のために使用します。|
 |H_TOTAL|1 - 4096||水平トータルピクセル数(クロック数)です。|
 |H_SYNC|1 - 1024||水平同期信号のピクセル数(クロック数)です。|
