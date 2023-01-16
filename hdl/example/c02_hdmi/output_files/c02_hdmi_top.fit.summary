@@ -1,0 +1,18 @@
+Fitter Status : Successful - Tue Jan 17 02:07:21 2023
+Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+Revision Name : c02_hdmi_top
+Top-level Entity Name : c02_hdmi_test_top
+Family : MAX 10
+Device : 10M02DCV36C8G
+Timing Models : Final
+Total logic elements : 1,630 / 2,304 ( 71 % )
+    Total combinational functions : 1,576 / 2,304 ( 68 % )
+    Dedicated logic registers : 862 / 2,304 ( 37 % )
+Total registers : 878
+Total pins : 11 / 27 ( 41 % )
+Total virtual pins : 0
+Total memory bits : 2,304 / 110,592 ( 2 % )
+Embedded Multiplier 9-bit elements : 0 / 32 ( 0 % )
+Total PLLs : 1 / 1 ( 100 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0

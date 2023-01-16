@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Jan 13 03:33:07 2023
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : wavplayer
+Top-level Entity Name : wavplayer_top
+Family : Cyclone IV E
+Total logic elements : 6,150
+    Total combinational functions : 4,880
+    Dedicated logic registers : 3,852
+Total registers : 3868
+Total pins : 80
+Total virtual pins : 0
+Total memory bits : 210,636
+Embedded Multiplier 9-bit elements : 10
+Total PLLs : 2

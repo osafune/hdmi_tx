@@ -1,0 +1,191 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\PROJECT\temp\hdmi_tx\hw\wavplayer\c4e_pcmplay_core.qsys --block-symbol-file --output-directory=C:\PROJECT\temp\hdmi_tx\hw\wavplayer\c4e_pcmplay_core --family="Cyclone IV E" --part=EP4CE6E22C8
+Progress: Loading wavplayer/c4e_pcmplay_core.qsys
+Progress: Reading input file
+Progress: Adding barcolor [altera_avalon_pio 20.1]
+Progress: Parameterizing module barcolor
+Progress: Adding boot [altera_avalon_onchip_memory2 20.1]
+Progress: Parameterizing module boot
+Progress: Adding core_clk [clock_source 20.1]
+Progress: Parameterizing module core_clk
+Progress: Adding gpio [altera_avalon_pio 20.1]
+Progress: Parameterizing module gpio
+Progress: Adding nios2_tiny [altera_nios2_gen2 20.1]
+Progress: Parameterizing module nios2_tiny
+Progress: Adding pcm [pcm_component 1.0]
+Progress: Parameterizing module pcm
+Progress: Adding peri_clk [clock_source 20.1]
+Progress: Parameterizing module peri_clk
+Progress: Adding peridot_sdif_0 [peridot_sdif 19.1]
+Progress: Parameterizing module peridot_sdif_0
+Progress: Adding peripheral_bridge [altera_avalon_mm_bridge 20.1]
+Progress: Parameterizing module peripheral_bridge
+Progress: Adding sdram [altera_avalon_new_sdram_controller 20.1]
+Progress: Parameterizing module sdram
+Progress: Adding sysid [altera_avalon_sysid_qsys 20.1]
+Progress: Parameterizing module sysid
+Progress: Adding systimer [altera_avalon_timer 20.1]
+Progress: Parameterizing module systimer
+Progress: Adding sysuart [altera_avalon_uart 20.1]
+Progress: Parameterizing module sysuart
+Progress: Adding vga [peridot_vga_controller 20.0.99]
+Progress: Parameterizing module vga
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: c4e_pcmplay_core.gpio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: c4e_pcmplay_core.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: c4e_pcmplay_core.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: c4e_pcmplay_core.sysid: Time stamp will be automatically updated when this component is generated.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\PROJECT\temp\hdmi_tx\hw\wavplayer\c4e_pcmplay_core.qsys --synthesis=VERILOG --output-directory=C:\PROJECT\temp\hdmi_tx\hw\wavplayer\c4e_pcmplay_core\synthesis --family="Cyclone IV E" --part=EP4CE6E22C8
+Progress: Loading wavplayer/c4e_pcmplay_core.qsys
+Progress: Reading input file
+Progress: Adding barcolor [altera_avalon_pio 20.1]
+Progress: Parameterizing module barcolor
+Progress: Adding boot [altera_avalon_onchip_memory2 20.1]
+Progress: Parameterizing module boot
+Progress: Adding core_clk [clock_source 20.1]
+Progress: Parameterizing module core_clk
+Progress: Adding gpio [altera_avalon_pio 20.1]
+Progress: Parameterizing module gpio
+Progress: Adding nios2_tiny [altera_nios2_gen2 20.1]
+Progress: Parameterizing module nios2_tiny
+Progress: Adding pcm [pcm_component 1.0]
+Progress: Parameterizing module pcm
+Progress: Adding peri_clk [clock_source 20.1]
+Progress: Parameterizing module peri_clk
+Progress: Adding peridot_sdif_0 [peridot_sdif 19.1]
+Progress: Parameterizing module peridot_sdif_0
+Progress: Adding peripheral_bridge [altera_avalon_mm_bridge 20.1]
+Progress: Parameterizing module peripheral_bridge
+Progress: Adding sdram [altera_avalon_new_sdram_controller 20.1]
+Progress: Parameterizing module sdram
+Progress: Adding sysid [altera_avalon_sysid_qsys 20.1]
+Progress: Parameterizing module sysid
+Progress: Adding systimer [altera_avalon_timer 20.1]
+Progress: Parameterizing module systimer
+Progress: Adding sysuart [altera_avalon_uart 20.1]
+Progress: Parameterizing module sysuart
+Progress: Adding vga [peridot_vga_controller 20.0.99]
+Progress: Parameterizing module vga
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: c4e_pcmplay_core.gpio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: c4e_pcmplay_core.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: c4e_pcmplay_core.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: c4e_pcmplay_core.sysid: Time stamp will be automatically updated when this component is generated.
+Info: c4e_pcmplay_core: Generating c4e_pcmplay_core "c4e_pcmplay_core" for QUARTUS_SYNTH
+Info: Inserting clock-crossing logic between cmd_demux.src1 and cmd_mux_001.sink0
+Info: Inserting clock-crossing logic between rsp_demux_001.src0 and rsp_mux.sink1
+Info: barcolor: Starting RTL generation for module 'c4e_pcmplay_core_barcolor'
+Info: barcolor:   Generation command is [exec C:/develop/quartus/20.1le/quartus/bin64/perl/bin/perl.exe -I C:/develop/quartus/20.1le/quartus/bin64/perl/lib -I C:/develop/quartus/20.1le/quartus/sopc_builder/bin/europa -I C:/develop/quartus/20.1le/quartus/sopc_builder/bin -I C:/develop/quartus/20.1le/quartus/../ip/altera/sopc_builder_ip/common -I C:/develop/quartus/20.1le/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/develop/quartus/20.1le/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=c4e_pcmplay_core_barcolor --dir=C:/Users/Regulus/AppData/Local/Temp/alt9369_369852025498813312.dir/0002_barcolor_gen/ --quartus_dir=C:/develop/quartus/20.1le/quartus --verilog --config=C:/Users/Regulus/AppData/Local/Temp/alt9369_369852025498813312.dir/0002_barcolor_gen//c4e_pcmplay_core_barcolor_component_configuration.pl  --do_build_sim=0  ]
+Info: barcolor: Done RTL generation for module 'c4e_pcmplay_core_barcolor'
+Info: barcolor: "c4e_pcmplay_core" instantiated altera_avalon_pio "barcolor"
+Info: boot: Starting RTL generation for module 'c4e_pcmplay_core_boot'
+Info: boot:   Generation command is [exec C:/develop/quartus/20.1le/quartus/bin64/perl/bin/perl.exe -I C:/develop/quartus/20.1le/quartus/bin64/perl/lib -I C:/develop/quartus/20.1le/quartus/sopc_builder/bin/europa -I C:/develop/quartus/20.1le/quartus/sopc_builder/bin -I C:/develop/quartus/20.1le/quartus/../ip/altera/sopc_builder_ip/common -I C:/develop/quartus/20.1le/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/develop/quartus/20.1le/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=c4e_pcmplay_core_boot --dir=C:/Users/Regulus/AppData/Local/Temp/alt9369_369852025498813312.dir/0003_boot_gen/ --quartus_dir=C:/develop/quartus/20.1le/quartus --verilog --config=C:/Users/Regulus/AppData/Local/Temp/alt9369_369852025498813312.dir/0003_boot_gen//c4e_pcmplay_core_boot_component_configuration.pl  --do_build_sim=0  ]
+Info: boot: Done RTL generation for module 'c4e_pcmplay_core_boot'
+Info: boot: "c4e_pcmplay_core" instantiated altera_avalon_onchip_memory2 "boot"
+Info: gpio: Starting RTL generation for module 'c4e_pcmplay_core_gpio'
+Info: gpio:   Generation command is [exec C:/develop/quartus/20.1le/quartus/bin64/perl/bin/perl.exe -I C:/develop/quartus/20.1le/quartus/bin64/perl/lib -I C:/develop/quartus/20.1le/quartus/sopc_builder/bin/europa -I C:/develop/quartus/20.1le/quartus/sopc_builder/bin -I C:/develop/quartus/20.1le/quartus/../ip/altera/sopc_builder_ip/common -I C:/develop/quartus/20.1le/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/develop/quartus/20.1le/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=c4e_pcmplay_core_gpio --dir=C:/Users/Regulus/AppData/Local/Temp/alt9369_369852025498813312.dir/0004_gpio_gen/ --quartus_dir=C:/develop/quartus/20.1le/quartus --verilog --config=C:/Users/Regulus/AppData/Local/Temp/alt9369_369852025498813312.dir/0004_gpio_gen//c4e_pcmplay_core_gpio_component_configuration.pl  --do_build_sim=0  ]
+Info: gpio: Done RTL generation for module 'c4e_pcmplay_core_gpio'
+Info: gpio: "c4e_pcmplay_core" instantiated altera_avalon_pio "gpio"
+Info: nios2_tiny: "c4e_pcmplay_core" instantiated altera_nios2_gen2 "nios2_tiny"
+Info: pcm: "c4e_pcmplay_core" instantiated pcm_component "pcm"
+Info: peridot_sdif_0: "c4e_pcmplay_core" instantiated peridot_sdif "peridot_sdif_0"
+Info: peripheral_bridge: "c4e_pcmplay_core" instantiated altera_avalon_mm_bridge "peripheral_bridge"
+Info: sdram: Starting RTL generation for module 'c4e_pcmplay_core_sdram'
+Info: sdram:   Generation command is [exec C:/develop/quartus/20.1le/quartus/bin64/perl/bin/perl.exe -I C:/develop/quartus/20.1le/quartus/bin64/perl/lib -I C:/develop/quartus/20.1le/quartus/sopc_builder/bin/europa -I C:/develop/quartus/20.1le/quartus/sopc_builder/bin -I C:/develop/quartus/20.1le/quartus/../ip/altera/sopc_builder_ip/common -I C:/develop/quartus/20.1le/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/develop/quartus/20.1le/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=c4e_pcmplay_core_sdram --dir=C:/Users/Regulus/AppData/Local/Temp/alt9369_369852025498813312.dir/0008_sdram_gen/ --quartus_dir=C:/develop/quartus/20.1le/quartus --verilog --config=C:/Users/Regulus/AppData/Local/Temp/alt9369_369852025498813312.dir/0008_sdram_gen//c4e_pcmplay_core_sdram_component_configuration.pl  --do_build_sim=0  ]
+Info: sdram: Done RTL generation for module 'c4e_pcmplay_core_sdram'
+Info: sdram: "c4e_pcmplay_core" instantiated altera_avalon_new_sdram_controller "sdram"
+Info: sysid: "c4e_pcmplay_core" instantiated altera_avalon_sysid_qsys "sysid"
+Info: systimer: Starting RTL generation for module 'c4e_pcmplay_core_systimer'
+Info: systimer:   Generation command is [exec C:/DEVELOP/Quartus/20.1LE/quartus/bin64//perl/bin/perl.exe -I C:/DEVELOP/Quartus/20.1LE/quartus/bin64//perl/lib -I C:/develop/quartus/20.1le/quartus/sopc_builder/bin/europa -I C:/develop/quartus/20.1le/quartus/sopc_builder/bin -I C:/develop/quartus/20.1le/quartus/../ip/altera/sopc_builder_ip/common -I C:/develop/quartus/20.1le/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/develop/quartus/20.1le/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=c4e_pcmplay_core_systimer --dir=C:/Users/Regulus/AppData/Local/Temp/alt9369_369852025498813312.dir/0010_systimer_gen/ --quartus_dir=C:/develop/quartus/20.1le/quartus --verilog --config=C:/Users/Regulus/AppData/Local/Temp/alt9369_369852025498813312.dir/0010_systimer_gen//c4e_pcmplay_core_systimer_component_configuration.pl  --do_build_sim=0  ]
+Info: systimer: Done RTL generation for module 'c4e_pcmplay_core_systimer'
+Info: systimer: "c4e_pcmplay_core" instantiated altera_avalon_timer "systimer"
+Info: sysuart: Starting RTL generation for module 'c4e_pcmplay_core_sysuart'
+Info: sysuart:   Generation command is [exec C:/develop/quartus/20.1le/quartus/bin64/perl/bin/perl.exe -I C:/develop/quartus/20.1le/quartus/bin64/perl/lib -I C:/develop/quartus/20.1le/quartus/sopc_builder/bin/europa -I C:/develop/quartus/20.1le/quartus/sopc_builder/bin -I C:/develop/quartus/20.1le/quartus/../ip/altera/sopc_builder_ip/common -I C:/develop/quartus/20.1le/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart -- C:/develop/quartus/20.1le/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart/generate_rtl.pl --name=c4e_pcmplay_core_sysuart --dir=C:/Users/Regulus/AppData/Local/Temp/alt9369_369852025498813312.dir/0011_sysuart_gen/ --quartus_dir=C:/develop/quartus/20.1le/quartus --verilog --config=C:/Users/Regulus/AppData/Local/Temp/alt9369_369852025498813312.dir/0011_sysuart_gen//c4e_pcmplay_core_sysuart_component_configuration.pl  --do_build_sim=0  ]
+Info: sysuart: Done RTL generation for module 'c4e_pcmplay_core_sysuart'
+Info: sysuart: "c4e_pcmplay_core" instantiated altera_avalon_uart "sysuart"
+Info: vga: "c4e_pcmplay_core" instantiated peridot_vga_controller "vga"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "c4e_pcmplay_core" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_1: "c4e_pcmplay_core" instantiated altera_mm_interconnect "mm_interconnect_1"
+Info: irq_mapper: "c4e_pcmplay_core" instantiated altera_irq_mapper "irq_mapper"
+Info: irq_synchronizer: "c4e_pcmplay_core" instantiated altera_irq_clock_crosser "irq_synchronizer"
+Info: rst_controller: "c4e_pcmplay_core" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'c4e_pcmplay_core_nios2_tiny_cpu'
+Info: cpu:   Generation command is [exec C:/DEVELOP/Quartus/20.1LE/quartus/bin64//perl/bin/perl.exe -I C:/DEVELOP/Quartus/20.1LE/quartus/bin64//perl/lib -I C:/develop/quartus/20.1le/quartus/sopc_builder/bin/europa -I C:/develop/quartus/20.1le/quartus/sopc_builder/bin -I C:/develop/quartus/20.1le/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/develop/quartus/20.1le/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/develop/quartus/20.1le/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/develop/quartus/20.1le/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/develop/quartus/20.1le/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=c4e_pcmplay_core_nios2_tiny_cpu --dir=C:/Users/Regulus/AppData/Local/Temp/alt9369_369852025498813312.dir/0016_cpu_gen/ --quartus_bindir=C:/DEVELOP/Quartus/20.1LE/quartus/bin64/ --verilog --config=C:/Users/Regulus/AppData/Local/Temp/alt9369_369852025498813312.dir/0016_cpu_gen//c4e_pcmplay_core_nios2_tiny_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2023.01.13 03:25:24 (*) Starting Nios II generation
+Info: cpu: # 2023.01.13 03:25:24 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2023.01.13 03:25:24 (*)   Creating all objects for CPU
+Info: cpu: # 2023.01.13 03:25:25 (*)   Generating RTL from CPU objects
+Info: cpu: # 2023.01.13 03:25:25 (*)   Creating plain-text RTL
+Info: cpu: # 2023.01.13 03:25:26 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'c4e_pcmplay_core_nios2_tiny_cpu'
+Info: cpu: "nios2_tiny" instantiated altera_nios2_gen2_unit "cpu"
+Info: nios2_tiny_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_tiny_data_master_translator"
+Info: nios2_tiny_debug_mem_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "nios2_tiny_debug_mem_slave_translator"
+Info: nios2_tiny_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_tiny_data_master_agent"
+Info: nios2_tiny_debug_mem_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "nios2_tiny_debug_mem_slave_agent"
+Info: nios2_tiny_debug_mem_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "nios2_tiny_debug_mem_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: router_006: "mm_interconnect_0" instantiated altera_merlin_router "router_006"
+Info: sdram_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "sdram_s1_burst_adapter"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_002"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file C:/PROJECT/temp/hdmi_tx/hw/wavplayer/c4e_pcmplay_core/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/PROJECT/temp/hdmi_tx/hw/wavplayer/c4e_pcmplay_core/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file C:/PROJECT/temp/hdmi_tx/hw/wavplayer/c4e_pcmplay_core/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_002"
+Info: Reusing file C:/PROJECT/temp/hdmi_tx/hw/wavplayer/c4e_pcmplay_core/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: sdram_s1_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "sdram_s1_rsp_width_adapter"
+Info: Reusing file C:/PROJECT/temp/hdmi_tx/hw/wavplayer/c4e_pcmplay_core/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/PROJECT/temp/hdmi_tx/hw/wavplayer/c4e_pcmplay_core/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: crosser: "mm_interconnect_0" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: Reusing file C:/PROJECT/temp/hdmi_tx/hw/wavplayer/c4e_pcmplay_core/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: avalon_st_adapter_003: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_003"
+Info: router: "mm_interconnect_1" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_1" instantiated altera_merlin_router "router_001"
+Info: peripheral_bridge_m0_limiter: "mm_interconnect_1" instantiated altera_merlin_traffic_limiter "peripheral_bridge_m0_limiter"
+Info: Reusing file C:/PROJECT/temp/hdmi_tx/hw/wavplayer/c4e_pcmplay_core/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: Reusing file C:/PROJECT/temp/hdmi_tx/hw/wavplayer/c4e_pcmplay_core/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: Reusing file C:/PROJECT/temp/hdmi_tx/hw/wavplayer/c4e_pcmplay_core/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/PROJECT/temp/hdmi_tx/hw/wavplayer/c4e_pcmplay_core/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter_003" instantiated error_adapter "error_adapter_0"
+Info: c4e_pcmplay_core: Done "c4e_pcmplay_core" with 53 modules, 83 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

@@ -1,0 +1,119 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\ip\TMDS_rPLL.v'
+Analyzing Verilog file 'C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\ip\logo_pattern_rom.v'
+Analyzing Verilog file 'C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\logo_overlay_gw.v'
+Analyzing Verilog file 'C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\video_top.v'
+WARN  (EX2535) : Signed/unsigned conversion for real expression("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\video_top.v":60)
+Analyzing VHDL file 'C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd'
+Analyzing entity 'hdmi_tx_scfifo'("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":124)
+Analyzing architecture 'rtl'("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":145)
+Analyzing entity 'hdmi_tx_delay'("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":233)
+Analyzing architecture 'rtl'("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":248)
+Analyzing entity 'hdmi_tx_audiopacket_submodule'("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":289)
+Analyzing architecture 'rtl'("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":315)
+Analyzing entity 'hdmi_tx_infopacket_submodule'("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":542)
+Analyzing architecture 'rtl'("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":601)
+Analyzing entity 'hdmi_tx_dataisland_submodule'("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":838)
+Analyzing architecture 'rtl'("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":861)
+Analyzing entity 'hdmi_tx_tmds_encoder_submodule'("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":1035)
+Analyzing architecture 'rtl'("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":1056)
+Analyzing entity 'hdmi_tx_pdiff_submodule'("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":1247)
+Analyzing architecture 'rtl'("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":1266)
+Analyzing entity 'hdmi_tx'("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":1387)
+Analyzing architecture 'rtl'("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":1462)
+Analyzing VHDL file 'C:\PROJECT\temp\hdmi_tx\video_syncgen.vhd'
+Analyzing entity 'video_syncgen'("C:\PROJECT\temp\hdmi_tx\video_syncgen.vhd":45)
+Analyzing architecture 'rtl'("C:\PROJECT\temp\hdmi_tx\video_syncgen.vhd":140)
+Analyzing VHDL file 'C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\melodychime.vhd'
+Analyzing entity 'melodychime_seq'("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\melodychime.vhd":45)
+Analyzing architecture 'rtl'("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\melodychime.vhd":63)
+Analyzing entity 'melodychime_sg'("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\melodychime.vhd":309)
+Analyzing architecture 'rtl'("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\melodychime.vhd":327)
+Analyzing entity 'melodychime'("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\melodychime.vhd":433)
+Analyzing architecture 'rtl'("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\melodychime.vhd":449)
+WARN  (EX2565) : Port 'aud_out' is not connected on this instance("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\video_top.v":169)
+WARN  (EX2565) : Port 'framestart' is not connected on this instance("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\video_top.v":196)
+WARN  (EX2565) : Port 'linestart' is not connected on this instance("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\video_top.v":196)
+WARN  (EX2565) : Port 'pixrequest' is not connected on this instance("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\video_top.v":196)
+WARN  (EX2565) : Port 'hdmicontrol' is not connected on this instance("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\video_top.v":196)
+WARN  (EX2565) : Port 'csync' is not connected on this instance("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\video_top.v":196)
+WARN  (EX2565) : Port 'hblank' is not connected on this instance("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\video_top.v":196)
+WARN  (EX2565) : Port 'vblank' is not connected on this instance("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\video_top.v":196)
+WARN  (EX3073) : Port 'test_frame_begin' remains unconnected for this instance("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\video_top.v":219)
+WARN  (EX2565) : Port 'data_n' is not connected on this instance("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\video_top.v":250)
+WARN  (EX2565) : Port 'clock_n' is not connected on this instance("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\video_top.v":250)
+Compiling module 'TMDS_rPLL'("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\ip\TMDS_rPLL.v":9)
+Compiling module 'logo_pattern_rom'("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\ip\logo_pattern_rom.v":8)
+WARN  (EX3670) : Actual bit length 1 differs from formal bit length 32 for port 'DO'("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\ip\logo_pattern_rom.v":28)
+WARN  (EX3670) : Actual bit length 1 differs from formal bit length 32 for port 'DO'("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\ip\logo_pattern_rom.v":107)
+WARN  (EX3670) : Actual bit length 1 differs from formal bit length 32 for port 'DO'("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\ip\logo_pattern_rom.v":186)
+Compiling module 'logo_overlay'("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\logo_overlay_gw.v":34)
+Compiling module 'video_top'("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\video_top.v":36)
+Switching to VHDL mode to elaborate design unit 'melodychime'("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\video_top.v":169)
+Processing 'melodychime(clock_freq_hz=74250000)(RTL)'("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\melodychime.vhd":433)
+Processing 'melodychime_seq(RTL)'("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\melodychime.vhd":45)
+Processing 'melodychime_sg(RTL)'("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\melodychime.vhd":309)
+Returning to Verilog mode to proceed with elaboration("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\video_top.v":169)
+Switching to VHDL mode to elaborate design unit 'video_syncgen'("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\video_top.v":196)
+Processing 'video_syncgen(colorspace="BT709",h_total=1650,h_sync=40,h_backp=260,h_active=1280,v_total=750,v_sync=5,v_backp=20,v_active=720)(1,4)(1,5)(1,6)(RTL)'("C:\PROJECT\temp\hdmi_tx\video_syncgen.vhd":45)
+Returning to Verilog mode to proceed with elaboration("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\video_top.v":196)
+Compiling module 'logo_overlay(VIEW_X_SIZE=1280,VIEW_Y_SIZE=720)'("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\logo_overlay_gw.v":34)
+Switching to VHDL mode to elaborate design unit 'hdmi_tx'("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\video_top.v":250)
+Processing 'hdmi_tx(device_family="Cyclone IV E",clock_frequency=74.25,scanmode="UNDER",colorspace="BT709")(1,12)(1,4)(1,3)(1,8)(1,5)(1,4)(1,4)(1,3)(1,5)(1,7)(1,8)(1,2)(RTL)'("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":1387)
+WARN  (EX4196) : Comparison between unequal length arrays always returns TRUE, left argument length 3 is different from right argument length 2 for 'string' array("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":1516)
+Processing 'hdmi_tx_delay(data_bitwidth=26,delay_distance=60)(1,4)(RTL)'("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":233)
+WARN  (EX4196) : Comparison between unequal length arrays always returns FALSE, left argument length 3 is different from right argument length 2 for 'string' array("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":1543)
+WARN  (EX4196) : Comparison between unequal length arrays always returns FALSE, left argument length 4 is different from right argument length 3 for 'string' array("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":1547)
+Processing 'hdmi_tx_audiopacket_submodule(RTL)'("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":289)
+Processing 'hdmi_tx_scfifo(fifo_word_width=8,fifo_data_width=9)(1,4)(RTL)'("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":124)
+Extracting RAM for identifier 'ram'("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":152)
+Processing 'hdmi_tx_infopacket_submodule(clock_frequency=74.25,scanmode="UNDER",colorspace="BT709")(1,5)(1,4)(1,4)(1,3)(1,5)(1,7)(1,8)(RTL)'("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":542)
+WARN  (EX4196) : Comparison between unequal length arrays always returns FALSE, left argument length 5 is different from right argument length 4 for 'string' array("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":656)
+WARN  (EX4196) : Comparison between unequal length arrays always returns FALSE, left argument length 4 is different from right argument length 3 for 'string' array("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":658)
+WARN  (EX4196) : Comparison between unequal length arrays always returns FALSE, left argument length 3 is different from right argument length 6 for 'string' array("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":660)
+WARN  (EX4196) : Comparison between unequal length arrays always returns FALSE, left argument length 3 is different from right argument length 5 for 'string' array("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":660)
+WARN  (EX4196) : Comparison between unequal length arrays always returns FALSE, left argument length 4 is different from right argument length 3 for 'string' array("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":663)
+WARN  (EX4196) : Comparison between unequal length arrays always returns FALSE, left argument length 5 is different from right argument length 3 for 'string' array("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":664)
+WARN  (EX4196) : Comparison between unequal length arrays always returns FALSE, left argument length 5 is different from right argument length 8 for 'string' array("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":666)
+WARN  (EX4196) : Comparison between unequal length arrays always returns FALSE, left argument length 5 is different from right argument length 8 for 'string' array("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":666)
+WARN  (EX4196) : Comparison between unequal length arrays always returns FALSE, left argument length 5 is different from right argument length 8 for 'string' array("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":667)
+WARN  (EX4196) : Comparison between unequal length arrays always returns FALSE, left argument length 5 is different from right argument length 3 for 'string' array("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":668)
+WARN  (EX4196) : Comparison between unequal length arrays always returns TRUE, left argument length 5 is different from right argument length 3 for 'string' array("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":669)
+WARN  (EX4196) : Comparison between unequal length arrays always returns FALSE, left argument length 7 is different from right argument length 4 for 'string' array("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":669)
+WARN  (EX4196) : Comparison between unequal length arrays always returns FALSE, left argument length 8 is different from right argument length 5 for 'string' array("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":672)
+WARN  (EX4196) : Comparison between unequal length arrays always returns FALSE, left argument length 8 is different from right argument length 6 for 'string' array("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":672)
+WARN  (EX4196) : Comparison between unequal length arrays always returns FALSE, left argument length 8 is different from right argument length 4 for 'string' array("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":672)
+WARN  (EX1998) : Net 'infotable_sig[6][7]' does not have a driver("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":689)
+Processing 'hdmi_tx_dataisland_submodule(RTL)'("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":838)
+WARN  (EX4196) : Comparison between unequal length arrays always returns FALSE, left argument length 4 is different from right argument length 8 for 'string' array("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":1680)
+WARN  (EX4196) : Comparison between unequal length arrays always returns FALSE, left argument length 4 is different from right argument length 3 for 'string' array("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":1726)
+Processing 'hdmi_tx_tmds_encoder_submodule(RTL)'("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":1035)
+Processing 'hdmi_tx_tmds_encoder_submodule(tmds_channel=1)(RTL)'("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":1035)
+Processing 'hdmi_tx_tmds_encoder_submodule(tmds_channel=2)(RTL)'("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":1035)
+Processing 'hdmi_tx_pdiff_submodule(device_family="Cyclone IV E")(1,12)(RTL)'("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":1247)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 4 for port 'control'("C:\PROJECT\temp\hdmi_tx\hdmi_tx_gw.vhd":1440)
+Returning to Verilog mode to proceed with elaboration("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\video_top.v":250)
+NOTE  (EX0101) : Current top module is "video_top"
+WARN  (EX0206) : Instance "rpll_inst" 's parameter "DEVICE" value invalid("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\ip\TMDS_rPLL.v":38)
+WARN  (EX0211) : The output port "LED[2]" of module "video_top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\video_top.v":49)
+[5%] Running netlist conversion ...
+WARN  (CV0018) : Input KEY_n[1] is unused("C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\src\video_top.v":40)
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\impl\gwsynthesis\hdmi_audio.vg" completed
+[100%] Generate report file "C:\PROJECT\temp\hdmi_tx\example\tn9k_hdmi\impl\gwsynthesis\hdmi_audio_syn.rpt.html" completed
+GowinSynthesis finish
