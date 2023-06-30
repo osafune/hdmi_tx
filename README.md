@@ -19,6 +19,7 @@ Intel FPGAおよびGowin FPGAのローエンドデバイスファミリ向けHDM
 	- 最大解像度HD720p (fmaxに依存)
 	- LVDSまたは疑似差動LVCMOS出力に対応
 	- Intel FPGA(MAX 10, Cyclone III, Cyclone IV, Cyclone V, Cyclone 10LP)、Gowin FPGA(GW1N, GW2A)に対応
+	- Type-C AltMode用の信号レーン入れ替え機能
 
 - **Video同期信号生成コア**
 	- 任意の解像度のビデオ同期信号およびARIBライクなカラーバー信号を生成
@@ -116,6 +117,7 @@ When developing and selling HDMI equipment products, it is necessary to become a
 |reset|1|in|コアの非同期リセット入力です。`'1'`でリセットアサートします。|
 |clk|1|in|コアのクロック入力です。全ての入力は `clk` の立ち上がりでアサートされます。|
 |clk_x5|1|in|シリアライザクロック入力です。`clk` に同期した5倍のクロックを入力します。|
+|cc_swap|1|in|AltMode用のレーン入れ替え信号です。`'1'`でレーンを入れ替えます。使用しない場合は未接続にします。|
 |control|4|in|外部からHDMIタイミング制御を行う場合に使用します。`USE_EXTCONTROL="ON"`の場合のみ有効です。DVIの場合は参照しません。使用しない場合は未接続にします。|
 |active|1|in|ビデオアクティブ期間の入力信号です。`USE_EXTCONTROL="OFF"`の場合に有効です。使用しない場合は未接続にします。|
 |r_data|8|in|色空間がRGBの場合はR、色差の場合はCrのデータ入力です。|

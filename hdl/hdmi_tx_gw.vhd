@@ -3,6 +3,7 @@
 --
 --     DESIGN : s.osafune@j7system.jp (J-7SYSTEM WORKS LIMITED)
 --     DATE   : 2022/12/01 -> 2023/01/13
+--              2023/06/30 add Type-C AltMode option
 --
 --
 -- ===================================================================
@@ -88,6 +89,7 @@
 --      reset       : in  std_logic;
 --      clk         : in  std_logic;            -- Rise edge drive clock
 --      clk_x5      : in  std_logic;            -- Transmitter clock (It synchronizes with clk)
+--      cc_swap     : in  std_logic := '0';     -- Type-C AltMode swap option
 --
 --      control     : in  std_logic_vector(3 downto 0) := "0000";   -- [0] : Indicate Active video period
 --                                                                  -- [1] : Indicate Video Preamble
@@ -1252,6 +1254,7 @@ entity hdmi_tx_pdiff_submodule is
 		clk			: in  std_logic;		-- Rise edge drive clock
 		clk_x5		: in  std_logic;		-- Transmitter clock (It synchronizes with clk)
 
+		tx_swap		: in  std_logic := '0';	-- Type-C AltMode swap option
 		data0_in	: in  std_logic_vector(9 downto 0);
 		data1_in	: in  std_logic_vector(9 downto 0);
 		data2_in	: in  std_logic_vector(9 downto 0);
@@ -1265,7 +1268,7 @@ end hdmi_tx_pdiff_submodule;
 
 architecture RTL of hdmi_tx_pdiff_submodule is
 	-- signal
-	signal data_in_reg	: std_logic_vector(3*10-1 downto 0);
+	signal data_in_reg	: std_logic_vector(4*10-1 downto 0);
 
 	component OSER10
 	generic (
@@ -1295,7 +1298,11 @@ begin
 
 	process (clk) begin
 		if rising_edge(clk) then
-			data_in_reg <= data2_in & data1_in & data0_in;
+			if is_true(tx_swap) then
+				data_in_reg <= data1_in & data0_in & "0000011111" & data2_in;
+			else
+				data_in_reg <= "0000011111" & data2_in & data1_in & data0_in;
+			end if;
 		end if;
 	end process;
 
@@ -1304,23 +1311,6 @@ begin
 
 
 	-- シリアライザ --
-
-	u_ser_clk : OSER10
-	port map (
-		PCLK	=> clk,
-		FCLK	=> clk_x5,
-		D0		=> '1',
-		D1		=> '1',
-		D2		=> '1',
-		D3		=> '1',
-		D4		=> '1',
-		D5		=> '0',
-		D6		=> '0',
-		D7		=> '0',
-		D8		=> '0',
-		D9		=> '0',
-		Q		=> txc
-	);
 
 	u_ser_dat0 : OSER10
 	port map (
@@ -1371,6 +1361,23 @@ begin
 		D8		=> data_in_reg(28),
 		D9		=> data_in_reg(29),
 		Q		=> tx(2)
+	);
+
+	u_ser_clk : OSER10
+	port map (
+		PCLK	=> clk,
+		FCLK	=> clk_x5,
+		D0		=> data_in_reg(30),
+		D1		=> data_in_reg(31),
+		D2		=> data_in_reg(32),
+		D3		=> data_in_reg(33),
+		D4		=> data_in_reg(34),
+		D5		=> data_in_reg(35),
+		D6		=> data_in_reg(36),
+		D7		=> data_in_reg(37),
+		D8		=> data_in_reg(38),
+		D9		=> data_in_reg(39),
+		Q		=> txc
 	);
 
 end RTL;
@@ -1436,6 +1443,7 @@ entity hdmi_tx is
 		reset		: in  std_logic;
 		clk			: in  std_logic;			-- Rise edge drive clock
 		clk_x5		: in  std_logic;			-- Transmitter clock (It synchronizes with clk)
+		cc_swap		: in  std_logic := '0';		-- Type-C AltMode swap option
 
 		control		: in  std_logic_vector(3 downto 0) := "0000";	-- [0] : Indicate Active video period
 																	-- [1] : Indicate Video Preamble
@@ -1474,6 +1482,7 @@ architecture RTL of hdmi_tx is
 	constant STOP_COUNT			: std_logic_vector(5 downto 0) := "000110";	-- LITEHDMI counter stop count(6)
 
 	-- signal
+	signal cc_swap_reg		: std_logic;
 	signal active_reg		: std_logic_vector(DELAY_DISTANCE+4-1 downto 0);
 	signal control_sig		: std_logic_vector(3 downto 0);
 	signal datain_sig		: std_logic_vector(2+3*8-1 downto 0);
@@ -1744,6 +1753,13 @@ end generate;
 		);
 	end generate;
 
+
+	process (clk) begin
+		if rising_edge(clk) then
+			cc_swap_reg <= cc_swap;
+		end if;
+	end process;
+
 	u_ser : entity work.hdmi_tx_pdiff_submodule
 	generic map (
 		DEVICE_FAMILY	=> DEVICE_FAMILY
@@ -1752,6 +1768,7 @@ end generate;
 		clk			=> clk,
 		clk_x5		=> clk_x5,
 
+		tx_swap		=> cc_swap_reg,
 		data0_in	=> q_sig(0*10+9 downto 0*10),
 		data1_in	=> q_sig(1*10+9 downto 1*10),
 		data2_in	=> q_sig(2*10+9 downto 2*10),
